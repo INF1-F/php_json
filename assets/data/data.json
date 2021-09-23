@@ -1,11 +1,39 @@
 {
-    "1632397421": {
+    "1632397522": {
         "title": "eerste nieuws bericht",
         "beschrijving": "Hallo dit is een nieuwe bericht voor alle studenten",
         "reactions": {
-            "1632397458": {
+            "1632402776": {
                 "author": "max",
-                "reaction": "saai bericht"
+                "reaction": "hallo"
+            },
+            "1632403256": {
+                "author": "max",
+                "reaction": "saassai"
+            }
+        }
+    },
+    "1632399647": {
+        "title": "inschrijven toetsen",
+        "beschrijving": "Vergeet je niet in te schrijven",
+        "reactions": {
+            "1632401980": {
+                "author": "max",
+                "reaction": "saai"
+            }
+        }
+    },
+    "1632400607": {
+        "title": "test3",
+        "beschrijving": "ddd",
+        "reactions": {
+            "0": {
+                "author": "max",
+                "reaction": "saai"
+            },
+            "1": {
+                "author": "max2",
+                "reaction": "saaaai"
             }
         }
     }

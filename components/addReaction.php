@@ -13,10 +13,15 @@ function createReaction($author, $reaction){
 
 
 function addReactionToItem($reaction, $news_item){
-    $reactions = array (
+    
+    if(isset($news_item->reactions)){
+        $reactions = $news_item->reactions;
+        $reaction = (object) array_replace_recursive((array)$reactions, (array)$reaction);
+    }
+    $reaction = array (
         'reactions' => $reaction
     );
-    $updated = (object) array_merge((array)$news_item, (array)$reactions);
+    $updated = (object) array_merge((array)$news_item, (array)$reaction);
 
     return $updated;
 }
