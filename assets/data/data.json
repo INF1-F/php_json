@@ -1,1 +1,12 @@
-{"1632382898":{"title":"dit is een titel","beschrijving":"test voor de beschrijving van dit item"},"1632382929":{"title":"test 222","beschrijving":"dit is de tweede test, hopelijk doet die het"},"1632383522":{"title":"dit is een titel","beschrijving":"Dit is een test voor de beihsihfddsa"},"1632383553":{"title":"test 333","beschrijving":"hallo ik ben gezakt voor me examen want ik kan niet rijden!!!"},"1632383960":{"title":"funcite test","beschrijving":"hoop dat ik nu wel slaag"},"1632385059":{"title":"news item 5000","beschrijving":"dit is weer een nieuws item wat we kunnen tonen op de news pagina"}}
+{
+    "1632397421": {
+        "title": "eerste nieuws bericht",
+        "beschrijving": "Hallo dit is een nieuwe bericht voor alle studenten",
+        "reactions": {
+            "1632397458": {
+                "author": "max",
+                "reaction": "saai bericht"
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 <?php
 
-include '../components/data.php';
+include '../components/news.php';
 
 $news_items = getJsonContent();
 
@@ -23,14 +23,14 @@ $news_items = getJsonContent();
     <div class="container row col-12">
 
     <?php
-    foreach ($news_items as $item) {
+    foreach ($news_items as $key => $item) {
 
     ?>
         <div class="card col-3" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title"><?= $item->title?></h5>
                 <p class="card-text"><?= $item->beschrijving ?></p>
-                <a href="" class="card-link">Reageer</a>
+                <a href="./reaction.php?id=<?=$key?>" class="card-link">Reageer</a>
                 <a href="" class="card-link">Reacties</a>
             </div>
         </div>
