@@ -1,38 +1,3 @@
-<?php
-
-include './components/news.php';
-
-if(isset($_POST['title'])){
-    $time = time();
-    if(isset($_FILES['image'])){
-        $file_type = $_FILES['image']['type'];
-        $extensie = explode('/', $file_type);
-        $path = 'assets/img/news_items/'.$time.$extensie[1];
-        move_uploaded_file($_FILES['image']["tmp_name"], $path);
-    }
-
-    //create array from input
-    $new_item = Array (
-        $time => Array(
-            "title" => $_POST['title'],
-            "beschrijving" =>$_POST['beschrijving'],
-            "image" => $path
-        )
-    );
-
-    $old_items = getJsonContent();
-
-    //merge arrays
-    foreach($new_item AS $var=>$value){
-        $old_items->$var = $value;
-    }
-
-
-    writeToJsonFile($old_items);
-
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +13,11 @@ if(isset($_POST['title'])){
 <body> 
     <div class="container">
         <br>
-    <form action="index.php" method="POST" enctype="multipart/form-data">
+    <!-- 
+        Wanneer de gebruiker op submit drukt word de data naar news.handler.php gestuurd.
+        De reden dat we POST gebruiken is zodat we een afbeelding kunnen uploaden
+     -->
+    <form action="./components/news.handler.php" method="POST" enctype="multipart/form-data">
        <p> <input type="text" name="title"></p>
         <p><textarea name="beschrijving"></textarea></p>
         <p><input type="file" name="image"></p>
