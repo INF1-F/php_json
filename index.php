@@ -3,15 +3,17 @@
 include './components/news.php';
 
 if(isset($_POST['title'])){
-
+    $time = time();
     if(isset($_FILES['image'])){
-        $path = 'assets/img/news_items/'.$_FILES['image']['name'];
+        $file_type = $_FILES['image']['type'];
+        $extensie = explode('/', $file_type);
+        $path = 'assets/img/news_items/'.$time.$extensie[1];
         move_uploaded_file($_FILES['image']["tmp_name"], $path);
     }
 
     //create array from input
     $new_item = Array (
-        time() => Array(
+        $time => Array(
             "title" => $_POST['title'],
             "beschrijving" =>$_POST['beschrijving'],
             "image" => $path
