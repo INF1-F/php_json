@@ -1,38 +1,11 @@
 {
-    "1632397522": {
-        "title": "eerste nieuws bericht",
-        "beschrijving": "Hallo dit is een nieuwe bericht voor alle studenten",
+    "1632471678": {
+        "title": "school weer geopent",
+        "beschrijving": "de scholen gaan weer open, helaas",
+        "image": "assets\/img\/news_items\/7NkQK5T0.jpg",
         "reactions": {
-            "1632402776": {
+            "1632471973": {
                 "author": "max",
-                "reaction": "hallo"
-            },
-            "1632403256": {
-                "author": "max",
-                "reaction": "saassai"
-            }
-        }
-    },
-    "1632399647": {
-        "title": "inschrijven toetsen",
-        "beschrijving": "Vergeet je niet in te schrijven",
-        "reactions": {
-            "1632401980": {
-                "author": "max",
-                "reaction": "saai"
-            }
-        }
-    },
-    "1632400607": {
-        "title": "test3",
-        "beschrijving": "ddd",
-        "reactions": {
-            "0": {
-                "author": "max",
-                "reaction": "saai"
-            },
-            "1": {
-                "author": "max2",
                 "reaction": "saaaai"
             }
         }

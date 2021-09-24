@@ -2,13 +2,19 @@
 
 include './components/news.php';
 
-if(isset($_GET['title'])){
+if(isset($_POST['title'])){
+
+    if(isset($_FILES['image'])){
+        $path = 'assets/img/news_items/'.$_FILES['image']['name'];
+        move_uploaded_file($_FILES['image']["tmp_name"], $path);
+    }
 
     //create array from input
     $new_item = Array (
         time() => Array(
-            "title" => $_GET['title'],
-            "beschrijving" =>$_GET['beschrijving']
+            "title" => $_POST['title'],
+            "beschrijving" =>$_POST['beschrijving'],
+            "image" => $path
         )
     );
 
@@ -21,7 +27,6 @@ if(isset($_GET['title'])){
 
 
     writeToJsonFile($old_items);
-
 
 }
 
@@ -40,13 +45,15 @@ if(isset($_GET['title'])){
 </head>
 <body> 
     <div class="container">
-    <form action="index.php" method="GET">
+        <br>
+    <form action="index.php" method="POST" enctype="multipart/form-data">
        <p> <input type="text" name="title"></p>
         <p><textarea name="beschrijving"></textarea></p>
+        <p><input type="file" name="image"></p>
         <input type="submit">
     </form>
 
-    <a target="_blank" href="./pages/news.php">News</a>
+    <a tarPOST="_blank" href="./pages/news.php">News</a>
     </div>
 </body>
 </html>
