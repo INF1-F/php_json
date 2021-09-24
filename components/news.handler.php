@@ -17,11 +17,12 @@ if(isset($_POST['title'])){
         // path waar afbeelding word opgeslagen + naam van het bestand
         $path = 'assets/img/news_items/'.$time.'.'.$extensie[1];
         // Verplaats de geuploade bestand naar een nieuwe locatie: $path
-        //https://www.php.net/manual/en/function.move-uploaded-file.php
+        // https://www.php.net/manual/en/function.move-uploaded-file.php
         move_uploaded_file($_FILES['image']["tmp_name"], ROOT_PATH.$path);
     }
 
-    //
+    // Zet de ingevulde gegevens in een associative array
+    // Zie tutorial!
     $new_item = Array (
         $time => Array(
             "title" => $_POST['title'],
@@ -30,17 +31,20 @@ if(isset($_POST['title'])){
         )
     );
 
+    // Haalt de data uit data.json
     $old_items = getJsonContent();
 
-    //merge arrays
+    // TODO: controleer of $old_items leeg is, zo ja sla foreach over!
     foreach($new_item AS $var=>$value){
         $old_items->$var = $value;
     }
 
-
+    // Zet data in data.json
     writeToJsonFile($old_items);
 
 }
 
+// Stuurt de gebruiker terug naar index.php
+// https://www.php.net/manual/en/function.header
 header('Location: ../index.php');
 
