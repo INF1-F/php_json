@@ -10,6 +10,7 @@
 <form action="reaction.php" method="GET">
        <p> <input type="text" name="author"></p>
         <p><textarea name="reaction"></textarea></p>
+        <!-- stuurt id van nieuwitem mee met de GET -->
         <p><input type="hidden" name="id" value="<?=$_GET['id']?>"></p>
         <input type="submit">
     </form>

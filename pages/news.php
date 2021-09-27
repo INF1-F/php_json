@@ -23,12 +23,19 @@ $news_items = getJsonContent();
     <div class="container row col-12">
 
     <?php
+    // loopt door alle nieuwsitems heen
+    // $key = id van nieuwsitem bijv: 1632480707
+    // $item = nieuws bericht zelf
     foreach ($news_items as $key => $item) {
     ?>
         <div class="card col-3" style="width: 18rem;">
         <img src="../<?=$item->image?>" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title"><?= $item->title?></h5>
+                <!-- 
+                    laat de datum van het nieuws bericht zien 
+                    https://www.php.net/manual/en/function.date.php
+                -->
                 <p><?= date('d/m/y', $key)?></p>
                 <p class="card-text"><?= $item->beschrijving ?></p>
                 <a href="./reaction.php?id=<?=$key?>" class="card-link">Reageer</a>
