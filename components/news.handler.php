@@ -36,7 +36,7 @@ if(isset($_POST['title'])){
     );
 
     // Haalt de data uit news.json
-    $old_items = getJsonContent();
+    $old_items = getJsonContent('news');
 
     // TODO: controleer of $old_items leeg is, zo ja sla foreach over!
     foreach($new_item AS $var=>$value){
@@ -44,7 +44,7 @@ if(isset($_POST['title'])){
     }
 
     // Zet data in news.json
-    writeToJsonFile($old_items);
+    writeToJsonFile($old_items, 'new');
 
 }
 

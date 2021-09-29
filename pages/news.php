@@ -2,7 +2,7 @@
 
 include '../components/main.php';
 
-$news_items = getJsonContent();
+$news_items = getJsonContent('news');
 
 ?>
 <!DOCTYPE html>
