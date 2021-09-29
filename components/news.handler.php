@@ -1,4 +1,6 @@
 <?php
+//TODO: field validation
+
 // include bestand, zodat we funties van dat bestand hier kunnen gebruiken
 // https://www.php.net/manual/en/lua.include
 include './news.php';
