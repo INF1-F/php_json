@@ -4,7 +4,7 @@
 // include bestand, zodat we funties van dat bestand hier kunnen gebruiken
 // https://www.php.net/manual/en/lua.include
 include '../components/reaction.php';
-include '../components/news.php';
+include '../components/main.php';
 
 // Checked of reaction wel word mee gestuurd vanuit het formulier
 // https://www.php.net/manual/en/function.isset

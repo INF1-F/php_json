@@ -1,6 +1,6 @@
 <?php
 
-include '../components/news.php';
+include '../components/main.php';
 
 $news_items = getJsonContent();
 
