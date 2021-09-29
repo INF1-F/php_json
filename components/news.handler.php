@@ -3,7 +3,7 @@
 
 // include bestand, zodat we funties van dat bestand hier kunnen gebruiken
 // https://www.php.net/manual/en/lua.include
-include './news.php';
+include '/main.php';
 
 // Checked of titel wel word mee gestuurd vanuit het formulier
 // https://www.php.net/manual/en/function.isset
