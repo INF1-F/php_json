@@ -10,7 +10,7 @@ define('ROOT_PATH', dirname(__DIR__).'/');
 function getJsonContent($file){
     // Leest bestand uit en zet het in een string
     // https://www.php.net/manual/en/function.file-get-contents
-    $json = file_get_contents(ROOT_PATH.'assets/data/'.$file.'.php');
+    $json = file_get_contents(ROOT_PATH.'assets/data/'.$file.'.json');
     // Decode JSON string, zodat we het kunnen gebruiken om data toe tevoegen of te tonen
     // https://www.php.net/manual/en/function.json-decode
     $content = json_decode($json);
