@@ -1,4 +1,4 @@
-# php_json
+# studentenplatform
 
 Template voor het opslaan van data in een JSON bestand.
 
