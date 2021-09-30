@@ -24,7 +24,7 @@
         <input type="submit">
     </form>
 
-    <a tarPOST="_blank" href="./pages/news.php">News</a>
+    <a target="_blank" href="./pages/news.php">News</a>
     </div>
 </body>
 </html>

@@ -17,7 +17,7 @@ if(isset($_GET['reaction'])){
     // Voegt reactie toe aan nieuwsitem
     $news_item = addReactionToItem($reaction, $content->{$_GET['id']});
     // Voegt reactie toe aan alle nieuws items
-    $new_content = addItemToContent($content, $news_item, $_GET['id']);
+    $new_content = addNewsItemToContent($content, $news_item, $_GET['id']);
     // Zet alle nieuws items toe aan news.json
     writeToJsonFile($new_content, 'new');
 }

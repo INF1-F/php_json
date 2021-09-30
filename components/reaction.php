@@ -45,16 +45,3 @@ function addReactionToItem($reaction, $news_item){
 
     return $updated;
 }
-
-/**
- * @param: $content: associative array, alle nieuws items
- * @param: $item: associative array, nieuws item
- * @param: $id: String, id van nieuws item
- * @return: associative array, geupdated nieuws items
- */
-function addItemToContent($content, $item, $id){
-    // Vervang of plaats $item in $content
-    $content->{$id} = $item;
-
-    return $content;
-}

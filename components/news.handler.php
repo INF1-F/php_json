@@ -3,7 +3,7 @@
 
 // include bestand, zodat we funties van dat bestand hier kunnen gebruiken
 // https://www.php.net/manual/en/lua.include
-include '/main.php';
+include './main.php';
 
 // Checked of titel wel word mee gestuurd vanuit het formulier
 // https://www.php.net/manual/en/function.isset
@@ -27,7 +27,7 @@ if(isset($_POST['title'])){
 
     // Zet de ingevulde gegevens in een associative array
     // Zie tutorial!
-    $new_item = Array (
+    $news_item = Array (
         $time => Array(
             "title" => $_POST['title'],
             "beschrijving" =>$_POST['beschrijving'],
@@ -39,12 +39,10 @@ if(isset($_POST['title'])){
     $old_items = getJsonContent('news');
 
     // TODO: controleer of $old_items leeg is, zo ja sla foreach over!
-    foreach($new_item AS $var=>$value){
-        $old_items->$var = $value;
-    }
+    $content = addNewsItemToContent($old_items, $news_item, $time);
 
     // Zet data in news.json
-    writeToJsonFile($old_items, 'new');
+    writeToJsonFile($content, 'news');
 
 }
 

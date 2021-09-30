@@ -2,8 +2,8 @@
 // Path naar root van project
 define('ROOT_PATH', dirname(__DIR__).'/');
 
-// Haalt de data uit news.json
 /**
+ * Haalt de data uit news.json
  * @param: $file: String, bestands naam waar de data uit word gehaald
  * @return: associative array: alle nieuwsitems
  */
@@ -18,8 +18,8 @@ function getJsonContent($file){
     return $content;
 }
 
-// Zet data in news.json
 /**
+ * Zet data in news.json
  * @param: $content, associative array: alle nieuwsitems
  * @param: $file: String, bestands naam waar de data uit word gehaald
  */
@@ -31,4 +31,17 @@ function writeToJsonFile($content, $file){
     // https://www.php.net/manual/en/function.file-put-contents
     file_put_contents(ROOT_PATH.'assets/data/'.$file.'.json', $json);
 
+}
+
+/**
+ * @param: $content: associative array, alle nieuws items
+ * @param: $item: associative array, nieuws item
+ * @param: $id: String, id van nieuws item
+ * @return: associative array, geupdated nieuws items
+ */
+function addNewsItemToContent($content, $item, $id){
+    // Vervang of plaats $item in $content
+    $content->{$id} = $item;
+
+    return $content;
 }
