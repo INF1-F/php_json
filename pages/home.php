@@ -15,20 +15,7 @@
 </head>
 
 <body>
-    <?php
-    $email = $_POST["email"];
-    if (strpos($email, '@') && substr($email, -15) === ".nhlstenden.com") {
-        $fullname = explode("@", $email)[0];
-        if (strpos($fullname, '.')) {
-            $name = explode(".", $fullname)[0];
-            echo $name;
-        } else {
-            echo "Invalid email";
-        }
-    } else {
-        echo "Invalid email";
-    }
-    ?>
+    
 </body>
 
 </html>
