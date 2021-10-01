@@ -9,10 +9,8 @@ define('ROOT_PATH', dirname(__DIR__).'/');
  */
 function getJsonContent($file){
     // Leest bestand uit en zet het in een string
-    // https://www.php.net/manual/en/function.file-get-contents
     $json = file_get_contents(ROOT_PATH.'assets/data/'.$file.'.json');
     // Decode JSON string, zodat we het kunnen gebruiken om data toe tevoegen of te tonen
-    // https://www.php.net/manual/en/function.json-decode
     $content = json_decode($json);
     
     return $content;
@@ -25,10 +23,8 @@ function getJsonContent($file){
  */
 function writeToJsonFile($content, $file){
     // Encode associative array naar JSON
-    // https://www.php.net/manual/en/function.json-encode
     $json = json_encode($content);
     // Zet $json in news.json, hier word alle nieuws items opgeslagen
-    // https://www.php.net/manual/en/function.file-put-contents
     file_put_contents(ROOT_PATH.'assets/data/'.$file.'.json', $json);
 
 }

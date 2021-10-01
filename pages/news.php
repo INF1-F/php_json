@@ -32,10 +32,7 @@ $news_items = getJsonContent('news');
         <img src="../<?=$item->image?>" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title"><?= $item->title?></h5>
-                <!-- 
-                    laat de datum van het nieuws bericht zien 
-                    https://www.php.net/manual/en/function.date.php
-                -->
+                <!-- laat de datum van het nieuws bericht zien -->
                 <p><?= date('d/m/y', $key)?></p>
                 <p class="card-text"><?= $item->beschrijving ?></p>
                 <a href="./reaction.php?id=<?=$key?>" class="card-link">Reageer</a>

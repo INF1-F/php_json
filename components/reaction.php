@@ -10,7 +10,6 @@ function createReaction($author, $reaction){
     // Zie tutorial!
     $reaction = Array (
         // Time() = huidige unix-tijd
-        // https://www.php.net/manual/en/function.time
         time() => Array(
             "author" => $author,
             "reaction" =>$reaction
@@ -31,7 +30,6 @@ function addReactionToItem($reaction, $news_item){
         // Zet alle reacties in $reactions
         $reactions = $news_item->reactions;
         // Voegt de nieuwe reactie toe aan de oude
-        // https://www.php.net/manual/en/function.array-replace-recursive.php
         $reaction = (object) array_replace_recursive((array)$reactions, (array)$reaction);
     }
     // Zet alle reacties in een associative array
@@ -40,7 +38,6 @@ function addReactionToItem($reaction, $news_item){
         'reactions' => $reaction
     );
     // Zet array van reacties in nieuws item array
-    // https://www.php.net/manual/en/function.array-merge.php
     $updated = (object) array_merge((array)$news_item, (array)$reaction);
 
     return $updated;

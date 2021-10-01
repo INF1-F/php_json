@@ -2,12 +2,10 @@
 //TODO: field validation
 
 // include bestand, zodat we funties van dat bestand hier kunnen gebruiken
-// https://www.php.net/manual/en/lua.include
 include '../components/reaction.php';
 include '../components/main.php';
 
 // Checked of reaction wel word mee gestuurd vanuit het formulier
-// https://www.php.net/manual/en/function.isset
 if(isset($_GET['reaction'])){
 
     // Maakt reacties aan
@@ -23,7 +21,6 @@ if(isset($_GET['reaction'])){
 }
 
 // Stuurt de gebruiker terug naar news.php
-// https://www.php.net/manual/en/function.header
 header('Location: ../index.php');
 
 header('Location: ../pages/news.php');
