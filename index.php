@@ -22,11 +22,11 @@
                             <form action="./pages/home.php" method="POST">
                                 <div class="col-12 text-center mt-3 mb-3 "><img src="./assets/img/Logo.svg" style="height:150px;" alt="logo"></div>
                                 <div class="row">
-                                    <label for="login-username" class="col-12 mb-1">
+                                    <label for="login-email" class="col-12 mb-1">
                                         Emailadress:
                                     </label>
                                     <div class="col-12">
-                                        <input id="login-username" type="email" placeholder="Emailadres" name="username" class="form-control">
+                                        <input id="login-email" type="email" placeholder="Emailadres" name="email" class="form-control">
                                     </div>
                                 </div>
                                 <button type="submit" name="login" class="btn btn-primary float-right mt-3">
