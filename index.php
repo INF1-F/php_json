@@ -69,7 +69,7 @@
                                         Emailadress:
                                     </label>
                                     <div class="col-12">
-                                        <input id="login-email" type="email" placeholder="Emailadres" name="email" class="form-control">
+                                        <input id="login-email" type="email" placeholder="Emailadres" <?php if(isset($_POST['email'])){ ?> value="<?= $_POST['email']?>" <?php } ?> name="email" class="form-control">
                                     </div>
                                 </div>
                                 <button type="submit" name="login" class="btn btn-primary float-right mt-3">
