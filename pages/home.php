@@ -15,7 +15,15 @@
 </head>
 
 <body>
-    
+    <?php
+    if($_GET){
+        echo'<pre>'; 
+        var_dump($_GET);  
+        echo'</pre>';   
+    }else{
+      echo "GET is empty";
+    }
+    ?>
 </body>
 
 </html>
