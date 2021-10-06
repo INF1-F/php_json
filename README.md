@@ -1,13 +1,20 @@
-# php_json
+## TODO
 
-Template voor het opslaan van data in een JSON bestand.
+`strpos()` wordt deze gebruikt om te controleren of er een **@** in de email zit? Regel: 6, 23 en 32
 
-## PHP funcites
+Er staan nog `echo`'s die niet meer van toepassing zijn, deze kunnen weg.
 
-alle php funcites die gebruikt zijn worden uitgelegd in commentaar.
-Ook staat er een link bij naar de php.net pagina van de funcite
+Onder `header()` moet nog `exit()` komen te staan, zodat het script niet verder gaat.
 
-## Associative arrays
+`$naam = GetName($email);` kan je het beste boven de **if statement** zetten, hierdoor staat er geen dubbele code in.  
+De waarde van `$naam` is niet anders als het een docenten mail of studenten mail is.
 
-Uitleg over associative arrays:
-`https://www.youtube.com/watch?v=IdB2z5yVVNI`
+### voorbeeld comentaar voor functies
+
+``` /**
+ * beschrijving van functie
+ *
+ * @param string $name naam van gebruiker
+ * @return boolean 
+ */
+```
