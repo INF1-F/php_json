@@ -11,10 +11,16 @@ De waarde van `$naam` is niet anders als het een docenten mail of studenten mail
 
 ### voorbeeld comentaar voor functies
 
-``` /**
+```php
+/**
  * beschrijving van functie
  *
  * @param string $name naam van gebruiker
  * @return boolean 
  */
+ function  naamFuncite(){
+     return true;
+ }
 ```
+
+
