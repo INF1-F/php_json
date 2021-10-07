@@ -6,7 +6,7 @@
 			</div>
 			<div class="col-4 my-auto">
 				<div class="d-flex" style="justify-content: space-between;">
-					<a href="#"><b>Nieuws</b></a>
+					<a href="../pages/news.php"><b>Nieuws</b></a>
 					<a href="#"><b>FAQ</b></a>
 					<a href="#"><b>Contact</b></a>
 				</div>

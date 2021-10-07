@@ -34,10 +34,13 @@ if(isset($_POST['title'])){
     $old_items = getJsonContent('news');
 
     // TODO: controleer of $old_items leeg is, zo ja sla foreach over!
-    $content = addNewsItemToContent($old_items, $news_item, $time);
+    foreach($news_item AS $var=>$value){
+        $old_items->$var = $value;
+    }
+    // $content = addNewsItemToContent($old_items, $news_item, $time);
 
     // Zet data in news.json
-    writeToJsonFile($content, 'news');
+    writeToJsonFile($old_items, 'news');
 
 }
 
