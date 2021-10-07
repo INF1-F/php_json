@@ -223,6 +223,11 @@ header {
 	color: white;
 }
 
+header a {
+	text-decoration: none;
+	color: white;
+}
+
 header img {
 	height: 4.5em;
 }
@@ -241,9 +246,12 @@ header img {
 
 .header-link {
 	height: 4em;
-	width: 6em;
 	margin: 0 2em;
 	font-weight: bold;
+}
+
+header nav .header-link {
+	width: 6em;
 }
 
 header ul {
