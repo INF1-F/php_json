@@ -17,7 +17,7 @@
         Wanneer de gebruiker op submit drukt word de data naar news.handler.php gestuurd.
         De reden dat we POST gebruiken is zodat we een afbeelding kunnen uploaden
      -->
-    <form action="./components/news.handler.php" method="POST" enctype="multipart/form-data">
+    <form action="./controllers/create_news.php" method="POST" enctype="multipart/form-data">
        <p> <input type="text" name="title"></p>
         <p><textarea name="beschrijving"></textarea></p>
         <p><input type="file" name="image"></p>

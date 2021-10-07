@@ -10,7 +10,7 @@
     <title>Poll</title>
 </head>
 <body>
-<form action="../components/poll.handler.php" method="GET">
+<form action="../controllers/create_poll.php" method="GET">
        <p><input type="text" name="poll"></p>
         <input type="submit">
     </form>

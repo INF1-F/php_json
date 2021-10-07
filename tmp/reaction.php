@@ -7,7 +7,7 @@
     <title>Reaction</title>
 </head>
 <body>
-<form action="../components/reaction.handler.php" method="GET">
+<form action="../controllers/create_reaction.php" method="GET">
        <p> <input type="text" name="author"></p>
         <p><textarea name="reaction"></textarea></p>
         <!-- stuurt id van nieuwitem mee met de GET -->
