@@ -1,12 +1,5 @@
-# studentenplatform
+## TODO
 
-Template voor het opslaan van data in een JSON bestand.
+`alt` vergeten bij img. Regel: 13
 
-## PHP funcites
-
-alle php funcites die gebruikt zijn worden uitgelegd in commentaar.
-
-## Associative arrays
-
-Uitleg over associative arrays:
-`https://www.youtube.com/watch?v=IdB2z5yVVNI`
+Zet in de `<li>` van **Nieuws**, **FAQ**, **Contact** en **Uitloggen** een `<a>`, zodat de gebruiker er ook op kan klikken. In dit geval bestaat de pagina nog niet, zet dan bij `href` **#** neer. Regel: 14t/m 16
