@@ -1,3 +1,12 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux
@@ -74,5 +83,6 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux
 
-img/news_items/
+img/news_items
 data/
+.idea/
