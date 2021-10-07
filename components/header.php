@@ -1,10 +1,3 @@
-<html lang="nl">
-<head>
-    <title></title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../assets/styles/main.css">
-</head>
-<body>
 <header>
     <div class="container">
         <div class="row">
@@ -32,5 +25,3 @@
         </div>
     </div>
 </header>
-</body>
-</html>

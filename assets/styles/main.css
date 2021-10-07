@@ -264,6 +264,25 @@ header ul {
 
 /* Footer */
 
+footer {
+	background-color: #0a54ab;
+	padding: 1rem 0;
+}
+footer a {
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+footer d-flex {
+	justify-content: space-between;
+}
+
+footer img {
+	height: 85px;
+}	
+
+
 /* Login page */
 
 .login-container {
