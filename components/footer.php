@@ -8,7 +8,7 @@
 				<div class="d-flex" style="justify-content: space-between;">
 					<a href="../pages/news.php"><b>Nieuws</b></a>
 					<a href="#"><b>FAQ</b></a>
-					<a href="#"><b>Contact</b></a>
+					<a href="../pages/contact.php"><b>Contact</b></a>
 				</div>
 			</div>
 			<div class="col-2 my-auto">
