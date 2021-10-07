@@ -14,10 +14,11 @@
 </head>
 <body>
     <?php include_once('../components/header.php') ?>
+
     <div class="container h-100">
         <div class="row">
             <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-flex h-100">
-                <h2>Nieuws</h2>
+                <h2>Laatste nieuws</h2>
             </div>
         </div>
         <div class="row mb-2">
@@ -64,6 +65,7 @@
         </div>
         
     </div>
+    
     <?php include_once('../components/footer.php') ?>
 </body>
 </html>

@@ -15,6 +15,7 @@
 </head>
 
 <body class="h-100">
+    <?php include_once('../components/header.php') ?>
     <div class="container h-100">
         <div class="row">
             <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-flex h-100">
@@ -69,6 +70,7 @@
             </div>
         </div>
     </div>
+    <?php include_once('../components/footer.php') ?>
 </body>
 
 </html>

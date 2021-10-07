@@ -13,7 +13,7 @@
             </div>
             <div class="col-2 justify-content-center d-flex align-items-center">
                 <div class="round justify-content-center align-items-center d-flex">
-                    <a href="#"><img src="../assets/img/logo.svg" alt="Logo van de site" class="main-logo"></a>
+                    <a href="./home.php"><img src="../assets/img/logo.svg" alt="Logo van de site" class="main-logo"></a>
                 </div>
             </div>
             <div class="col-5">
