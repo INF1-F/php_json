@@ -221,11 +221,23 @@ body {
 
 footer {
 	background-color: #0a54ab;
+	padding: 1rem 0;
 }
-span {
+footer a {
 	color: white;
-	}
-	
+	text-align: center;
+	text-decoration: none;
+}
+
+footer d-flex {
+	justify-content: space-between;
+}
+
+footer img {
+	height: 85px;
+}	
+
+
 /* Login page */
 
 .login-container {
@@ -257,11 +269,11 @@ span {
 	.col-9 {
 		flex: 0 0 75%;
 		max-width: 75%;
-		text-align:right;
+		text-align: right;
 	}
 	.col-8 {
-		flex: 0 0 66,66666666666667%;
-		max-width: 66,66666666666667%;
+		flex: 0 0 66.66666666666667%;
+		max-width: 66.66666666666667%;
 	}
 	.col-7 {
 		flex: 0 0 58.33333333333333%;
@@ -282,6 +294,9 @@ span {
 	.col-3 {
 		flex: 0 0 25%;
 		max-width: 25%;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
 	}
 	.col-2 {
 		flex: 0 0 16.66666666666667%;
