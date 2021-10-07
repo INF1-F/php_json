@@ -11,7 +11,7 @@
             <div class="col-5">
                 <nav>
                     <ul class="d-flex list-unstyled align-items-center">
-                        <li><img src="./assets/img/Stenden_logo_wit.svg"></li>
+                        <li><img src="./assets/img/Stenden_logo_wit.svg" alt="Het logo van Stenden"></li>
                         <li class="header-link d-flex align-items-center justify-content-center"><a href="#">Nieuws</a></li>
                         <li class="header-link d-flex align-items-center justify-content-center"><a href="#">FAQ</a></li>
                         <li class="header-link d-flex align-items-center justify-content-center"><a href="#">Contact</a></li>
