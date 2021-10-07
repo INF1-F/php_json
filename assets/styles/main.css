@@ -8,6 +8,14 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+	color: #0A54AB;
+}
 .container {
     width: 100%;
     padding-right: 15px;
@@ -160,6 +168,9 @@ body {
 .h-100 {
     height:100%;
 }
+.w-100 {
+	width:100%;
+}
 .d-flex {
     display: flex;
 }
@@ -227,6 +238,20 @@ body {
     flex: auto;
 }
 
+/* newsItem */
+
+.reaction-date {
+	color:#9e9e9ebf;
+	font-size: 80%;
+	float: right;
+}
+.reaction-name {
+	display: inline-block;
+}
+.reactionForm textarea{
+	resize: none;
+	height:80px;
+}
 /* Media query flexbox */
 
 /* Mobile devices */
@@ -252,8 +277,8 @@ body {
 		max-width: 75%;
 	}
 	.col-8 {
-		flex: 0 0 66,66666666666667%;
-		max-width: 66,66666666666667%;
+		flex: 0 0 66.66666666666667%;
+		max-width: 66.66666666666667%;
 	}
 	.col-7 {
 		flex: 0 0 58.33333333333333%;
@@ -308,8 +333,8 @@ body {
 		max-width: 75%;
 	}
 	.col-sm-8 {
-		flex: 0 0 66,66666666666667%;
-		max-width: 66,66666666666667%;
+		flex: 0 0 66.66666666666667%;
+		max-width: 66.66666666666667%;
 	}
 	.col-sm-7 {
 		flex: 0 0 58.33333333333333%;
@@ -364,8 +389,8 @@ body {
 		max-width: 75%;
 	}
 	.col-md-8 {
-		flex: 0 0 66,66666666666667%;
-		max-width: 66,66666666666667%;
+		flex: 0 0 66.66666666666667%;
+		max-width: 66.66666666666667%;
 	}
 	.col-md-7 {
 		flex: 0 0 58.33333333333333%;
@@ -420,8 +445,8 @@ body {
 		max-width: 75%;
 	}
 	.col-lg-8 {
-		flex: 0 0 66,66666666666667%;
-		max-width: 66,66666666666667%;
+		flex: 0 0 66.66666666666667%;
+		max-width: 66.66666666666667%;
 	}
 	.col-lg-7 {
 		flex: 0 0 58.33333333333333%;
@@ -477,8 +502,8 @@ body {
 		max-width: 75%;
 	}
 	.col-xl-8 {
-		flex: 0 0 66,66666666666667%;
-		max-width: 66,66666666666667%;
+		flex: 0 0 66.66666666666667%;
+		max-width: 66.66666666666667%;
 	}
 	.col-xl-7 {
 		flex: 0 0 58.33333333333333%;
@@ -533,8 +558,8 @@ body {
 		max-width: 75%;
 	}
 	.col-xxl-8 {
-		flex: 0 0 66,66666666666667%;
-		max-width: 66,66666666666667%;
+		flex: 0 0 66.66666666666667%;
+		max-width: 66.66666666666667%;
 	}
 	.col-xxl-7 {
 		flex: 0 0 58.33333333333333%;
