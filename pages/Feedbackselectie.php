@@ -4,19 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="main.css"/>
+    <link rel="Stylesheet" type="text/css" href="../assets/styles/main.css"/>
     </head>
 
 <body>
-
-<h2>contact</h2>
-
-<div class="col-12">
- <div class="col-11"><a href=""><p>Vragen</p></a></div>
- <div class="col-10"><a href=""><p>Feedback</p></a></div>
- <div class="col-9"><a href=""><p>Klachten</p></a></div>
-</div> 
-
-
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Contact</h1>
+            </div>
+            <div class="col-12 col-md-4 mb-3 text-center">
+                <div class="card justify-content-center card-form">
+                    <div class="card-body">
+                        <h2 class="contact-title">Klachten</h2>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3 text-center">
+                <div class="card justify-content-center card-form">
+                    <div class="card-body">
+                        <h2 class="contact-title">Vragen</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3 text-center">
+                <div class="card justify-content-center card-form">
+                    <div class="card-body">
+                        <h2 class="contact-title">Feedback</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
