@@ -226,10 +226,15 @@ header {
 header a {
 	text-decoration: none;
 	color: white;
+	font-weight: bold;
 }
 
 header img {
 	height: 4.5em;
+}
+
+header a img {
+	height: 3.25em;
 }
 
 .round {
@@ -246,7 +251,7 @@ header img {
 
 .header-link {
 	height: 4em;
-	margin: 0 2em;
+	margin: 0 1.5em;
 	font-weight: bold;
 }
 
@@ -328,11 +333,23 @@ header ul {
 	flex: 0 0 8.333333333333333%;
 	max-width: 8.333333333333333%;
 }
+.d-none {
+	display: none;
+}
 
 
 /* Small devices 'small tablets' */
 
 @media (min-width: 576px) {
+	.d-sm-flex {
+		display: flex;
+	}
+	.d-sm-block {
+		display: block;
+	}
+	.d-sm-none {
+		display: none;
+	}
 	.container {
 		max-width: 540px;
 	}
@@ -389,6 +406,15 @@ header ul {
 /* Medium devices 'tables' */
 
 @media (min-width: 768px) {
+	.d-md-flex {
+		display: flex;
+	}
+	.d-md-block {
+		display: block;
+	}
+	.d-md-none {
+		display: none;
+	}
 	.container {
 		max-width: 720px;
 	}
@@ -445,6 +471,15 @@ header ul {
 /* Laptops and small monitors  */
 
 @media (min-width: 992px) {
+	.d-lg-flex {
+		display: flex;
+	}
+	.d-lg-block {
+		display: block;
+	}
+	.d-lg-none {
+		display: none;
+	}
 	.container {
 		max-width: 960px;
 	}
@@ -502,6 +537,15 @@ header ul {
 /* Xl laptops and Xl monitors  */
 
 @media (min-width: 1200px){
+	.d-xl-flex {
+		display: flex;
+	}
+	.d-xl-block {
+		display: block;
+	}
+	.d-xl-none {
+		display: none;
+	}
 	.container {
 		max-width: 1140px;
 	}
@@ -558,6 +602,15 @@ header ul {
 /* XXl laptops and XXl monitors  */
 
 @media (min-width: 1400px) {
+	.d-xxl-flex {
+		display: flex;
+	}
+	.d-xxl-block {
+		display: block;
+	}
+	.d-xxl-none {
+		display: none;
+	}
 	.container {
 		max-width: 1320px;
 	}
