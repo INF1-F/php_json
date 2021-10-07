@@ -26,6 +26,7 @@ if(isset($_POST['title'])){
         $time => Array(
             "title" => $_POST['title'],
             "beschrijving" =>$_POST['beschrijving'],
+            "author" => 'henk',
             "image" => $path
         )
     );
