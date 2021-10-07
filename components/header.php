@@ -2,7 +2,7 @@
 <head>
     <title></title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/main.css">
 </head>
 <body>
 <header>
@@ -11,7 +11,7 @@
             <div class="col-5">
                 <nav>
                     <ul class="d-flex list-unstyled align-items-center">
-                        <li><img src="./assets/img/Stenden_logo_wit.svg" alt="Het logo van Stenden"></li>
+                        <li><img src="../assets/img/Stenden_logo_wit.svg" alt="Het logo van Stenden"></li>
                         <li class="header-link d-flex align-items-center justify-content-center"><a href="#">Nieuws</a></li>
                         <li class="header-link d-flex align-items-center justify-content-center"><a href="#">FAQ</a></li>
                         <li class="header-link d-flex align-items-center justify-content-center"><a href="#">Contact</a></li>
@@ -20,7 +20,7 @@
             </div>
             <div class="col-2 justify-content-center d-flex align-items-center">
                 <div class="round justify-content-center align-items-center d-flex">
-                    <a href="#"><img src="./assets/img/logo.svg" alt="Logo van de site" class="main-logo"></a>
+                    <a href="#"><img src="../assets/img/logo.svg" alt="Logo van de site" class="main-logo"></a>
                 </div>
             </div>
             <div class="col-5">
