@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row text-center text-md-left">
 			<div class="col-md-6 col-12 d-none d-md-block">
-				<img src="../assets/img/Stenden_logo_wit.svg" alt="" title="">
+				<img src="../assets/img/Stenden_logo_wit.svg" alt="Stenden logo">
 			</div>
 			<div class="col-md-4 col-12 my-auto">
 				<ul class="list-unstyled footer-nav">
