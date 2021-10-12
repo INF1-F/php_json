@@ -10,8 +10,15 @@
     <?php include_once('../components/header.php') ?>
     <div class="container">
         <div class="row">
-            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-flex h-100">
+            <div class="col-12">
                 <h2>Nieuws</h2>
+                <?php
+                if ($_SESSION['auth'] == "teacher") {
+                ?>
+                    <a class="btn btn-primary float-right" href="./news-add.php">Nieuws toevoegen</a>
+                <?php
+                }
+                ?>
             </div>
         </div>
         <div class="row mb-2 mt-2">
@@ -65,8 +72,8 @@
             </div>
         </div>
         <div class="row mb-4">
-            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-flex h-100 justify-content-center">
-                <button type="button" class="btn2">Meer weergeven</button>
+            <div class="col-12 d-flex justify-content-center">
+                <button type="button" class="btn btn-custom">Meer weergeven</button>
             </div>
         </div>
     </div>

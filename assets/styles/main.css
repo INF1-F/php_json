@@ -16,6 +16,9 @@ h5,.h5,
 h6,.h6 {
 	color: #0A54AB;
 }
+a {
+	text-decoration: none;
+}
 #content {
 	position: relative;
 	min-height: 100vh;
@@ -337,7 +340,16 @@ footer img {
 	align-self: center;
 	flex: auto;
 }
-
+.popup {
+	color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+	position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
 /*feedback selectie */
 
 .card-form {
@@ -350,15 +362,21 @@ footer img {
 .card-form .card-body {
 	flex: unset;
 }
-
+.form-row {
+	margin: 0rem 0 1rem 0;
+}
+.full-link {
+	color: #0A54AB;
+}
+.full-link::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
 /* News page overview*/
-
-/* .newstile { */
-	/* border-style: solid; */
-	/* border-color: #707070;
-	border-width: 1px;
-	padding: 0; */
-/* } */
 
 .articleImage {
 	background-size: cover;
@@ -375,18 +393,13 @@ footer img {
 	padding-left: 0px;
 }
 
-.btn2 {
-	text-decoration: none;
-	border: none;
+.btn-custom {
 	background-color: #0A54AB;
 	color: white;
 	cursor: pointer;
-	font-size: 1rem;
-	padding: .4rem 2rem;
 }
-
-.btn2:hover {
-	text-decoration: underline;
+.btn-custom:hover {
+	background-color: #073f81;
 }
 
 /* Flexbox */

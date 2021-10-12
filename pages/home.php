@@ -66,6 +66,11 @@
                 </div>
             </div>
         </div>
+        <div class="row mb-2 mt-2">
+            <div class="col-12 d-flex justify-content-center">
+                <a href="./news.php" class="btn btn-custom">Bekijk meer</a>
+            </div>
+        </div>
     </div>
     <?php include_once('../components/footer.php') ?>
 </body>

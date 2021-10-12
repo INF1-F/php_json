@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <header>
     <div class="container">
         <div class="row">

@@ -16,21 +16,21 @@
             <div class="col-12 col-md-4 mb-3 text-center">
                 <div class="card justify-content-center card-form">
                     <div class="card-body">
-                        <h2 class="contact-title">Klachten</h2>    
+                        <h2 class="contact-title"><a class="full-link" href="./form.php?choise=0">Klachten</a></h2>    
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-4 mb-3 text-center">
                 <div class="card justify-content-center card-form">
                     <div class="card-body">
-                        <h2 class="contact-title">Vragen</h2>
+                        <h2 class="contact-title"><a class="full-link" href="./form.php?choise=1">Vragen</a></h2>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-4 mb-3 text-center">
                 <div class="card justify-content-center card-form">
                     <div class="card-body">
-                        <h2 class="contact-title">Feedback</h2>
+                        <h2 class="contact-title"><a class="full-link" href="./form.php?choise=2">Feedback</a></h2>
                     </div>
                 </div>
             </div>
