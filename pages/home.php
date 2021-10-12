@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
+
 <head>
     <?php include_once('../components/head.php') ?>
     <title>Voorpagina</title>
 </head>
+
 <body>
     <?php include_once('../components/header.php') ?>
     <div class="container h-100">
@@ -67,4 +69,5 @@
     </div>
     <?php include_once('../components/footer.php') ?>
 </body>
+
 </html>

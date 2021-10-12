@@ -328,6 +328,10 @@ footer img {
 }
 /* Login page */
 
+.login-background {
+	background-color: #23c6ed;
+}
+
 .login-container {
 	max-width: 800px;
 	align-self: center;
