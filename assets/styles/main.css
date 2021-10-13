@@ -350,7 +350,7 @@ footer img {
     border: 1px solid transparent;
     border-radius: .25rem;
 }
-/*feedback selectie */
+/*contact soort selectie */
 
 .card-form {
 	height: 40vh;
@@ -375,6 +375,9 @@ footer img {
 	right: 0;
 	bottom: 0;
 	left: 0;
+}
+.contactForm label {
+	color: #0A54AB;
 }
 /* News page overview*/
 

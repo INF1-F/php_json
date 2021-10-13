@@ -32,7 +32,7 @@
                         </div>
                         <div class="col-md-6 col-12 paddingLeftClear">
                             <div class="news-description card-body">
-                                <h2 class="m-0">Title</h2>
+                                <h2 class="m-0">Titel</h2>
                                 <p class="mt-1 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec iaculis massa,
                                     non rhoncus enim. Sed tristique blandit odio dignissim tempor. Suspendisse at
                                     lorem ex. Pellentesque ornare elit nulla, id ultrices magna venenatis a.
@@ -57,7 +57,7 @@
                         </div>
                         <div class="col-md-6 col-12 paddingLeftClear">
                             <div class="news-description card-body">
-                                <h2 class="m-0">Title</h2>
+                                <h2 class="m-0">Titel</h2>
                                 <p class="mt-1 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec iaculis massa,
                                     non rhoncus enim. Sed tristique blandit odio dignissim tempor. Suspendisse at
                                     lorem ex. Pellentesque ornare elit nulla, id ultrices magna venenatis a.
