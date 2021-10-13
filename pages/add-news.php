@@ -16,14 +16,14 @@
             <div class="col-12 mb-3 add-news">
                 <div class="card align-items">
                     <div class="card-body">
-                        <form class="contactForm" action="news.php" method="POST" enctype="multipart/form-data">
+                        <form class="contactForm" action="../controllers/create_news.php" method="POST" enctype="multipart/form-data">
                             <div class="form-row">
                                 <label for="title"><b>Titel</b></label>
                                 <input type="text" id="title" name="title" class="form-control" placeholder="Typ hier uw titel">
                             </div>
                             <div class="form-row">
-                                <label for="file"><b>Selecteer een afbeelding:</b></label>
-                                <input type="file" class="form-control" id="file" name="file">
+                                <label for="image"><b>Selecteer een afbeelding:</b></label>
+                                <input type="file" class="form-control" id="image" name="image">
                             </div>
                             <div class="form-row">
                                 <label for="article"><b>Artikel</b></label>
@@ -31,10 +31,10 @@
                             </div>
                             <div class="form-row">
                             </div>
-                        </form>
                     </div>
                 </div>
                 <input class="float-right btn btn-primary" type="submit" value="Versturen">
+                </form>
 
             </div>
         </div>
