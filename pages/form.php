@@ -145,11 +145,11 @@
                                     </select>
                                 </div>
                                 <div class="form-row">
-                                    <label for="Feedback"><b>Feedback</b></label>
-                                    <textarea id="Feedback" class="form-control" name="message" style="height: 200px;" placeholder="Typ hier uw feedback" required></textarea>
+                                    <label for="message"><b>Bericht</b></label>
+                                    <textarea id="message" class="form-control" name="message" style="height: 200px;" placeholder="Typ hier uw feedback" required></textarea>
                                 </div>
                                 <div class="form-row">                                           
-                                    <input class="float-right btn btn-primary" type="submit" value="Versturen">
+                                    <input class="float-right btn btn-primary" name="submit" type="submit" value="Versturen">
                                 </div> 
                             </form>
                         </div>
