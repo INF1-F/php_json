@@ -241,10 +241,6 @@ h6,.h6 {
     color: #fff;    
 }
 
-h2 {
-	color: #0A54AB;
-	font-size: 1.5rem;
-}
 .bg-gray {
 	background-color: #f4f0f0;
 }
@@ -363,14 +359,6 @@ footer img {
 	width: 100%;
 }
 
-.paddingRightClear {
-	padding-right: 0px;
-}
-
-.paddingLeftClear{
-	padding-left: 0px;
-}
-
 .btn2 {
 	text-decoration: none;
 	border: none;
@@ -383,6 +371,12 @@ footer img {
 
 .btn2:hover {
 	text-decoration: underline;
+}
+
+/* FAQ */
+.title {
+	color: #0A54AB;
+	font-weight: bold;
 }
 
 /* Flexbox */
