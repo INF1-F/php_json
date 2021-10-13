@@ -1,5 +1,10 @@
 <?php
-session_start();	
+session_start();
+if (isset($_POST["logoff"])) { //session destroy werkt niet, unset wel?// 
+    unset($_SESSION["auth"]);
+    unset($_SESSION["fullName"]); 
+} 
+	
 function GetName($email) {
     $name = explode("@", $email)[0];
     if (strpos($name, '.')) { //Kijk of de naam bestaat uit een voornaam en achternaam
