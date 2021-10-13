@@ -36,14 +36,14 @@
                                 ?> 
                                     <div class="form-row">
                                         <label for="name"><b>Naam</b></label>
-                                        <input class="form-control" type="text" value="<?=$_SESSION["fullName"]?>" name="name" id="name">              
+                                        <input class="form-control" type="text" value="<?=$_SESSION["fullName"]?>" name="name" id="name" required>              
                                     </div>
                                 <?php
                                 }
                                 ?>
                                 <div class="form-row">
                                     <label for="Opleiding"><b>Opleiding</b></label>
-                                        <select id="Opleiding" class="form-control" name="education">
+                                        <select id="Opleiding" class="form-control" name="education" required>
                                         <option value="HBO-ICT">HBO-ICT</option>
                                         <option value="Academische Pabo">Academische Pabo</option>
                                         <option value="Accountancy">Accountancy</option>
@@ -133,7 +133,7 @@
                                 </div>
                                 <div class="form-row">
                                     <label for="Locatie"><b>Locatie</b></label>
-                                    <select class="form-control" id="Locatie" name="location">
+                                    <select class="form-control" id="Locatie" name="location" required>
                                         <option value="Emmen">Emmen</option>
                                         <option value="Amsterdam">Amsterdam</option>
                                         <option value="Assen">Assen</option>
@@ -146,7 +146,7 @@
                                 </div>
                                 <div class="form-row">
                                     <label for="Feedback"><b>Feedback</b></label>
-                                    <textarea id="Feedback" class="form-control" name="message" style="height: 200px;" placeholder="Typ hier uw feedback"></textarea>
+                                    <textarea id="Feedback" class="form-control" name="message" style="height: 200px;" placeholder="Typ hier uw feedback" required></textarea>
                                 </div>
                                 <div class="form-row">                                           
                                     <input class="float-right btn btn-primary" type="submit" value="Versturen">
