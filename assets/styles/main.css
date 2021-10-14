@@ -353,6 +353,11 @@ footer img {
 }
 /*contact soort selectie */
 
+.contact-warning{
+	color:red;
+	font-size:80%;
+}
+
 .card-form {
 	height: 40vh;
 }
