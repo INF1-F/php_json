@@ -16,6 +16,9 @@ h5,.h5,
 h6,.h6 {
 	color: #0A54AB;
 }
+a {
+	text-decoration: none;
+}
 #content {
 	position: relative;
 	min-height: 100vh;
@@ -264,7 +267,12 @@ header a {
 header img {
 	height: 4.5em;
 }
-
+header button[type="submit"] {
+	color: white;
+	background: transparent;
+	border: none;
+	font-weight: 800;
+}
 header a img {
 	height: 3.25em;
 }
@@ -324,13 +332,26 @@ footer img {
 }
 /* Login page */
 
+.login-background {
+	background-color: #23c6ed;
+}
+
 .login-container {
 	max-width: 800px;
 	align-self: center;
 	flex: auto;
 }
-
-/*feedback selectie */
+.popup {
+	color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+	position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+/*contact soort selectie */
 
 .card-form {
 	height: 40vh;
@@ -342,15 +363,37 @@ footer img {
 .card-form .card-body {
 	flex: unset;
 }
+.form-row {
+	margin: 0rem 0 1rem 0;
+}
+.full-link {
+	color: #0A54AB;
+}
+.full-link::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.contactForm label {
+	color: #0A54AB;
+}
+
+/* Formulieren verzonden*/
+.verzonden{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+    font-size:30px;
+	height: 65.9vh;
+}
+
+
 
 /* News page overview*/
-
-/* .newstile { */
-	/* border-style: solid; */
-	/* border-color: #707070;
-	border-width: 1px;
-	padding: 0; */
-/* } */
 
 .articleImage {
 	background-size: cover;
@@ -359,18 +402,33 @@ footer img {
 	width: 100%;
 }
 
-.btn2 {
-	text-decoration: none;
-	border: none;
+
+.paddingRightClear {
+	padding-right: 0px;
+}
+
+.paddingLeftClear{
+	padding-left: 0px;
+}
+
+.btn-custom {
 	background-color: #0A54AB;
 	color: white;
 	cursor: pointer;
-	font-size: 1rem;
-	padding: .4rem 2rem;
+}
+.btn-custom:hover {
+	background-color: #073f81;
 }
 
-.btn2:hover {
-	text-decoration: underline;
+/* add news */
+
+.hero{
+	background-image: url('../img/header_plaatje.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 30vh;
 }
 
 /* FAQ */
@@ -378,6 +436,7 @@ footer img {
 	color: #0A54AB;
 	font-weight: bold;
 }
+
 
 /* Flexbox */
 

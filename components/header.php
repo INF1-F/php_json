@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <header>
     <div class="container">
         <div class="row">
@@ -32,7 +35,11 @@
 <!--        Dit is het rechterdeel van de header voor laptopformaat en groter-->
             <div class="col-lg-5 col-4 d-none d-lg-block">
                 <ul class="d-flex justify-content-right list-unstyled align-items-center">
-                    <li class="header-link d-flex align-items-center justify-content-center"><a href="./../index.php">Uitloggen</a></li>
+                    <li class="header-link d-flex align-items-center justify-content-center">
+                        <form action="./../index.php" method="post">
+                            <button type="submit" name="logoff">Uitloggen</button>
+                        </form>
+                    </li>
                     <li class="header-link d-flex align-items-center justify-content-center"><a href="#">NL</a>/<a href="#">EN</a></li>
                 </ul>
             </div>
@@ -43,3 +50,6 @@
         </div>
     </div>
 </header>
+<div class="hero">
+
+</div>

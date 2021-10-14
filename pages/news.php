@@ -10,8 +10,16 @@
     <?php include_once('../components/header.php') ?>
     <div class="container">
         <div class="row">
-            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-flex h-100">
-                <h1>Nieuws</h1>
+
+            <div class="col-12">
+                <h2>Nieuws</h2>
+                <?php
+                if ($_SESSION['auth'] == "teacher") {
+                ?>
+                    <a class="btn btn-primary float-right" href="./news-add.php">Nieuws toevoegen</a>
+                <?php
+                }
+                ?>
             </div>
         </div>
         <div class="row mb-2 mt-2">
@@ -25,7 +33,7 @@
                         </div>
                         <div class="col-md-6 col-12">
                             <div class="news-description card-body">
-                                <h2 class="m-0">Title</h2>
+                                <h2 class="m-0">Titel</h2>
                                 <p class="mt-1 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec iaculis massa,
                                     non rhoncus enim. Sed tristique blandit odio dignissim tempor. Suspendisse at
                                     lorem ex. Pellentesque ornare elit nulla, id ultrices magna venenatis a.
@@ -50,7 +58,7 @@
                         </div>
                         <div class="col-md-6 col-12">
                             <div class="news-description card-body">
-                                <h2 class="m-0">Title</h2>
+                                <h2 class="m-0">Titel</h2>
                                 <p class="mt-1 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec iaculis massa,
                                     non rhoncus enim. Sed tristique blandit odio dignissim tempor. Suspendisse at
                                     lorem ex. Pellentesque ornare elit nulla, id ultrices magna venenatis a.
@@ -65,8 +73,8 @@
             </div>
         </div>
         <div class="row mb-4">
-            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-flex h-100 justify-content-center">
-                <button type="button" class="btn2">Meer weergeven</button>
+            <div class="col-12 d-flex justify-content-center">
+                <button type="button" class="btn btn-custom">Meer weergeven</button>
             </div>
         </div>
     </div>

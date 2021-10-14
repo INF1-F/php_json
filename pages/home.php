@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
+
 <head>
     <?php include_once('../components/head.php') ?>
     <title>Voorpagina</title>
 </head>
+
 <body>
     <?php include_once('../components/header.php') ?>
     <div class="container h-100">
@@ -24,7 +26,7 @@
                         </div>
                         <div class="col-md-6 col-12 paddingLeftClear">
                             <div class="news-description card-body">
-                                <h2 class="m-0">Title</h2>
+                                <h2 class="m-0">Titel</h2>
                                 <p class="mt-1 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec iaculis massa,
                                     non rhoncus enim. Sed tristique blandit odio dignissim tempor. Suspendisse at
                                     lorem ex. Pellentesque ornare elit nulla, id ultrices magna venenatis a.
@@ -38,7 +40,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="row mb-2 mt-2">
             <div class="col-12">
                 <div class="card">
@@ -50,7 +52,7 @@
                         </div>
                         <div class="col-md-6 col-12 paddingLeftClear">
                             <div class="news-description card-body">
-                                <h2 class="m-0">Title</h2>
+                                <h2 class="m-0">Titel</h2>
                                 <p class="mt-1 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec iaculis massa,
                                     non rhoncus enim. Sed tristique blandit odio dignissim tempor. Suspendisse at
                                     lorem ex. Pellentesque ornare elit nulla, id ultrices magna venenatis a.
@@ -64,7 +66,13 @@
                 </div>
             </div>
         </div>
+        <div class="row mb-2 mt-2">
+            <div class="col-12 d-flex justify-content-center">
+                <a href="./news.php" class="btn btn-custom">Bekijk meer</a>
+            </div>
+        </div>
     </div>
     <?php include_once('../components/footer.php') ?>
 </body>
+
 </html>

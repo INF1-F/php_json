@@ -2,7 +2,7 @@
 //TODO: field validation
 
 // include bestand, zodat we funties van dat bestand hier kunnen gebruiken
-include './main.php';
+include '../components/main.php';
 
 // Checked of titel wel word mee gestuurd vanuit het formulier
 if(isset($_POST['title'])){
@@ -25,7 +25,7 @@ if(isset($_POST['title'])){
     $news_item = Array (
         $time => Array(
             "title" => $_POST['title'],
-            "beschrijving" =>$_POST['beschrijving'],
+            "article" =>$_POST['article'],
             "image" => $path
         )
     );
@@ -45,5 +45,5 @@ if(isset($_POST['title'])){
 }
 
 // Stuurt de gebruiker terug naar index.php
-header('Location: ../index.php');
+header('Location: ../pages/home.php');
 
