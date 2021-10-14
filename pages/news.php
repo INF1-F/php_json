@@ -16,7 +16,7 @@
                 <?php
                 if ($_SESSION['auth'] == "teacher") {
                 ?>
-                    <a class="btn btn-primary float-right" href="./news-add.php">Nieuws toevoegen</a>
+                    <a class="btn btn-primary float-right" href="./add-news.php">Nieuws toevoegen</a>
                 <?php
                 }
                 ?>
