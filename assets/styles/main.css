@@ -423,6 +423,19 @@ footer img {
 	background-color: #073f81;
 }
 
+/* add news */
+
+.hero{
+	background-image: url('../img/header_plaatje.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 30vh;
+}
+
+
+
 /* Flexbox */
 
 /* Mobile devices */

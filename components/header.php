@@ -50,3 +50,6 @@ session_start();
         </div>
     </div>
 </header>
+<div class="hero">
+
+</div>
