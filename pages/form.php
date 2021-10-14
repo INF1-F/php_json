@@ -16,7 +16,7 @@
             header("Location: ./contact-choise.php");
         }
     }else {
-        echo "Nee";
+      echo "Er is geen keuze gemaakt";
     }
     ?>
     <body>
@@ -31,18 +31,30 @@
                         <div class="card-body">
                             <form class="contactForm" action="formResult.php" method="POST">     
                                 <input type="hidden" value="<?=$formChoise?>" name="sort">
+                                <input type="hidden" value="<?=$_GET['choise']?>" name="formtype">
                                 <?php
                                 if ($_GET['choise'] == 1) {
                                 ?> 
                                     <div class="form-row">
-                                        <label for="name"><b>Naam</b></label>
+                                        <label for="name">
+                                         <b>Naam *</b>
+                                          <?php if(isset($_GET['error']) && $_GET['error'] == 'name')
+                                          echo"<span class='contact-warning'> Geen naam ingevuld </span>";   
+                                          ?> 
+                                        </label>
                                         <input class="form-control" type="text" value="<?=$_SESSION["fullName"]?>" name="name" id="name" required>              
                                     </div>
                                 <?php
                                 }
                                 ?>
                                 <div class="form-row">
-                                    <label for="Opleiding"><b>Opleiding</b></label>
+                                    <label for="Opleiding">
+                                        <b>Opleiding *</b>
+                                        <?php if(isset($_GET['error']) && $_GET['error'] == 'education')
+                                        echo"<span class='contact-warning'> Geen opleiding ingevuld </span>";   
+                                        ?>
+                                
+                                    </label>
                                         <select id="Opleiding" class="form-control" name="education" required>
                                         <option value="HBO-ICT">HBO-ICT</option>
                                         <option value="Academische Pabo">Academische Pabo</option>
@@ -132,7 +144,12 @@
                                     </select>
                                 </div>
                                 <div class="form-row">
-                                    <label for="Locatie"><b>Locatie</b></label>
+                                    <label for="Locatie">
+                                    <b>Locatie *</b>
+                                    <?php if(isset($_GET['error']) && $_GET['error'] == 'location')
+                                          echo"<span class='contact-warning'> Geen locatie ingevuld</span>";   
+                                    ?>
+                                    </label>
                                     <select class="form-control" id="Locatie" name="location" required>
                                         <option value="Emmen">Emmen</option>
                                         <option value="Amsterdam">Amsterdam</option>
@@ -145,7 +162,12 @@
                                     </select>
                                 </div>
                                 <div class="form-row">
-                                    <label for="message"><b>Bericht</b></label>
+                                    <label for="message">
+                                        <b>Bericht *</b>
+                                        <?php if(isset($_GET['error']) && $_GET['error'] == 'message')
+                                          echo"<span class='contact-warning'> Geen bericht ingevuld </span>";   
+                                        ?>
+                                    </label>
                                     <textarea id="message" class="form-control" name="message" style="height: 200px;" placeholder="Typ hier uw feedback" required></textarea>
                                 </div>
                                 <div class="form-row">                                           

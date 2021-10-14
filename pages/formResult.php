@@ -12,15 +12,16 @@
                     <div class="verzonden">
                     <?php
                     if(isset($_POST['submit'])) {
-                        if (isset($_POST['sort'])) {
+                        if (isset($_POST['sort']) && isset($_POST['formtype'])) {
                             $sort = $_POST['sort'];
-                            if(isset($_POST['education'])) {
+                            $formtype = $_POST['formtype'];
+                            if(isset($_POST['education']) && !empty($_POST['education'])) {
                                 $education = $_POST['education'];
-                                if(isset($_POST['location'])) {
+                                if(isset($_POST['location']) && !empty($_POST['location'])) {
                                     $location = $_POST['location'];
                                     if(isset($_POST['message']) && !empty($_POST['message'])) {
                                         $message = $_POST['message'];
-                                        if (isset($_POST['name'])) {
+                                        if (isset($_POST['name']) && !empty($_POST['name']))  {
                                             $name = $_POST['name'];
                                         } else {
                                             $name = "Anoniem";
@@ -46,16 +47,16 @@
                                         fclose($file);
                                         echo "<p>Bedankt voor het versturen! U krijgt zo spoedig mogelijk antwoord!</p>";
                                     } else {
-                                        echo "<p>Het bericht is niet goed ingevuld in het formulier</p>";
+                                        header("location: form.php?choise={$formtype}&error=message");
                                     } 
                                 } else {
-                                    echo "<p>De locatie is niet goed ingevuld in het formulier</p>";
+                                    header("location: form.php?choise={$formtype}&error=location");
                                 } 
                             } else {
-                                echo "<p>De opleiding is niet ingevuld in het formulier</p>";
+                                header("location: form.php?choise={$formtype}&error=education");
                             } 
                         }else {
-                            echo "<p>Het Soort formulier is niet ingevuld</p>";
+                            header("location: form.php?choise={$formtype}&error=sort");
                         }
                     }
                     ?>
