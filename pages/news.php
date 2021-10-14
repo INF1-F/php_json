@@ -10,6 +10,7 @@
     <?php include_once('../components/header.php') ?>
     <div class="container">
         <div class="row">
+
             <div class="col-12">
                 <h2>Nieuws</h2>
                 <?php
@@ -30,7 +31,7 @@
                                 <div style="background-image: url('../assets/img/news_items/NHLStendenEmmen.jpg')" class="articleImage h-100 w-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-12 paddingLeftClear">
+                        <div class="col-md-6 col-12">
                             <div class="news-description card-body">
                                 <h2 class="m-0">Titel</h2>
                                 <p class="mt-1 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec iaculis massa,
@@ -55,7 +56,7 @@
                                 <div style="background-image: url('../assets/img/news_items/NHLStendenEmmen.jpg')" class="articleImage h-100 w-100"></div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-12 paddingLeftClear">
+                        <div class="col-md-6 col-12">
                             <div class="news-description card-body">
                                 <h2 class="m-0">Titel</h2>
                                 <p class="mt-1 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec iaculis massa,

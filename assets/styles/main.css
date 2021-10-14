@@ -244,10 +244,6 @@ a {
     color: #fff;    
 }
 
-h2 {
-	color: #0A54AB;
-	font-size: 1.5rem;
-}
 .bg-gray {
 	background-color: #f4f0f0;
 }
@@ -406,6 +402,7 @@ footer img {
 	width: 100%;
 }
 
+
 .paddingRightClear {
 	padding-right: 0px;
 }
@@ -434,6 +431,11 @@ footer img {
 	height: 30vh;
 }
 
+/* FAQ */
+.title {
+	color: #0A54AB;
+	font-weight: bold;
+}
 
 
 /* Flexbox */
