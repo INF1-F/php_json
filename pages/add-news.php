@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <?php  include_once('../components/head.php')?>
+    <?php include_once('../components/head.php') ?>
 
     <title>Voeg nieuws toe</title>
 </head>
+
 <body>
-    <?php include_once('../components/header.php')?>
+    <?php include_once('../components/header.php') ?>
 
     <div class="container">
         <div class="row">
@@ -18,28 +20,42 @@
                     <div class="card-body">
                         <form class="contactForm" action="../controllers/create_news.php" method="POST" enctype="multipart/form-data">
                             <div class="form-row">
-                                <label for="title"><b>Titel</b></label>
-                                <input type="text" id="title" name="title" class="form-control" placeholder="Typ hier uw titel">
+                                <label for="lang"><b>Selecteer een taal</b></label>
+                                <p id="lang">
+                                    <label class="radio-label"><input type="radio" name="lang" value="nl"> Nederlands</label>
+                                    <label class="radio-label"><input type="radio" name="lang" value="en"> Engels</label>
+                                </p>
                             </div>
                             <div class="form-row">
-                                <label for="image"><b>Selecteer een afbeelding:</b></label>
-                                <input type="file" class="form-control" id="image" name="image">
+                                <label for="author"><b>Auteur</b></label>
+                                <input type="text" id="author" value="<?= $_SESSION['fullName'] ?>" name="author" class="form-control mt-2" placeholder="Typ de auteur">
+                            </div>
+                            <div class="form-row">
+                                <label for="title"><b>Titel</b></label>
+                                <input type="text" id="title" name="title" class="form-control mt-2" placeholder="Typ hier uw titel">
+                            </div>
+                            <div class="form-row">
+                                <label for="image"><b>Selecteer een afbeelding</b></label>
+                                <input type="file" class="d-flex mt-2" id="image" name="image">
                             </div>
                             <div class="form-row">
                                 <label for="article"><b>Artikel</b></label>
-                                <textarea id="article" class="form-control" name="article" style="height: 200px;" placeholder="Typ hier uw artikel"></textarea>
+                                <textarea id="article" class="form-control mt-2" name="article" style="height: 200px;" placeholder="Typ hier uw artikel"></textarea>
                             </div>
                             <div class="form-row">
+                                <input class="float-right btn btn-custom" type="submit" value="Versturen">
+
                             </div>
+                        </form>
+
                     </div>
                 </div>
-                <input class="float-right btn btn-primary" type="submit" value="Versturen">
-                </form>
 
             </div>
         </div>
     </div>
 
-    <?php include_once('../components/footer.php')?>
+    <?php include_once('../components/footer.php') ?>
 </body>
+
 </html>

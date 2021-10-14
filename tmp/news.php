@@ -1,8 +1,8 @@
 <?php
 
-include '../components/main.php';
+include '../components/function.php';
 
-$news_items = getJsonContent('news');
+$news_items = getJsonContent('news', 'nl');
 
 ?>
 <!DOCTYPE html>

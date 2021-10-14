@@ -1,8 +1,8 @@
 <?php
 
-include('../components/main.php');
+include('../components/function.php');
 
-$news = getJsonContent('news');
+$news_items = getJsonContent('news', 'nl');
 
 ?>
 <!DOCTYPE html>
@@ -30,33 +30,33 @@ $news = getJsonContent('news');
             </div>
         </div>
 
-
-        <div class="row mb-2 mt-2">
-            <div class="col-12">
-                <div class="card">
-                    <div class="row">
-                        <div class="col-md-6 col-12">
-                            <div class="news-image h-100 w-100">
-                                <div style="background-image: url('../assets/img/news_items/NHLStendenEmmen.jpg')" class="articleImage h-100 w-100"></div>
+        <?php
+        foreach ($news_items as $id => $news_item) {
+        ?>
+            <div class="row mb-2 mt-2">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <a class="full-link" href="./news-item.php?id=<?=$id?>">
+                                    <div class="news-image h-100 w-100">
+                                        <div style="background-image: url('../<?= $news_item->image ?>')" class="articleImage h-100 w-100"></div>
+                                    </div>
+                                </a>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="news-description card-body">
-                                <h2 class="m-0">Titel</h2>
-                                <p class="mt-1 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec iaculis massa,
-                                    non rhoncus enim. Sed tristique blandit odio dignissim tempor. Suspendisse at
-                                    lorem ex. Pellentesque ornare elit nulla, id ultrices magna venenatis a.
-                                    Quisque consequat dolor ante, semper cursus lacus gravida vitae. Aliquam mattis
-                                    purus enim. Morbi laoreet vitae risus ac sodales. Aenean rutrum, neque porttitor
-                                    euismod pulvinar, sem lacus posuere tellus, eu finibus orci metus quis diam.
-                                </p>
+                            <div class="col-md-6 col-12">
+                                <div class="news-description card-body">
+                                    <h2 class="m-0"><?= $news_item->title ?></h2>
+                                    <p class="mt-1 mb-2"><?= $news_item->article ?> <a class="full-link" href="./news-item.php?id=<?=$id?>">lees meer</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-       
+        <?php
+        }
+        ?>
 
         <div class="row mb-4">
             <div class="col-12 d-flex justify-content-center">

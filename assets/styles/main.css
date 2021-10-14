@@ -123,6 +123,9 @@ a {
 .m-0 {
 	margin:0;
 }
+.mt-0 {
+	margin-top:0;
+}
 .mt-1 {
 	margin-top:.5rem;
 }
@@ -134,6 +137,9 @@ a {
 }
 .mt-4 {
 	margin-top:2rem;
+}
+.mb-0 {
+	margin-bottom:.5rem;
 }
 .mb-1 {
 	margin-bottom:.5rem;
@@ -272,6 +278,7 @@ header button[type="submit"] {
 	background: transparent;
 	border: none;
 	font-weight: 800;
+	cursor: pointer;
 }
 header a img {
 	height: 3.25em;
@@ -381,6 +388,10 @@ footer img {
 	color: #0A54AB;
 }
 
+.radio-label{
+	color: black !important;
+}
+
 /* Formulieren verzonden*/
 .verzonden{
 	display:flex;
@@ -420,6 +431,25 @@ footer img {
 	background-color: #073f81;
 }
 
+/* newsItem */
+
+.reaction-date {
+	color:#9e9e9ebf;
+	font-size: 80%;
+	float: right;
+}
+.reaction-name {
+	display: inline-block;
+}
+.reactionForm textarea{
+	resize: none;
+	height:80px;
+}
+
+.image-fluid{
+	height: auto;
+	max-width: 100%;
+}
 /* add news */
 
 .hero{

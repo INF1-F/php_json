@@ -37,7 +37,7 @@ session_start();
                 <ul class="d-flex justify-content-right list-unstyled align-items-center">
                     <li class="header-link d-flex align-items-center justify-content-center">
                         <form action="./../index.php" method="post">
-                            <button type="submit" name="logoff">Uitloggen</button>
+                            <button type="submit" class="button" name="logoff">Uitloggen</button>
                         </form>
                     </li>
                     <li class="header-link d-flex align-items-center justify-content-center"><a href="#">NL</a>/<a href="#">EN</a></li>

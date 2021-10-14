@@ -1,26 +1,26 @@
 <?php
-//TODO: field validation
-
 // include bestand, zodat we funties van dat bestand hier kunnen gebruiken
-include '../components/reaction.php';
-include '../components/main.php';
+include './reaction.php';
+include '../components/function.php';
 
 // Checked of reaction wel word mee gestuurd vanuit het formulier
-if(isset($_GET['reaction'])){
+if(isset($_POST['reaction']) && !empty($_POST['reaction'])){
+    $author = $_POST['author'];
+    $id = $_POST['id'];
+    $reaction = $_POST['reaction'];
 
     // Maakt reacties aan
-    $reaction = createReaction($_GET['author'], $_GET['reaction']);
+    $reaction = createReaction($author, $reaction);
     // Haalt alles op van news.json
-    $content = getJsonContent('news');
+    $content = getJsonContent('news', 'nl');
     // Voegt reactie toe aan nieuwsitem
-    $news_item = addReactionToItem($reaction, $content->{$_GET['id']});
+    $news_item = addReactionToItem($reaction, $content->{$id});
     // Voegt reactie toe aan alle nieuws items
-    $new_content = addNewsItemToContent($content, $news_item, $_GET['id']);
+    $new_content = addNewsItemToContent($content, $news_item, $id);
     // Zet alle nieuws items toe aan news.json
-    writeToJsonFile($new_content, 'new');
+    writeToJsonFile($new_content, 'news', 'nl');
 }
 
 // Stuurt de gebruiker terug naar news.php
-header('Location: ../index.php');
 
-header('Location: ../pages/news.php');
+header('Location: ../pages/news-item.php?id='. $id);
