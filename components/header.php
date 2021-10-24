@@ -18,8 +18,22 @@ session_start();
 <!--        Dit is het linkerdeel van de header voor alles kleiner van laptopformaat, dus telefoon en tablet-->
             <div class="col-lg-5 col-4 d-lg-none">
                 <div class="menu-toggle">
-                    <img class="d-flex" src="../assets/img/Logo_footer_white.svg" alt="Logo van de site in wit" style="height: 55px;">
-                    <span class="d-flex">MENU</span>
+                    <div class="MobileTopLogo"><img id="MobilePlatformLogo" class="d-flex" src="../assets/img/Logo_footer_white.svg" alt="Logo van de site in wit" onclick="openNav()" ></div>
+                    <div id="mySidenav" class="sidenav">
+                        <div class="mobileMenu">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img class="d-flex" src="../assets/img/Logo.svg" alt="Logo site kleur"></a>
+                            <a href="news.php">Nieuws</a>
+                            <hr class="MenuLine">
+                            <a href="contact-choise.php">Contact</a>
+                            <hr class="MenuLine">
+                            <a href="faq.php">FAQ</a>
+                            <hr class="MenuLine">
+                            <a href="#">Uitloggen</a> <br />
+                            <div class="MobileBottomLogo">
+                                <img src="../assets/img/Stenden_logo_blauw.svg" alt="Stenden logo blauw" id="MobileStendenLogo">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 <!--        Dit is het midden van de header voor laptopformaat en groter-->
@@ -50,6 +64,16 @@ session_start();
         </div>
     </div>
 </header>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
 <div class="hero">
 
 </div>
