@@ -27,7 +27,7 @@ if(isset($_POST['title'])){
             "title" => $_POST['title'],
             "article" =>$_POST['article'],
             "image" => $path,
-            "auhtor" => $_POST['auhtor']
+            "author" => $_POST['author']
         )
     );
 
@@ -35,9 +35,8 @@ if(isset($_POST['title'])){
     $old_items = getJsonContent('news', $lang);
 
     // TODO: controleer of $old_items leeg is, zo ja sla foreach over!
-    foreach($news_item AS $var=>$value){
-        $old_items->$var = $value;
-    }
+    $old_items = (object) array_replace_recursive((array)$news_item, (array)$old_items);
+
     // $content = addNewsItemToContent($old_items, $news_item, $time);
 
     // Zet data in news.json
@@ -46,5 +45,5 @@ if(isset($_POST['title'])){
 }
 
 // Stuurt de gebruiker terug naar index.php
-header('Location: ../pages/home.php');
+header('Location: ../pages/news.php');
 

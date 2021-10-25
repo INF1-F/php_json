@@ -171,7 +171,7 @@
                                     <textarea id="message" class="form-control" name="message" style="height: 200px;" placeholder="Typ hier uw feedback" required></textarea>
                                 </div>
                                 <div class="form-row">                                           
-                                    <input class="float-right btn btn-primary" name="submit" type="submit" value="Versturen">
+                                    <input class="float-right btn btn-custom" name="submit" type="submit" value="Versturen">
                                 </div> 
                             </form>
                         </div>

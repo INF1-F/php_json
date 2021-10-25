@@ -3,10 +3,11 @@
 include './reaction.php';
 include '../components/function.php';
 
+$id = $_POST['id'];
+
 // Checked of reaction wel word mee gestuurd vanuit het formulier
 if(isset($_POST['reaction']) && !empty($_POST['reaction'])){
     $author = $_POST['author'];
-    $id = $_POST['id'];
     $reaction = $_POST['reaction'];
 
     // Maakt reacties aan
@@ -21,6 +22,6 @@ if(isset($_POST['reaction']) && !empty($_POST['reaction'])){
     writeToJsonFile($new_content, 'news', 'nl');
 }
 
-// Stuurt de gebruiker terug naar news.php
+// Stuurt de gebruiker terug naar news-item.php
 
 header('Location: ../pages/news-item.php?id='. $id);

@@ -42,6 +42,19 @@ function addNewsItemToContent($content, $item, $id){
     return $content;
 }
 
+function flip_ASarray($array){
+
+    for($i = count((array) $array); $i > 0; $i--){
+        $j = 0;
+        $j++;
+    printArray($array[$i]);
+
+        
+    }
+    // return $new_array;
+    die('');
+}
+
 function printArray($array){
     echo '<pre>';
     print_r($array);

@@ -29,7 +29,7 @@ function addReactionToItem($reaction, $news_item){
         // Zet alle reacties in $reactions
         $reactions = $news_item->reactions;
         // Voegt de nieuwe reactie toe aan de oude
-        $reaction = (object) array_replace_recursive((array)$reactions, (array)$reaction);
+        $reaction = (object) array_replace_recursive((array)$reaction, (array)$reactions);
     }
     // Zet alle reacties in een associative array
     // Zie tutorial!
@@ -38,6 +38,5 @@ function addReactionToItem($reaction, $news_item){
     );
     // Zet array van reacties in nieuws item array
     $updated = (object) array_merge((array)$news_item, (array)$reaction);
-
     return $updated;
 }
