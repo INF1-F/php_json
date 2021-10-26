@@ -30,7 +30,7 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
             if ($_SESSION['auth'] == "teacher") {
             ?>
             <div class="col-6 my-auto"> <!-- Als het ingelogde persoon een leraar is, laat de 'nieuws toevoegen' knop zien. -->
-                <a class="btn btn-custom float-right" href="./add-news.php">Add News</a>
+                <a class="btn btn-custom float-right hoverUnderline" href="./add-news.php">Add News</a>
             </div>
             <?php
             }
