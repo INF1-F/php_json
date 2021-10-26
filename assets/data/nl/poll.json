@@ -1,13 +1,13 @@
 {
     "1632910405": {
-        "question": "willen jullie vrij?",
-        "answers": {
-            "true": 43,
-            "false": 13
+        "title": "willen jullie vrij?",
+        "questions": {
+            "ja": 13,
+            "nee": 2
         }
     },
     "1999990405": {
-        "question": "willen jullie vrij? 2",
+        "question": "Stoppen met school?",
         "answers": {
             "true": 6,
             "false": 32

@@ -4,13 +4,8 @@ include('../../components/function.php');
 
 $news_items = getJsonContent('news', 'nl');
 $polls = getJsonContent('poll', 'nl');
-if (isset($_COOKIE['answerd_polls'])) {
-    $answerd_polls = json_decode($_COOKIE['answerd_polls']);
-    printArray($answerd_polls);
-}else {
-    $answerd_polls = array(0);
-}
-
+$current_poll = $polls->{array_keys((array) $polls)[0]};
+$current_poll_id = array_keys((array) $polls)[0];
 ?>
 <!DOCTYPE html>
 <html lang="nl" class="h-100">
@@ -22,42 +17,60 @@ if (isset($_COOKIE['answerd_polls'])) {
 
 <body>
     <?php include_once('../../components/nl/header.php') ?>
-    <div class="container h-100">
+    <div class="container">
         <div class="row">
             <div class="col-12 d-flex h-100">
-                <h2>Polls</h2>
+                <h2>Nieuwste poll</h2>
+                <?php
+                if ($_SESSION['auth'] == "teacher") {
+                ?>
+                    <div class="col-10 my-auto">
+                        <!-- Als het ingelogde persoon een leraar is, laat de 'nieuws toevoegen' knop zien. -->
+                        <a class="btn btn-custom float-right" href="./create-poll.php">Poll toevoegen</a>
+                    </div>
+                <?php
+                }
+                ?>
             </div>
-            <?php
-            foreach ($polls as $key => $poll) {
-            ?>
-                <form action="../../controllers/answer_poll.php" method="POST">
-                <h4><?= $poll->question ?></h4>
-                    <?php
-                        // foreach ($answerd_polls as $answerd_poll) {
-                            for($i = 0; $i < count($answerd_polls); $i++){
-                            if ($answerd_polls[$i] == $key) {
-                            ?>
-                            <p>Ja: <?= round($poll->answers->true / ($poll->answers->true + $poll->answers->false) * 100, 1) ?></p>
-                            <p>Nee: <?= round($poll->answers->false / ($poll->answers->true + $poll->answers->false) * 100, 1) ?></p>
-                            <?php
-                            } else {
-                            ?>
-                                <input type="hidden" name="userLang" value="nl">
-                                <input type="hidden" name="id" value="<?= $key ?>">
-                                <label for="true">Ja </label>
-                                <input onchange="this.form.submit();" type="radio" id="true" name="answer" value="true">
-                                <label for="false">Nee</label>
-                                <input onchange="this.form.submit();" type="radio" name="answer" value="false">
-                    <?php
-                            }
-                    }
-                    ?>
-
-                </form>
-            <?php
-            }
-            ?>
         </div>
+        <div class="row mb-2 mt-2">
+            <div class="col-12">
+                <h3><?= $current_poll->title ?></h3>
+                <?php
+                if (isset($_COOKIE['poll_id']) && $_COOKIE['poll_id'] == $current_poll_id) {
+                    foreach ($current_poll->questions as $key => $question) {
+                ?>
+                        <p><?= $key . ': ' . round($question / array_sum((array) $current_poll->questions) * 100, 1) ?>%</p>
+                    <?php
+                    }
+                } else {
+                    ?>
+                    <form action="../../controllers/answer_poll.php" method="POST">
+
+                        <input type="hidden" name="userLang" value="nl">
+                        <input type="hidden" name="id" value="<?= $current_poll_id ?>">
+                        <div class="row">
+                            <?php
+                            foreach ($current_poll->questions as $key => $question) {
+                            ?>
+                                <div class="col-12">
+                                    <input onchange="this.form.submit();" type="radio" id="<?= $key ?>" name="question" value="<?= $key ?>">
+                                    <label for="<?= $key ?>"><?= $key ?></label>
+                                </div>
+                            <?php
+                            }
+
+                            ?>
+
+                        </div>
+
+                    </form>
+                <?php
+                }
+                ?>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-12 d-flex h-100">
                 <h2>Laatste nieuws</h2>
@@ -112,6 +125,8 @@ if (isset($_COOKIE['answerd_polls'])) {
             </div>
         </div>
     </div>
+    </div>
+
     <?php include_once('../../components/nl/footer.php') ?>
 </body>
 
