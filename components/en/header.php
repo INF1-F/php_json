@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <header>
     <div class="container">
         <div class="row">
@@ -54,7 +51,7 @@ session_start();
                             <button type="submit" class="button" name="logoff">Log off</button>
                         </form>
                     </li>
-                    <li class="header-link d-flex align-items-center justify-content-center"><a href="../nl/home.php">NL</a>/<a class="underline" href="../en/home.php">EN</a></li>
+                    <li class="header-link d-flex align-items-center justify-content-center"><a class="underline" href="../en/home.php">EN</a>/<a href="../nl/home.php">NL</a></li>
                 </ul>
             </div>
 <!--        Dit is het rechterdeel van de header voor kleiner dan laptopformaat, dus telefoon en tablet-->
