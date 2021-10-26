@@ -3,7 +3,33 @@
         "title": "eerrrr",
         "article": "fdfsf",
         "image": "assets\/img\/news_items\/en\/1635247794.jpeg",
-        "author": "Voornaam achternaame"
+        "author": "Voornaam achternaame",
+        "reactions": {
+            "1635250232": {
+                "author": "Steffan van der werf",
+                "reaction": "sdfsdf"
+            },
+            "1635250230": {
+                "author": "Steffan van der werf",
+                "reaction": "sdfsdf"
+            },
+            "1635250228": {
+                "author": "Steffan van der werf",
+                "reaction": "sdfsdf"
+            },
+            "1635250227": {
+                "author": "Steffan van der werf",
+                "reaction": "f"
+            },
+            "1635250226": {
+                "author": "Steffan van der werf",
+                "reaction": "dfsdfsd"
+            },
+            "1635250225": {
+                "author": "Steffan van der werf",
+                "reaction": "sdfds"
+            }
+        }
     },
     "1635247543": {
         "title": "lang test",
