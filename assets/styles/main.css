@@ -259,6 +259,10 @@ a {
 	color: #c4bebe;
 	font-weight: bold;
 }
+
+.hidden{
+	overflow: hidden;
+}
 /* Header */
 header {
 	background-color: #0A54AB;
