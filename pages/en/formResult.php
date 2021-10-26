@@ -27,7 +27,7 @@
                                             $name = "Anoniem";
                                         }
 
-                                        $file = fopen ('../assets/data/contact/formData-'.date("YmdHis").'.txt', 'a');
+                                        $file = fopen ('../../assets/data/contact/formData-'.date("YmdHis").'.txt', 'a');
 
                                         fwrite($file, "Type formulier:");
                                         fwrite($file, $sort . "\n");
