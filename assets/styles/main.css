@@ -566,6 +566,40 @@ span.error {
 }
 
 
+/* FAQ */
+
+.title {
+    color: #0A54AB;
+    font-weight: bold;
+}
+
+.expandBtn {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin: 1rem 0;
+    border: none;
+    color: #0A54AB;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+.expContent {
+    display: none;
+}
+
+.closedContent::after {
+    content: "▼";
+}
+
+.openedContent::after {
+    content: "▲";
+}
+
+.dividerLine {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
 /* Small devices 'small tablets' */
 
 @media (min-width: 576px) {

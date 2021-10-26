@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 contact-title">
-                <h1>Contact</h1>
+                <h2>Contact</h2>
             </div>
             <div class="col-12 col-md-4 mb-3 text-center">
                 <div class="card justify-content-center card-form">
