@@ -5,7 +5,7 @@ session_start();
 <html lang="en">
     <head>
         <?php include_once('../../components/head.php') ?>
-        <title>Contact keuze</title>
+        <title>Contact choice</title>
     </head>
 
 <body>
@@ -26,7 +26,7 @@ session_start();
             <div class="col-12 col-md-4 mb-3 text-center">
                 <div class="card justify-content-center card-form">
                     <div class="card-body">
-                        <h2 class="contact-title hoverUnderline"><a class="full-link" href="./form.php?choise=1">Questions</a></h2>
+                        <h2 class="contact-title hoverUnderline"><a class="full-link" href="./form.php?choise=1">Question</a></h2>
                     </div>
                 </div>
             </div>
