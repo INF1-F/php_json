@@ -52,7 +52,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                     ?>
                             <div class="card mb-2">
                                 <div class="card-body">
-                                    <h5 class="reaction-name mt-0"><?= $reaction->author ?>:</h5><span class="reaction-date "><?= date('d-m-Y', $key) ?></span>
+                                    <h5 class="reaction-name mt-0"><?= $reaction->author ?>:</h5><span class="reaction-date "><?= date('d-m-Y H:i', $key) ?></span>
                                     <div class="reaction">
                                         <?= nl2br($reaction->reaction) ?>
                                     </div>

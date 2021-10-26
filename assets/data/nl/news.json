@@ -1,0 +1,36 @@
+{
+    "1635254534": {
+        "title": "test 2",
+        "article": "Test 2",
+        "image": "assets\/img\/news_items\/nl\/1635254534.png",
+        "author": "Monique sabong",
+        "reactions": {
+            "1635254583": {
+                "author": "Monique sabong",
+                "reaction": "test 5"
+            },
+            "1635254576": {
+                "author": "Monique sabong",
+                "reaction": "test 4"
+            },
+            "1635254573": {
+                "author": "Monique sabong",
+                "reaction": "test 3\r\n"
+            },
+            "1635254568": {
+                "author": "Monique sabong",
+                "reaction": "test 2"
+            },
+            "1635254559": {
+                "author": "Monique sabong",
+                "reaction": "test"
+            }
+        }
+    },
+    "1635254410": {
+        "title": "test",
+        "article": "Test",
+        "image": "assets\/img\/news_items\/nl\/1635254410.jpeg",
+        "author": "Monique sabong"
+    }
+}
