@@ -45,29 +45,29 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
             </div>
             <div class="col-12 col-md-6">
                 <h3 class="mt-0">Geef een reactie</h3> <!-- geplaatste reacties-->
-                <?php
-                if (isset($reactions)) {
-                    foreach ($reactions as $key => $reaction) {
-                ?>
-                        <div class="card mb-2">
-                            <div class="card-body">
-                                <h5 class="reaction-name mt-0"><?= $reaction->author ?>:</h5><span class="reaction-date "><?= date('d-m-Y', $key) ?></span>
-                                <div class="reaction">
-                                    <?= nl2br($reaction->reaction) ?>
+                <div class="reaction-container">
+                    <?php
+                    if (isset($reactions)) {
+                        foreach ($reactions as $key => $reaction) {
+                    ?>
+                            <div class="card mb-2">
+                                <div class="card-body">
+                                    <h5 class="reaction-name mt-0"><?= $reaction->author ?>:</h5><span class="reaction-date "><?= date('d-m-Y', $key) ?></span>
+                                    <div class="reaction">
+                                        <?= nl2br($reaction->reaction) ?>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php
+                        }
+                    } else {
+                        ?>
+                        <h4 class="text-center">Er zijn momenteel geen reacties</h4>
+
                     <?php
                     }
-                } else {
                     ?>
-                    <h4 class="text-center">Er zijn momenteel geen reacties</h4>
-
-                <?php
-                }
-                ?>
-
-
+                </div>
                 <!-- reactie typen -->
                 <h3 class="mt-3">
                     <label for="reaction"> Schrijf uw reactie <sup>*</sup>
