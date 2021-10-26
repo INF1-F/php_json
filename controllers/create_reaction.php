@@ -20,8 +20,12 @@ if(isset($_POST['reaction']) && !empty($_POST['reaction'])){
     $new_content = addNewsItemToContent($content, $news_item, $id);
     // Zet alle nieuws items toe aan news.json
     writeToJsonFile($new_content, 'news', 'nl');
+    
+    // Stuurt de gebruiker terug naar news-item.php
+    header('Location: ../pages/news-item.php?id='. $id);
+}else {
+    header('Location: ../pages/news-item.php?error=message&id='. $id);
 }
 
-// Stuurt de gebruiker terug naar news-item.php
 
-header('Location: ../pages/news-item.php?id='. $id);
+

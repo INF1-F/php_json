@@ -1,9 +1,6 @@
 # TODO
 
 * thema kunnen veranderen
-* Valideren van formulieren
-* Fout meldingen na foute invoer
-* Melding na juiste invoer
 * Site vertalen naar engels
 
 ## Pages
@@ -15,4 +12,6 @@
 * De knop "Meer weergeven" werkend maken. Deze knop zorgt ervoor dat er 4 extra nieuwsitems worden getoond.
 
 **FAQ**
-* Vraag en antwoord toevoegen(als deze beschikbaar zijn).
+* Vraag en antwoord toevoegen(wachten op opgeleverde teksten).
+* Collapse van FAQ items
+

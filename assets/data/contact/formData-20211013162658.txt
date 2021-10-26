@@ -1,4 +1,4 @@
-Type formulier:Vragen
+Type formulier:Klachten
 naam:Steffan van der werf
 Type opleiding:HBO-ICT
 Locatie:Emmen

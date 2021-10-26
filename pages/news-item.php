@@ -5,8 +5,7 @@ $news_items = getJsonContent('news', 'nl');
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $id = $_GET['id'];
     $news_item = $news_items->$id;
-    if (isset($reactions->reactions)) {
-
+    if (isset($news_item->reactions)) {
         $reactions = $news_item->reactions;
     }
     if (!$news_item) {
@@ -69,12 +68,22 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
 
                 <!-- reactie typen -->
-                <h3 class="mt-3">Schrijf uw reactie</h3>
+                <h3 class="mt-3">
+                    <label for="reaction"> Schrijf uw reactie <sup>*</sup>
+                        <?php
+                        if (isset($_GET["error"]) && $_GET["error"] == "message") { //foutmelding als bericht leeg is
+                        ?>
+                        <span class="error">uw bericht was niet ingevuld</span>
+                        <?php
+                        }
+                        ?>
+                    </label>
+                </h3>
                 <form action="../controllers/create_reaction.php" class="reactionForm" method="post">
                     <input type="hidden" name="id" value="<?= $id ?>">
                     <input type="hidden" name="author" value="<?= $_SESSION['fullName'] ?>">
-                    <textarea class="form-control" name="reaction"></textarea>
-                    <input type="submit" class="btn btn-custom mt-2" height="80" value="Versturen">
+                    <textarea id="reaction" class="form-control" name="reaction" placeholder="Vul hier uw bericht in...."></textarea>
+                    <input type="submit" class="btn btn-custom mt-2 mb-2" height="80" value="Versturen">
                 </form>
             </div>
         </div>
