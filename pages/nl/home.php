@@ -4,6 +4,12 @@ include('../../components/function.php');
 
 $news_items = getJsonContent('news', 'nl');
 $polls = getJsonContent('poll', 'nl');
+if (isset($_COOKIE['answerd_polls'])) {
+    $answerd_polls = json_decode($_COOKIE['answerd_polls']);
+    printArray($answerd_polls);
+}else {
+    $answerd_polls = array(0);
+}
 
 ?>
 <!DOCTYPE html>
@@ -24,12 +30,29 @@ $polls = getJsonContent('poll', 'nl');
             <?php
             foreach ($polls as $key => $poll) {
             ?>
-                <form action="../../controllers/answer_poll.php">
-                    <h4><?= $poll->question ?></h4>
-                    <label for="true">Ja </label>
-                    <input type="radio" id="true" name="answer" value="true">
-                    <label for="false">Nee</label>
-                    <input type="radio" name="answer" value="false">
+                <form action="../../controllers/answer_poll.php" method="POST">
+                <h4><?= $poll->question ?></h4>
+                    <?php
+                        // foreach ($answerd_polls as $answerd_poll) {
+                            for($i = 0; $i < count($answerd_polls); $i++){
+                            if ($answerd_polls[$i] == $key) {
+                            ?>
+                            <p>Ja: <?= round($poll->answers->true / ($poll->answers->true + $poll->answers->false) * 100, 1) ?></p>
+                            <p>Nee: <?= round($poll->answers->false / ($poll->answers->true + $poll->answers->false) * 100, 1) ?></p>
+                            <?php
+                            } else {
+                            ?>
+                                <input type="hidden" name="userLang" value="nl">
+                                <input type="hidden" name="id" value="<?= $key ?>">
+                                <label for="true">Ja </label>
+                                <input onchange="this.form.submit();" type="radio" id="true" name="answer" value="true">
+                                <label for="false">Nee</label>
+                                <input onchange="this.form.submit();" type="radio" name="answer" value="false">
+                    <?php
+                            }
+                    }
+                    ?>
+
                 </form>
             <?php
             }
