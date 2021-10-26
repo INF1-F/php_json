@@ -10,9 +10,12 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
+
 textarea {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     resize: none;
 }
+
 h1,
 .h1,
 h2,
@@ -26,6 +29,15 @@ h5,
 h6,
 .h6 {
     color: #0A54AB;
+}
+
+.reqFieldText {
+    color: #495057;
+}
+
+.reqField {
+    color: #ae1515;
+    ;
 }
 
 a {
@@ -309,12 +321,6 @@ button:hover {
     background-color: #f4f0f0;
 }
 
-.text-muted {
-    font-size: 80%;
-    color: #c4bebe;
-    font-weight: bold;
-}
-
 .hidden {
     overflow: hidden;
 }
@@ -502,7 +508,6 @@ footer img {
 
 /* News page overview*/
 
-
 .news-description {
     overflow: hidden;
 }
@@ -541,10 +546,12 @@ footer img {
     font-size: 80%;
     float: right;
 }
+
 .reaction-container {
-	max-height: 475px;
+    max-height: 475px;
     overflow: hidden auto;
 }
+
 .reaction-name {
     display: inline-block;
 }
@@ -589,11 +596,13 @@ span.error {
     font-weight: bold;
 }
 
+
 /* Mobile menu */
 
 .sidenav a img {
     height: 3.25em;
 }
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -606,9 +615,11 @@ span.error {
     transition: 0.5s;
     padding-top: 30px;
 }
+
 .sidenav .nav-btn {
     margin-bottom: .5rem;
 }
+
 .sidenav a,
 .sidenav .nav-btn {
     padding: 8px 8px 8px 32px;
@@ -621,8 +632,7 @@ span.error {
 }
 
 .sidenav a:hover,
-.sidenav button:hover
- {
+.sidenav button:hover {
     text-decoration: underline;
 }
 
@@ -649,6 +659,7 @@ span.error {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 /* Flexbox */
 
@@ -903,7 +914,6 @@ span.error {
         flex: 0 0 8.333333333333333%;
         max-width: 8.333333333333333%;
     }
-
     .news-card {
         height: 250px;
         overflow: hidden;
@@ -1159,7 +1169,7 @@ span.error {
         height: 230px;
     }
     .news-card h2 {
-        margin-top:1rem;
+        margin-top: 1rem;
     }
     .news-card {
         max-height: 515px;

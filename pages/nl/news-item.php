@@ -44,7 +44,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
             </div>
             <div class="col-12 col-md-6">
-                <h3 class="mt-0">Geef een reactie</h3> <!-- geplaatste reacties-->
+                <h3 class="mt-0">Laat een reactie achter</h3> <!-- geplaatste reacties-->
                 <div class="reaction-container">
                     <?php
                     if (isset($reactions)) {
@@ -52,7 +52,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                     ?>
                             <div class="card mb-2">
                                 <div class="card-body">
-                                    <h5 class="reaction-name mt-0"><?= $reaction->author ?>:</h5><span class="reaction-date "><?= date('d-m-Y H:i', $key) ?></span>
+                                    <h5 class="reaction-name mt-0"><?= $reaction->author ?></h5><span class="reaction-date "><?= date('d-m-Y H:i', $key) ?></span>
                                     <div class="reaction">
                                         <?= nl2br($reaction->reaction) ?>
                                     </div>
@@ -70,7 +70,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                 </div>
                 <!-- reactie typen -->
                 <h3 class="mt-3">
-                    <label for="reaction"> Schrijf uw reactie <sup>*</sup>
+                    <label for="reaction"> Schrijf uw reactie
                         <?php
                         if (isset($_GET["error"]) && $_GET["error"] == "message") { //foutmelding als bericht leeg is
                         ?>
@@ -83,7 +83,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                 <form action="../../controllers/create_reaction.php" class="reactionForm" method="post">
                     <input type="hidden" name="id" value="<?= $id ?>">
                     <input type="hidden" name="author" value="<?= $_SESSION['fullName'] ?>">
-                    <textarea id="reaction" class="form-control" name="reaction" placeholder="Vul hier uw bericht in...."></textarea>
+                    <textarea id="reaction" class="form-control" name="reaction" placeholder="Schrijf hier uw bericht..."></textarea>
                     <input type="submit" class="btn btn-custom mt-2 mb-2" height="80" value="Versturen">
                 </form>
             </div>

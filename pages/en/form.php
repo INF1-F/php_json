@@ -35,12 +35,15 @@ session_start();
                             <form class="contactForm" action="./formResult.php" method="POST">     
                                 <input type="hidden" value="<?=$formChoise?>" name="sort">
                                 <input type="hidden" value="<?=$_GET['choise']?>" name="formtype">
+                                <div class="form-row">
+                                    <p class="mt-0 reqFieldText"><span class="reqField">*</span> Required fields</p>
+                                </div>
                                 <?php
                                 if ($_GET['choise'] == 1) {
                                 ?> 
                                     <div class="form-row">
                                         <label for="name">
-                                         <b>Name *</b>
+                                         <b>Name <span class="reqField">*</span></b>
                                           <?php if(isset($_GET['error']) && $_GET['error'] == 'name')
                                           echo"<span class='contact-warning'> No name entered </span>";   
                                           ?> 
@@ -52,7 +55,7 @@ session_start();
                                 ?>
                                 <div class="form-row">
                                     <label for="Opleiding">
-                                        <b>Training *</b>
+                                        <b>Course <span class="reqField">*</span></b>
                                         <?php if(isset($_GET['error']) && $_GET['error'] == 'education')
                                         echo"<span class='contact-warning'> No training completed </span>";   
                                         ?>
@@ -148,7 +151,7 @@ session_start();
                                 </div>
                                 <div class="form-row">
                                     <label for="Locatie">
-                                    <b>Location *</b>
+                                    <b>Location <span class="reqField">*</span></b>
                                     <?php if(isset($_GET['error']) && $_GET['error'] == 'location')
                                           echo"<span class='contact-warning'> No location entered</span>";   
                                     ?>
@@ -166,12 +169,12 @@ session_start();
                                 </div>
                                 <div class="form-row">
                                     <label for="message">
-                                        <b>Message *</b>
+                                        <b>Message <span class="reqField">*</span></b>
                                         <?php if(isset($_GET['error']) && $_GET['error'] == 'message')
                                           echo"<span class='contact-warning'> No message entered </span>";   
                                         ?>
                                     </label>
-                                    <textarea id="message" class="form-control" name="message" style="height: 200px;" placeholder="Type your message here" required></textarea>
+                                    <textarea id="message" class="form-control" name="message" style="height: 200px;" placeholder="Write your message here..." required></textarea>
                                 </div>
                                 <div class="form-row">                                           
                                     <input class="float-right btn btn-custom" name="submit" type="submit" value="Send">

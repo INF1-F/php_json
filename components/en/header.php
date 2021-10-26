@@ -26,7 +26,7 @@
                             <a href="./faq.php">FAQ</a>
                             <hr class="MenuLine">
                             <form action="../../index.php" method="post">
-                                <button type="submit" class="nav-btn" name="logoff">Logout</button>
+                                <button type="submit" class="nav-btn" name="logoff">Log out</button>
                             </form>
                             <div class="MobileBottomLogo">
                                 <a href="../en/home.php"><img src="../../assets/img/Stenden_logo_blauw.svg" alt="Stenden logo blauw" id="MobileStendenLogo"></a>
@@ -50,7 +50,7 @@
                 <ul class="d-flex justify-content-right list-unstyled align-items-center">
                     <li class="header-link d-flex align-items-center justify-content-center">
                         <form action="../../index.php" method="post">
-                            <button type="submit" class="button" name="logoff">Logout <span class="material-icons align-middle">logout</span></button>
+                            <button type="submit" class="button" name="logoff">Log out</button>
                         </form>
                     </li>
                     <li class="header-link d-flex align-items-center justify-content-center"><a class="underline" href="../en/home.php">EN</a>/<a href="../nl/home.php">NL</a></li>

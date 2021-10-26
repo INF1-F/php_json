@@ -114,14 +114,17 @@ session_start();
                                 <div class="col-12 text-center mt-3 mb-3 ">
                                     <img src="./assets/img/Logo.svg" style="height:150px;" alt="logo">
                                 </div>
+                                <div class="col-12 text-center mt-3 mb-3 ">
+                                    <h2>Welkom bij het NHL Stenden Studentenplatform!</h2>
+                                </div>
                                 <div class="row">
                                     <div class="col-12">
                                         <label for="login-email" class="mb-1">
-                                            Emailadres:
+                                            Enter your emailadress to log in:
                                         </label>
                                     </div>
                                     <div class="col-12">
-                                        <input id="login-email" type="email" placeholder="Emailadres" <?php if (isset($_POST['email'])) { ?> value="<?= $_POST['email'] ?>" <?php } ?> name="email" class="form-control">
+                                        <input id="login-email" type="email" placeholder="Emailadress..." <?php if (isset($_POST['email'])) { ?> value="<?= $_POST['email'] ?>" <?php } ?> name="email" class="form-control">
                                     </div>
                                     <div class="col-12 text-right">
                                         <button type="submit" name="login" class="btn btn-custom mt-3">

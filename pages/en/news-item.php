@@ -31,7 +31,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1><?= $news_item->title ?></h1>
+                <h2><?= $news_item->title ?></h2>
             </div>
             <div class="col-12 col-md-6">
                 <img src="../../<?= $news_item->image ?>" class="image-fluid news-item-img" alt="<?= $news_item->title ?>">
@@ -44,7 +44,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
             </div>
             <div class="col-12 col-md-6">
-                <h3 class="mt-0">Give a reaction</h3> <!-- geplaatste reacties-->
+                <h3 class="mt-0">Leave a comment</h3> <!-- geplaatste reacties-->
                 <div class="reaction-container">
                     <?php
                     if (isset($reactions)) {
@@ -70,7 +70,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                 </div>
                 <!-- reactie typen -->
                 <h3 class="mt-3">
-                    <label for="reaction"> Write your comment <sup>*</sup>
+                    <label for="reaction">Write your comment
                         <?php
                         if (isset($_GET["error"]) && $_GET["error"] == "message") { //foutmelding als bericht leeg is
                         ?>
@@ -84,7 +84,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                     <input type="hidden" name="id" value="<?= $id ?>">
                     <input type="hidden" name="userLang" value="en">
                     <input type="hidden" name="author" value="<?= $_SESSION['fullName'] ?>">
-                    <textarea id="reaction" class="form-control" name="reaction" placeholder="Enter your message here...."></textarea>
+                    <textarea id="reaction" class="form-control" name="reaction" placeholder="Write your message here..."></textarea>
                     <input type="submit" class="btn btn-custom mt-2 mb-2" height="80" value="Send">
                 </form>
             </div>
