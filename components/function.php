@@ -23,7 +23,7 @@ function getJsonContent($file, $lang){
  */
 function writeToJsonFile($content, $file, $lang){
     // Encode associative array naar JSON
-    $json = json_encode($content);
+    $json = json_encode($content, JSON_PRETTY_PRINT);
     // Zet $json in news.json, hier word alle nieuws items opgeslagen
     file_put_contents(ROOT_PATH.'assets/data/'.$lang.'/'.$file.'.json', $json);
 

@@ -6,7 +6,7 @@
 ## Pages
 
 **Home**
-* niewsitems ophalen uit news.json, en dit tonen. Toon alleen de eerste 2.
+* niewsitems ophalen uit news.json, en dit tonen. Toon alleen de eerste 3
 
 **news**
 * De knop "Meer weergeven" werkend maken. Deze knop zorgt ervoor dat er 4 extra nieuwsitems worden getoond.
