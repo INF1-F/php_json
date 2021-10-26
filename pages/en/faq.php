@@ -6,7 +6,7 @@ session_start();
 
 <head>
     <?php include_once('../../components/head.php') ?>
-    <title>Nieuws</title>
+    <title>FAQ</title>
 </head>
 
 <body class="h-100">
