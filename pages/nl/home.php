@@ -57,6 +57,10 @@ $news_items = getJsonContent('news', 'nl');
             }
             ?>
         <?php
+        } else {
+        ?>
+            <h3 class="text-center">Er zijn momenteel geen nieuws artikelen beschikbaar</h3>
+        <?php
         }
         ?>
 

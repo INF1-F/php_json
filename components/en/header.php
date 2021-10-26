@@ -51,7 +51,7 @@ session_start();
                 <ul class="d-flex justify-content-right list-unstyled align-items-center">
                     <li class="header-link d-flex align-items-center justify-content-center">
                         <form action="../../index.php" method="post">
-                            <button type="submit" class="button" name="logoff">Log off</button>
+                            <button type="submit" class="button" name="logoff">Log out</button>
                         </form>
                     </li>
                     <li class="header-link d-flex align-items-center justify-content-center"><a href="../en/home.php">EN</a>/<a href="../nl/home.php">NL</a></li>

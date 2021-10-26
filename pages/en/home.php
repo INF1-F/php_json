@@ -57,6 +57,10 @@ $news_items = getJsonContent('news', 'en');
             }
             ?>
         <?php
+        } else {
+        ?>
+            <h3 class="text-center">There are currently no news articles available</h3>
+        <?php
         }
         ?>
 
