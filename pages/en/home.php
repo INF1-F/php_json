@@ -62,7 +62,7 @@ $news_items = getJsonContent('news', 'en');
 
         <div class="row mb-2 mt-2">
             <div class="col-12 d-flex justify-content-center">
-                <a href="./news.php" class="btn btn-custom">View more</a>
+                <a href="./news.php" class="btn btn-custom hoverUnderline">View more</a>
             </div>
         </div>
     </div>

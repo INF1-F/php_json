@@ -6,9 +6,9 @@
 			</div>
 			<div class="col-md-4 col-12 my-auto">
 				<ul class="list-unstyled footer-nav">
-					<li><a href="./news.php"><b>News</b></a></li>
-					<li><a href="./faq.php"><b>FAQ</b></a></li>
-					<li><a href="./contact-choise.php"><b>Contact</b></a></li>
+					<li class="hoverUnderline"><a href="./news.php"><b>News</b></a></li>
+					<li class="hoverUnderline"><a href="./faq.php"><b>FAQ</b></a></li>
+					<li class="hoverUnderline"><a href="./contact-choise.php"><b>Contact</b></a></li>
 				</ul>
 			</div>
 			<div class="col-md-2 col-12 my-auto py-2">
