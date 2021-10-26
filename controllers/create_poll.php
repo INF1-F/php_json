@@ -17,10 +17,8 @@ if(isset($_GET['poll'])){
 
     $all_polls = getJsonContent('poll', 'nl');
 
-    // TODO: controleer of $all_polls leeg is, zo ja sla foreach over!
-    foreach($poll as $key => $value){
-        $all_polls->$key = $value;
-    }
+    $old_items = (object) array_replace_recursive((array)$poll, (array)$all_polls);
+
 
     writeToJsonFile($all_polls, 'poll', 'nl');
 

@@ -39,7 +39,6 @@ if (isset($_POST['article']) && !empty($_POST['article'])) {
                     // Haalt de data uit news.json
                     $old_items = getJsonContent('news', $lang);
 
-                    // TODO: controleer of $old_items leeg is, zo ja sla foreach over!
                     $old_items = (object) array_replace_recursive((array)$news_item, (array)$old_items);
 
                     // $content = addNewsItemToContent($old_items, $news_item, $time);

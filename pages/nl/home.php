@@ -3,7 +3,7 @@ session_start();
 include('../../components/function.php');
 
 $news_items = getJsonContent('news', 'nl');
-
+$polls = getJsonContent('poll', 'nl');
 
 ?>
 <!DOCTYPE html>
@@ -17,6 +17,24 @@ $news_items = getJsonContent('news', 'nl');
 <body>
     <?php include_once('../../components/nl/header.php') ?>
     <div class="container h-100">
+        <div class="row">
+            <div class="col-12 d-flex h-100">
+                <h2>Polls</h2>
+            </div>
+            <?php
+            foreach ($polls as $key => $poll) {
+            ?>
+                <form action="../../controllers/answer_poll.php">
+                    <h4><?= $poll->question ?></h4>
+                    <label for="true">Ja </label>
+                    <input type="radio" id="true" name="answer" value="true">
+                    <label for="false">Nee</label>
+                    <input type="radio" name="answer" value="false">
+                </form>
+            <?php
+            }
+            ?>
+        </div>
         <div class="row">
             <div class="col-12 d-flex h-100">
                 <h2>Laatste nieuws</h2>
