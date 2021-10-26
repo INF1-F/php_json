@@ -1,55 +1,5 @@
-<?php
-session_start();
-if (isset($_POST["logoff"])) { //session destroy werkt niet, unset wel?// 
-    unset($_SESSION["auth"]);
-    unset($_SESSION["fullName"]); 
-} 
-	
-function GetName($email) {
-    $name = explode("@", $email)[0];
-    if (strpos($name, '.')) { //Kijk of de naam bestaat uit een voornaam en achternaam
-        $fullname = preg_replace('/[0-9]+/', '', str_replace(".", " ", $name)); // uit fullname worden de punten vervangen door spaties en met de preg replace functie worden alle cijfers uit de naam gefilterd waar [0-9] controlleert op alle cijfers en de + staat voor hoever die moet zoeken en dat is tot einde string
-        return ucfirst($fullname); //return voor en achternaam 
-    } else {
-        echo PrintError("Een email moet bestaan uit 'voornaam.achternaam@nhlstenden.com'");
-    }
-}
-
-function PrintError($errorText) { //Functie die een error balk print met de class 'popup'.
-    return "<div class='popup'> $errorText </div>";
-}
-
-
-if (isset($_POST['login'])) {
-    $email = $_POST["email"];
-    if (strpos($email, '@') && substr($email, -22) === "student.nhlstenden.com") { //Check voor studentenmail.
-        $name = GetName($email);
-        if ($name) { //zodra er een naam is stuur de gebruiker door naar de volgende pagina. Hierbij wordt ook de naam en rol (student/leraar) meegenomen.
-            // Add values to the session.
-            $_SESSION["fullName"] = $name; 
-            $_SESSION["auth"] = "student"; 
-            header("Location: ./pages/home.php");
-            exit;
-        }
-    } else if (strpos($email, '@') && substr($email, -14) === "nhlstenden.com") { //Check voor een leraren mail.
-        $name = GetName($email);
-        if ($name) {
-            // Add values to the session.
-            $_SESSION['fullName'] = $name; 
-            $_SESSION['auth'] = "teacher"; 
-            header("Location: ./pages/home.php");
-            exit;
-        }
-    } else {
-        echo PrintError("Het ingevoerde emailadres is niet geldig");
-    }
-    
-}
-
-?>
 <!DOCTYPE html>
-<html lang="en" class="h-100">
-
+<html lang="nl" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,7 +13,85 @@ if (isset($_POST['login'])) {
     <title>Loginpagina</title>
 </head>
 
-<body class="h-100 login-background">
+<body class="h-100 login-background" style="background-image: url('<?= getTheme() ?>');">
+    <?php
+    session_start();
+    if (isset($_POST["logoff"])) { //session destroy werkt niet, unset wel?// 
+        unset($_SESSION["auth"]);
+        unset($_SESSION["fullName"]);
+    }
+
+    function GetName($email)
+    {
+        $name = explode("@", $email)[0];
+        if (strpos($name, '.')) { //Kijk of de naam bestaat uit een voornaam en achternaam
+            $fullname = preg_replace('/[0-9]+/', '', str_replace(".", " ", $name)); // uit fullname worden de punten vervangen door spaties en met de preg replace functie worden alle cijfers uit de naam gefilterd waar [0-9] controlleert op alle cijfers en de + staat voor hoever die moet zoeken en dat is tot einde string
+            return ucfirst($fullname); //return voor en achternaam 
+        } else {
+            echo PrintError("Een email moet bestaan uit 'voornaam.achternaam@nhlstenden.com'");
+        }
+    }
+
+    function PrintError($errorText)
+    { //Functie die een error balk print met de class 'popup'.
+        return "<div class='popup'> $errorText </div>";
+    }
+
+
+    if (isset($_POST['login'])) {
+        $email = $_POST["email"];
+        if (strpos($email, '@') && substr($email, -22) === "student.nhlstenden.com") { //Check voor studentenmail.
+            $name = GetName($email);
+            if ($name) { //zodra er een naam is stuur de gebruiker door naar de volgende pagina. Hierbij wordt ook de naam en rol (student/leraar) meegenomen.
+                // Add values to the session.
+                $_SESSION["fullName"] = $name;
+                $_SESSION["auth"] = "student";
+                header("Location: ./pages/home.php");
+                exit;
+            }
+        } else if (strpos($email, '@') && substr($email, -14) === "nhlstenden.com") { //Check voor een leraren mail.
+            $name = GetName($email);
+            if ($name) {
+                // Add values to the session.
+                $_SESSION['fullName'] = $name;
+                $_SESSION['auth'] = "teacher";
+                header("Location: ./pages/home.php");
+                exit;
+            }
+        } else {
+            echo PrintError("Het ingevoerde emailadres is niet geldig");
+        }
+    }
+
+    function getTheme()
+    {
+        $today = new DateTime();
+
+        // get the season dates
+        $spring = new DateTime('March 1');
+        $summer = new DateTime('June 1');
+        $fall = new DateTime('September 1');
+        $winter = new DateTime('December 1');
+
+        switch (true) {
+            case $today >= $spring && $today < $summer:
+                return './assets/img/theme/spring.jpg';
+                break;
+
+            case $today >= $summer && $today < $fall:
+                return './assets/img/theme/summer.jpg';
+                break;
+
+            case $today >= $fall && $today < $winter:
+                return './assets/img/theme/autumm.jpg';
+                break;
+
+            default:
+                return "./assets/img/theme/winter.jpg";
+        }
+    }
+
+    ?>
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-flex h-100">
@@ -84,13 +112,13 @@ if (isset($_POST['login'])) {
                                         <input id="login-email" type="email" placeholder="Emailadres" <?php if (isset($_POST['email'])) { ?> value="<?= $_POST['email'] ?>" <?php } ?> name="email" class="form-control">
                                     </div>
                                     <div class="col-12 text-right">
-                                        <button type="submit" name="login" class="btn btn-primary mt-3">
+                                        <button type="submit" name="login" class="btn btn-custom mt-3">
                                             <span class="material-icons align-middle">lock</span>
                                             Inloggen
                                         </button>
                                     </div>
-                                </form>
-                            </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
