@@ -9,7 +9,7 @@ session_start();
                 <nav>
                     <ul class="d-flex list-unstyled align-items-center">
                         <li><a href="home.php"><img src="../../assets/img/Stenden_logo_wit.svg" alt="Het logo van Stenden"></a></li>
-                        <li class="header-link d-flex align-items-center justify-content-center"><a href="./news.php">Nieuws</a></li>
+                        <li class="header-link d-flex align-items-center justify-content-center"><a href="./news.php">News</a></li>
                         <li class="header-link d-flex align-items-center justify-content-center"><a href="./faq.php">FAQ</a></li>
                         <li class="header-link d-flex align-items-center justify-content-center"><a href="./contact-choise.php">Contact</a></li>
                     </ul>
@@ -28,7 +28,7 @@ session_start();
                             <hr class="MenuLine">
                             <a href="faq.php">FAQ</a>
                             <hr class="MenuLine">
-                            <a href="#">Uitloggen</a> <br />
+                            <a href="#">Log off</a> <br />
                             <div class="MobileBottomLogo">
                                 <img src="../../assets/img/Stenden_logo_blauw.svg" alt="Stenden logo blauw" id="MobileStendenLogo">
                             </div>
@@ -51,15 +51,15 @@ session_start();
                 <ul class="d-flex justify-content-right list-unstyled align-items-center">
                     <li class="header-link d-flex align-items-center justify-content-center">
                         <form action="../../index.php" method="post">
-                            <button type="submit" class="button" name="logoff">Uitloggen</button>
+                            <button type="submit" class="button" name="logoff">Log off</button>
                         </form>
                     </li>
-                    <li class="header-link d-flex align-items-center justify-content-center"><a href="../nl/home.php">NL</a>/<a href="../en/home.php">EN</a></li>
+                    <li class="header-link d-flex align-items-center justify-content-center"><a href="../en/home.php">EN</a>/<a href="../nl/home.php">NL</a></li>
                 </ul>
             </div>
 <!--        Dit is het rechterdeel van de header voor kleiner dan laptopformaat, dus telefoon en tablet-->
             <div class="col-lg-5 col-4 d-lg-none d-flex align-items-center justify-content-center">
-                <a href="../pages/nl/home.php">NL</a>/<a href="../pages/en/home.php">EN</a>
+                <a href="../pages/en/home.php">EN</a>/<a href="../pages/nl/home.php">NL</a>
             </div>
         </div>
     </div>
