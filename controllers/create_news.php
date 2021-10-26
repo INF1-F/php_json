@@ -43,19 +43,19 @@ if (isset($_POST['article']) && !empty($_POST['article'])) {
                     writeToJsonFile($old_items, 'news', $lang);
 
                     // Stuurt de gebruiker terug naar index.php
-                    header('Location: ../pages/news.php');
+                    header('Location: ../pages/nl/news.php');
                 } else {
-                    header("Location: ../pages/add-news.php?error=img");
+                    header("Location: ../pages/nl/add-news.php?error=img");
                 }
             } else {
-                header("Location: ../pages/add-news.php?error=author");
+                header("Location: ../pages/nl/add-news.php?error=author");
             }
         } else {
-            header("Location: ../pages/add-news.php?error=lang");
+            header("Location: ../pages/nl/add-news.php?error=lang");
         }
     } else {
-        header("Location: ../pages/add-news.php?error=title");
+        header("Location: ../pages/nl/add-news.php?error=title");
     }
 } else {
-    header("Location: ../pages/add-news.php?error=article");
+    header("Location: ../pages/nl/add-news.php?error=article");
 }

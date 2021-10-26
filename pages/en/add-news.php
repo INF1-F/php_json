@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <?php include_once('../components/head.php') ?>
+    <?php include_once('../../components/head.php') ?>
 
     <title>Voeg nieuws toe</title>
 </head>
 
 <body>
-    <?php include_once('../components/header.php') ?>
+    <?php include_once('../../components/header.php') ?>
 
     <div class="container">
         <div class="row">
@@ -19,7 +19,7 @@
             <div class="col-12 mb-3 add-news">
                 <div class="card align-items">
                     <div class="card-body">
-                        <form class="contactForm" action="../controllers/create_news.php" method="POST" enctype="multipart/form-data">
+                        <form class="contactForm" action="../../controllers/create_news.php" method="POST" enctype="multipart/form-data">
                             <div class="form-row">
                                 <label for="lang">
                                     <b>Selecteer een taal <sup>*</sup></b>
@@ -106,7 +106,7 @@
         </div>
     </div>
 
-    <?php include_once('../components/footer.php') ?>
+    <?php include_once('../../components/footer.php') ?>
 </body>
 
 </html>

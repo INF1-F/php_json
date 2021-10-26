@@ -1,5 +1,5 @@
 <?php
-include('../components/function.php');
+include('../../components/function.php');
 
 $news_items = getJsonContent('news', 'nl');
 if (isset($_GET['id']) && !empty($_GET['id'])) {
@@ -20,12 +20,12 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 <html lang="en">
 
 <head>
-    <?php include_once('../components/head.php') ?>
+    <?php include_once('../../components/head.php') ?>
     <title><?= $news_item->title ?></title>
 </head>
 
 <body>
-    <?php include_once('../components/header.php') ?>
+    <?php include_once('../../components/header.php') ?>
 
     <div class="container">
         <div class="row">
@@ -33,7 +33,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                 <h1><?= $news_item->title ?></h1>
             </div>
             <div class="col-12 col-md-6">
-                <img src="../<?= $news_item->image ?>" class="image-fluid news-item-img" alt="<?= $news_item->title ?>">
+                <img src="../../<?= $news_item->image ?>" class="image-fluid news-item-img" alt="<?= $news_item->title ?>">
                 <div class="news-author">
                     <h4><?= $news_item->author ?></h4>
                 </div>
@@ -79,7 +79,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                         ?>
                     </label>
                 </h3>
-                <form action="../controllers/create_reaction.php" class="reactionForm" method="post">
+                <form action="../../controllers/create_reaction.php" class="reactionForm" method="post">
                     <input type="hidden" name="id" value="<?= $id ?>">
                     <input type="hidden" name="author" value="<?= $_SESSION['fullName'] ?>">
                     <textarea id="reaction" class="form-control" name="reaction" placeholder="Vul hier uw bericht in...."></textarea>
@@ -88,7 +88,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
             </div>
         </div>
     </div>
-    <?php include_once('../components/footer.php') ?>
+    <?php include_once('../../components/footer.php') ?>
 </body>
 
 </html>

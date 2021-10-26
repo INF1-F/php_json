@@ -1,5 +1,5 @@
 <?php
-include('../components/function.php');
+include('../../components/function.php');
 
 $news_items = getJsonContent('news', 'nl');
 
@@ -9,16 +9,16 @@ $news_items = getJsonContent('news', 'nl');
 <html lang="en" class="h-100">
 
 <head>
-    <?php include_once('../components/head.php') ?>
-    <title>Voorpagina</title>
+    <?php include_once('../../components/head.php') ?>
+    <title>Home</title>
 </head>
 
 <body>
-    <?php include_once('../components/header.php') ?>
+    <?php include_once('../../components/header.php') ?>
     <div class="container h-100">
         <div class="row">
             <div class="col-12 d-flex h-100">
-                <h2>Laatste nieuws</h2>
+                <h2>Latest news</h2>
             </div>
         </div>
         <?php
@@ -34,7 +34,7 @@ $news_items = getJsonContent('news', 'nl');
                                     <div class="col-md-6 col-12">
                                         <a class="full-link" href="./news-item.php?id=<?= $key ?>">
                                             <div class="news-image h-100 w-100">
-                                                <div style="background-image: url('../<?= $news_item->image ?>')" class="articleImage h-100 w-100"></div>
+                                                <div style="background-image: url('../../<?= $news_item->image ?>')" class="articleImage h-100 w-100"></div>
                                             </div>
                                         </a>
                                     </div>
@@ -62,11 +62,11 @@ $news_items = getJsonContent('news', 'nl');
 
         <div class="row mb-2 mt-2">
             <div class="col-12 d-flex justify-content-center">
-                <a href="./news.php" class="btn btn-custom">Bekijk meer</a>
+                <a href="./news.php" class="btn btn-custom">View more</a>
             </div>
         </div>
     </div>
-    <?php include_once('../components/footer.php') ?>
+    <?php include_once('../../components/footer.php') ?>
 </body>
 
 </html>

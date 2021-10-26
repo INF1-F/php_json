@@ -24,6 +24,6 @@ if(isset($_GET['poll'])){
 
     writeToJsonFile($all_polls, 'poll', 'nl');
 
-    header('Location: ../pages/poll.php');
+    header('Location: ../pages/nl/poll.php');
 
 }

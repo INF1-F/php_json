@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <?php include_once('../components/head.php') ?>
+        <?php include_once('../../components/head.php') ?>
         <title>Feedback</title>
     </head>
     <?php
@@ -20,7 +20,7 @@
     }
     ?>
     <body>
-        <?php include_once('../components/header.php') ?>
+        <?php include_once('../../components/header.php') ?>
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -29,7 +29,7 @@
                 <div class="col-12 mb-3">
                     <div class="card align-items">
                         <div class="card-body">
-                            <form class="contactForm" action="formResult.php" method="POST">     
+                            <form class="contactForm" action="./formResult.php" method="POST">     
                                 <input type="hidden" value="<?=$formChoise?>" name="sort">
                                 <input type="hidden" value="<?=$_GET['choise']?>" name="formtype">
                                 <?php
@@ -179,6 +179,6 @@
                 </div>
             </div>
         </div>
-        <?php include_once('../components/footer.php') ?>
+        <?php include_once('../../components/footer.php') ?>
     </body>
 </html>

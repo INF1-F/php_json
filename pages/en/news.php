@@ -1,6 +1,6 @@
 <?php
 
-include('../components/function.php');
+include('../../components/function.php');
 
 $news_items = getJsonContent('news', 'nl');
 
@@ -15,12 +15,12 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
 <html lang="en" class="h-100">
 
 <head>
-    <?php include_once('../components/head.php') ?>
+    <?php include_once('../../components/head.php') ?>
     <title>Nieuws</title>
 </head>
 
 <body class="h-100">
-    <?php include_once('../components/header.php') ?>
+    <?php include_once('../../components/header.php') ?>
     <div class="container">
         <div class="row">
 
@@ -48,7 +48,7 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
                                     <div class="col-md-6 col-12">
                                         <a class="full-link" href="./news-item.php?id=<?= $id ?>">
                                             <div class="news-image h-100 w-100">
-                                                <div style="background-image: url('../<?= $news_item->image ?>')" class="articleImage h-100 w-100"></div>
+                                                <div style="background-image: url('../../<?= $news_item->image ?>')" class="articleImage h-100 w-100"></div>
                                             </div>
                                         </a>
                                     </div>
@@ -95,7 +95,7 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
         ?>
 
     </div>
-    <?php include_once('../components/footer.php') ?>
+    <?php include_once('../../components/footer.php') ?>
 </body>
 
 </html>

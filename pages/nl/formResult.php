@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <?php include_once('../components/head.php') ?>
+        <?php include_once('../../components/head.php') ?>
         <title>Feedback</title>
     </head>
     <body>
-        <?php include_once('../components/header.php') ?>
+        <?php include_once('../../components/nl/header.php') ?>
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -64,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <?php include_once('../components/footer.php') ?>
+        <?php include_once('../../components/footer.php') ?>
     </body>
 </html>
         

@@ -1,4 +1,10 @@
 {
+    "1635244800": {
+        "title": "dsada",
+        "article": "dsada",
+        "image": "assets\/img\/news_items\/nl\/1635244800.webp",
+        "author": "Voornaam achternaam"
+    },
     "1635243708": {
         "title": "test 200",
         "article": "dsdad",
@@ -9,7 +15,17 @@
         "title": "test 1000",
         "article": "hallo",
         "image": "assets\/img\/news_items\/nl\/1635243688.webp",
-        "author": "Voornaam achternaam"
+        "author": "Voornaam achternaam",
+        "reactions": {
+            "1635246147": {
+                "author": "Voornaam achternaam",
+                "reaction": "Mooi"
+            },
+            "1635245663": {
+                "author": "Voornaam achternaam",
+                "reaction": "Leeeuukk"
+            }
+        }
     },
     "1635168968": {
         "title": "dit is een titel",

@@ -46,7 +46,7 @@
                 // Add values to the session.
                 $_SESSION["fullName"] = $name;
                 $_SESSION["auth"] = "student";
-                header("Location: ./pages/home.php");
+                header("Location: ./pages/nl/home.php");
                 exit;
             }
         } else if (strpos($email, '@') && substr($email, -14) === "nhlstenden.com") { //Check voor een leraren mail.
@@ -55,7 +55,7 @@
                 // Add values to the session.
                 $_SESSION['fullName'] = $name;
                 $_SESSION['auth'] = "teacher";
-                header("Location: ./pages/home.php");
+                header("Location: ./pages/nl/home.php");
                 exit;
             }
         } else {

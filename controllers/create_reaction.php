@@ -22,9 +22,9 @@ if(isset($_POST['reaction']) && !empty($_POST['reaction'])){
     writeToJsonFile($new_content, 'news', 'nl');
     
     // Stuurt de gebruiker terug naar news-item.php
-    header('Location: ../pages/news-item.php?id='. $id);
+    header('Location: ../pages/nl/news-item.php?id='. $id);
 }else {
-    header('Location: ../pages/news-item.php?error=message&id='. $id);
+    header('Location: ../pages/nl/news-item.php?error=message&id='. $id);
 }
 
 
