@@ -465,6 +465,10 @@ footer img {
 	font-size: 80%;
 	float: right;
 }
+.reaction-container {
+	max-height: 475px;
+    overflow: hidden auto;
+}
 .reaction-name {
 	display: inline-block;
 }

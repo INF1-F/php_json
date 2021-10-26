@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -107,7 +110,7 @@
         </div>
     </div>
 
-    <?php include_once('../../components/footer.php') ?>
+    <?php include_once('../../components/nl/footer.php') ?>
 </body>
 
 </html>
