@@ -23,7 +23,7 @@ session_start();
                 <div class="dividerLine">
                     <button type="button" class="expandBtn closedContent">Vraag 1</button>
                     <div class="expContent">
-                        <p class="mt-0">> Antwoord 1 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="mt-0"> Antwoord 1 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@ session_start();
                 <div class="dividerLine">
                     <button type="button" class="expandBtn closedContent">Vraag 2</button>
                     <div class="expContent">
-                        <p class="mt-0">> Antwoord 2 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="mt-0"> Antwoord 2 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@ session_start();
                 <div class="dividerLine">
                     <button type="button" class="expandBtn closedContent">Vraag 3</button>
                     <div class="expContent">
-                        <p class="mt-0">> Antwoord 3 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="mt-0"> Antwoord 3 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@ session_start();
             <div class="col-md-6 col-12">
                 <button type="button" class="expandBtn closedContent">Vraag 4</button>
                 <div class="expContent">
-                    <p class="mt-0">> Antwoord 4 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="mt-0"> Antwoord 4 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
         </div>

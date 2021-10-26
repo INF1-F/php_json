@@ -20,15 +20,19 @@
                     <div id="mySidenav" class="sidenav">
                         <div class="mobileMenu">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img class="d-flex" src="../../assets/img/Logo.svg" alt="Logo site kleur"></a>
-                            <a href="news.php">Nieuws</a>
+                            <a href="./news.php">Nieuws</a>
                             <hr class="MenuLine">
-                            <a href="contact-choise.php">Contact</a>
+                            <a href="./contact-choise.php">Contact</a>
                             <hr class="MenuLine">
-                            <a href="faq.php">FAQ</a>
+                            <a href="./faq.php">FAQ</a>
                             <hr class="MenuLine">
-                            <a href="#">Uitloggen</a> <br />
+                            <form action="../../index.php" method="post">
+                                <button type="submit" class="nav-btn" name="logoff">Uitloggen</button>
+                            </form>
                             <div class="MobileBottomLogo">
+                            <a href="./home.php">
                                 <img src="../../assets/img/Stenden_logo_blauw.svg" alt="Stenden logo blauw" id="MobileStendenLogo">
+                            </a>
                             </div>
                         </div>
                     </div>
@@ -37,12 +41,12 @@
 <!--        Dit is het midden van de header voor laptopformaat en groter-->
             <div class="col-lg-2 col-4 justify-content-center d-lg-flex align-items-center d-none">
                 <div class="round justify-content-center align-items-center d-flex">
-                    <a href="./home.php"><img src="../../assets/img/logo.svg" alt="Logo van de site" class="main-logo"></a>
+                    <img src="../../assets/img/logo.svg" alt="Logo van de site" class="main-logo"></a>
                 </div>
             </div>
 <!--        Dit is het midden van de header voor telefoon en tablet-->
             <div class="col-lg-2 col-4 d-flex justify-content-center d-lg-none">
-                <img src="../../assets/img/Stenden_logo_wit.svg" alt="Het logo van Stenden">
+                <a href="./home.php"><img src="../../assets/img/Stenden_logo_wit.svg" alt="Het logo van Stenden"></a>
             </div>
 <!--        Dit is het rechterdeel van de header voor laptopformaat en groter-->
             <div class="col-lg-5 col-4 d-none d-lg-block">
@@ -57,7 +61,7 @@
             </div>
 <!--        Dit is het rechterdeel van de header voor kleiner dan laptopformaat, dus telefoon en tablet-->
             <div class="col-lg-5 col-4 d-lg-none d-flex align-items-center justify-content-center">
-                <a href="../pages/nl/home.php">NL</a>/<a href="../pages/en/home.php">EN</a>
+            <a class="underline" href="../nl/home.php">NL</a>/<a href="../en/home.php">EN</a>
             </div>
         </div>
     </div>

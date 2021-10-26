@@ -76,9 +76,14 @@ session_start();
                                     //foutmelding als img leeg is
                                     if (isset($_GET["error"]) && $_GET["error"] == "img") {
                                     ?>
-                                        <span class="error">The image has not the correct size or type</span>
+                                        <span class="error">The image has not the correct size</span>
                                     <?php
                                     }
+                                    if (isset($_GET["error"]) && $_GET["error"] == "img_extention") {
+                                        ?>
+                                            <span class="error">The image has not the right extention type use JPG, JPEG, PNG or GIF</span>
+                                        <?php
+                                        }
                                     ?>
                                 </label>
                                 <input type="file" class="d-flex mt-2" id="image" name="image" required>
