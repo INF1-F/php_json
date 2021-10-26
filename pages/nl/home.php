@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('../../components/function.php');
 
 $news_items = getJsonContent('news', 'nl');

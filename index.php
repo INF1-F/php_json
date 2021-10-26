@@ -1,3 +1,7 @@
+<?php
+ob_start();
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="nl" class="h-100">
 <head>
@@ -15,8 +19,7 @@
 
 <body class="h-100 login-background" style="background-image: url('<?= getTheme() ?>');">
     <?php
-    session_start();
-    if (isset($_POST["logoff"])) { //session destroy werkt niet, unset wel?// 
+    if (isset($_POST["logoff"])) {
         unset($_SESSION["auth"]);
         unset($_SESSION["fullName"]);
     }
