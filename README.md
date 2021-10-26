@@ -1,6 +1,4 @@
 # TODO
-
-* thema kunnen veranderen
 * Site vertalen naar engels
 
 ## Pages

@@ -345,6 +345,9 @@ footer img {
 
 .login-background {
 	background-color: #23c6ed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center center;
 }
 
 .login-container {
