@@ -31,7 +31,13 @@
         "title": "Trots moment op onze studenten",
         "article": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
         "image": "assets\/img\/news_items\/nl\/1635261063.gif",
-        "author": " Steffan van der Werf"
+        "author": " Steffan van der Werf",
+        "reactions": {
+            "1635262313": {
+                "author": "Max Verstappen",
+                "reaction": "mooi hoor\r\n"
+            }
+        }
     },
     "1635261040": {
         "title": "Lion king ",
