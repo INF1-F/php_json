@@ -2,6 +2,11 @@
 // include bestand, zodat we funties van dat bestand hier kunnen gebruiken
 include '../components/function.php';
 
+if(isset($_POST['userLang']) && !empty($_POST['userLang'])){
+    $user_lang = $_POST['userLang'];
+}else{
+    $user_lang = 'nl';
+}
 if (isset($_POST['article']) && !empty($_POST['article'])) {
     // Checked of titel wel word mee gestuurd vanuit het formulier
     if (isset($_POST['title']) && !empty($_POST['title'])) { // check als title bestaat en niet leeg is
@@ -43,19 +48,19 @@ if (isset($_POST['article']) && !empty($_POST['article'])) {
                     writeToJsonFile($old_items, 'news', $lang);
 
                     // Stuurt de gebruiker terug naar index.php
-                    header('Location: ../pages/nl/news.php');
+                    header("Location: ../pages/{$user_lang}/news.php");
                 } else {
-                    header("Location: ../pages/nl/add-news.php?error=img");
+                    header("Location: ../pages/{$user_lang}/add-news.php?error=img");
                 }
             } else {
-                header("Location: ../pages/nl/add-news.php?error=author");
+                header("Location: ../pages/{$user_lang}/add-news.php?error=author");
             }
         } else {
-            header("Location: ../pages/nl/add-news.php?error=lang");
+            header("Location: ../pages/{$user_lang}/add-news.php?error=lang");
         }
     } else {
-        header("Location: ../pages/nl/add-news.php?error=title");
+        header("Location: ../pages/{$user_lang}/add-news.php?error=title");
     }
 } else {
-    header("Location: ../pages/nl/add-news.php?error=article");
+    header("Location: ../pages/{$user_lang}/add-news.php?error=article");
 }

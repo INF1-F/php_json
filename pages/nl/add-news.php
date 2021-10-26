@@ -20,6 +20,7 @@
                 <div class="card align-items">
                     <div class="card-body">
                         <form class="contactForm" action="../../controllers/create_news.php" method="POST" enctype="multipart/form-data">
+                            <input type="hidden" name="userLang" value="en">
                             <div class="form-row">
                                 <label for="lang">
                                     <b>Selecteer een taal <sup>*</sup></b>

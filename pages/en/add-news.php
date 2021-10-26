@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <?php include_once('../../components/header.php') ?>
+    <?php include_once('../../components/en/header.php') ?>
 
     <div class="container">
         <div class="row">
@@ -20,6 +20,7 @@
                 <div class="card align-items">
                     <div class="card-body">
                         <form class="contactForm" action="../../controllers/create_news.php" method="POST" enctype="multipart/form-data">
+                            <input type="hidden" name="userLang" value="en">
                             <div class="form-row">
                                 <label for="lang">
                                     <b>Selecteer een taal <sup>*</sup></b>
@@ -27,7 +28,7 @@
                                     //foutmelding als lang leeg is
                                     if (isset($_GET["error"]) && $_GET["error"] == "lang") {
                                     ?>
-                                    <span class="error">Er is geen taal geselecteerd</span>
+                                        <span class="error">Er is geen taal geselecteerd</span>
                                     <?php
                                     }
                                     ?>
@@ -44,7 +45,7 @@
                                     //foutmelding als author leeg is
                                     if (isset($_GET["error"]) && $_GET["error"] == "author") {
                                     ?>
-                                    <span class="error">Er is geen auteur ingevuld</span>
+                                        <span class="error">Er is geen auteur ingevuld</span>
                                     <?php
                                     }
                                     ?>
@@ -58,7 +59,7 @@
                                     //foutmelding als title leeg is
                                     if (isset($_GET["error"]) && $_GET["error"] == "title") {
                                     ?>
-                                    <span class="error">Titel niet correct ingevuld</span>
+                                        <span class="error">Titel niet correct ingevuld</span>
                                     <?php
                                     }
                                     ?>
@@ -72,7 +73,7 @@
                                     //foutmelding als img leeg is
                                     if (isset($_GET["error"]) && $_GET["error"] == "img") {
                                     ?>
-                                    <span class="error">De afbeelding is niet van correct formaat of type</span>
+                                        <span class="error">De afbeelding is niet van correct formaat of type</span>
                                     <?php
                                     }
                                     ?>
@@ -86,7 +87,7 @@
                                     //foutmelding als article leeg is
                                     if (isset($_GET["error"]) && $_GET["error"] == "article") {
                                     ?>
-                                    <span class="error">Het artikel is niet correct ingevuld</span>
+                                        <span class="error">Het artikel is niet correct ingevuld</span>
                                     <?php
                                     }
                                     ?>

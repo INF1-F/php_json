@@ -2,7 +2,7 @@
 
 include('../../components/function.php');
 
-$news_items = getJsonContent('news', 'nl');
+$news_items = getJsonContent('news', 'en');
 
 $counter = 3;
 $i = 0;
@@ -20,7 +20,7 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
 </head>
 
 <body class="h-100">
-    <?php include_once('../../components/header.php') ?>
+    <?php include_once('../../components/en/header.php') ?>
     <div class="container">
         <div class="row">
 

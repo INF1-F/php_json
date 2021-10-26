@@ -6,7 +6,7 @@
     </head>
 
 <body>
-    <?php include_once('../../components/header.php')?>
+    <?php include_once('../../components/en/header.php')?>
 
     <div class="container">
         <div class="row">

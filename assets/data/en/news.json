@@ -1,0 +1,24 @@
+{
+    "1635247794": {
+        "title": "eerrrr",
+        "article": "fdfsf",
+        "image": "assets\/img\/news_items\/en\/1635247794.jpeg",
+        "author": "Voornaam achternaame"
+    },
+    "1635247543": {
+        "title": "lang test",
+        "article": "dsfsdf",
+        "image": "assets\/img\/news_items\/en\/1635247543.jpeg",
+        "author": "Voornaam achternaam",
+        "reactions": {
+            "1635248708": {
+                "author": "Voornaam achternaam",
+                "reaction": "mooi"
+            },
+            "1635248672": {
+                "author": "Voornaam achternaam",
+                "reaction": "Hallo"
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 <?php
 include('../../components/function.php');
 
-$news_items = getJsonContent('news', 'nl');
+$news_items = getJsonContent('news', 'en');
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $id = $_GET['id'];
     $news_item = $news_items->$id;
@@ -25,7 +25,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 </head>
 
 <body>
-    <?php include_once('../../components/header.php') ?>
+    <?php include_once('../../components/en/header.php') ?>
 
     <div class="container">
         <div class="row">
@@ -81,6 +81,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                 </h3>
                 <form action="../../controllers/create_reaction.php" class="reactionForm" method="post">
                     <input type="hidden" name="id" value="<?= $id ?>">
+                    <input type="hidden" name="userLang" value="en">
                     <input type="hidden" name="author" value="<?= $_SESSION['fullName'] ?>">
                     <textarea id="reaction" class="form-control" name="reaction" placeholder="Vul hier uw bericht in...."></textarea>
                     <input type="submit" class="btn btn-custom mt-2 mb-2" height="80" value="Versturen">
