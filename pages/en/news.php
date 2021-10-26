@@ -2,7 +2,7 @@
 
 include('../../components/function.php');
 
-$news_items = getJsonContent('news', 'nl');
+$news_items = getJsonContent('news', 'en');
 
 $counter = 3;
 $i = 0;
@@ -16,20 +16,20 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
 
 <head>
     <?php include_once('../../components/head.php') ?>
-    <title>Nieuws</title>
+    <title>News</title>
 </head>
 
 <body class="h-100">
-    <?php include_once('../../components/header.php') ?>
+    <?php include_once('../../components/en/header.php') ?>
     <div class="container">
         <div class="row">
 
             <div class="col-12">
-                <h2>Nieuws</h2>
+                <h2>News</h2>
                 <?php
                 if ($_SESSION['auth'] == "teacher") {
                 ?>
-                    <a class="btn btn-custom float-right" href="./add-news.php">Nieuws toevoegen</a>
+                    <a class="btn btn-custom float-right" href="./add-news.php">Add News</a>
                 <?php
                 }
                 ?>
@@ -80,7 +80,7 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
                         <div class="col-12 d-flex justify-content-center">
                             <form action="news.php#bottom" method="POST">
                                 <input type="hidden" value="<?= $counter ?>" name="counter">
-                                <button type="submit" class="btn btn-custom">Meer weergeven</button>
+                                <button type="submit" class="btn btn-custom">Show more</button>
                             </form>
                         </div>
                     </div>
@@ -89,13 +89,13 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
             }
         } else {
             ?>
-            <h3 class="text-center">Er zijn momenteel geen nieuws artikelen beschikbaar</h3>
+            <h3 class="text-center">There are currently no news articles available</h3>
         <?php
         }
         ?>
 
     </div>
-    <?php include_once('../../components/footer.php') ?>
+    <?php include_once('../../components/en/footer.php') ?>
 </body>
 
 </html>

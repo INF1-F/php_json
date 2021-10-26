@@ -12,7 +12,7 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="nl" class="h-100">
 
 <head>
     <?php include_once('../../components/head.php') ?>
@@ -95,7 +95,7 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
         ?>
 
     </div>
-    <?php include_once('../../components/footer.php') ?>
+    <?php include_once('../../components/nl/footer.php') ?>
 </body>
 
 </html>

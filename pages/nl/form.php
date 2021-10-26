@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
     <head>
         <?php include_once('../../components/head.php') ?>
         <title>Feedback</title>
@@ -168,7 +168,7 @@
                                           echo"<span class='contact-warning'> Geen bericht ingevuld </span>";   
                                         ?>
                                     </label>
-                                    <textarea id="message" class="form-control" name="message" style="height: 200px;" placeholder="Typ hier uw feedback" required></textarea>
+                                    <textarea id="message" class="form-control" name="message" style="height: 200px;" placeholder="Typ hier uw bericht" required></textarea>
                                 </div>
                                 <div class="form-row">                                           
                                     <input class="float-right btn btn-custom" name="submit" type="submit" value="Versturen">
@@ -179,6 +179,6 @@
                 </div>
             </div>
         </div>
-        <?php include_once('../../components/footer.php') ?>
+        <?php include_once('../../components/nl/footer.php') ?>
     </body>
 </html>

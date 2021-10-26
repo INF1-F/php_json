@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <?php include_once('../../components/head.php') ?>
-        <title>Feedback</title>
+        <title>Thank you for sending your form</title>
     </head>
     <body>
-        <?php include_once('../../components/header.php') ?>
+        <?php include_once('../../components/en/header.php') ?>
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -45,18 +45,18 @@
                                         fwrite($file, $message . "\n");
                                     
                                         fclose($file);
-                                        echo "<p>Bedankt voor het versturen! U krijgt zo spoedig mogelijk antwoord!</p>";
+                                        echo "<p>Thanks for sending! You will receive a reply as soon as possible!</p>";
                                     } else {
-                                        header("location: form.php?choise={$formtype}&error=message");
+                                        header("location: ./form.php?choise={$formtype}&error=message");
                                     } 
                                 } else {
-                                    header("location: form.php?choise={$formtype}&error=location");
+                                    header("location: ./form.php?choise={$formtype}&error=location");
                                 } 
                             } else {
-                                header("location: form.php?choise={$formtype}&error=education");
+                                header("location: ./form.php?choise={$formtype}&error=education");
                             } 
                         }else {
-                            header("location: form.php?choise={$formtype}&error=sort");
+                            header("location: ./form.php?choise={$formtype}&error=sort");
                         }
                     }
                     ?>
@@ -64,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <?php include_once('../../components/footer.php') ?>
+        <?php include_once('../../components/en/footer.php') ?>
     </body>
 </html>
         

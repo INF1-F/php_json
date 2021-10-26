@@ -1,7 +1,7 @@
 <?php
 include('../../components/function.php');
 
-$news_items = getJsonContent('news', 'nl');
+$news_items = getJsonContent('news', 'en');
 
 
 ?>
@@ -14,7 +14,7 @@ $news_items = getJsonContent('news', 'nl');
 </head>
 
 <body>
-    <?php include_once('../../components/header.php') ?>
+    <?php include_once('../../components/en/header.php') ?>
     <div class="container h-100">
         <div class="row">
             <div class="col-12 d-flex h-100">
@@ -66,7 +66,7 @@ $news_items = getJsonContent('news', 'nl');
             </div>
         </div>
     </div>
-    <?php include_once('../../components/footer.php') ?>
+    <?php include_once('../../components/en/footer.php') ?>
 </body>
 
 </html>
