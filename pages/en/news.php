@@ -25,13 +25,6 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
         <div class="row">
             <div class="col-6">
                 <h2>News</h2>
-                <?php
-                if ($_SESSION['auth'] == "teacher") {
-                ?>
-                    <a class="btn btn-custom float-right hoverUnderline" href="./add-news.php">Add News</a>
-                <?php
-                }
-                ?>
             </div>
             <?php 
             if ($_SESSION['auth'] == "teacher") {
