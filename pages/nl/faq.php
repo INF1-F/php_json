@@ -2,7 +2,7 @@
 session_start();
 ?>
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="nl" class="h-100">
 
 <head>
     <?php include_once('../../components/head.php') ?>
@@ -10,7 +10,7 @@ session_start();
 </head>
 
 <body class="h-100">
-    <?php include_once('../../components/en/header.php') ?>
+    <?php include_once('../../components/nl/header.php') ?>
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-12">
@@ -77,7 +77,7 @@ session_start();
             }
         </script>
     </div>
-    <?php include_once('../../components/en/footer.php') ?>
+    <?php include_once('../../components/nl/footer.php') ?>
 </body>
 
 </html> 

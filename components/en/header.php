@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <header>
     <div class="container">
         <div class="row">
@@ -48,10 +51,10 @@
                 <ul class="d-flex justify-content-right list-unstyled align-items-center">
                     <li class="header-link d-flex align-items-center justify-content-center">
                         <form action="../../index.php" method="post">
-                            <button type="submit" class="button" name="logoff">Log out</button>
+                            <button type="submit" class="button" name="logoff">Log off</button>
                         </form>
                     </li>
-                    <li class="header-link d-flex align-items-center justify-content-center"><a href="../en/home.php">EN</a>/<a href="../nl/home.php">NL</a></li>
+                    <li class="header-link d-flex align-items-center justify-content-center"><a href="../nl/home.php">NL</a>/<a class="underline" href="../en/home.php">EN</a></li>
                 </ul>
             </div>
 <!--        Dit is het rechterdeel van de header voor kleiner dan laptopformaat, dus telefoon en tablet-->

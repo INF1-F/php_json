@@ -49,10 +49,10 @@
                 <ul class="d-flex justify-content-right list-unstyled align-items-center">
                     <li class="header-link d-flex align-items-center justify-content-center">
                         <form action="../../index.php" method="post">
-                            <button type="submit" class="button" name="logoff">Uitloggen</button>
+                            <button type="submit" class="button logOut" name="logoff">Uitloggen</button>
                         </form>
                     </li>
-                    <li class="header-link d-flex align-items-center justify-content-center"><a href="../nl/home.php">NL</a>/<a href="../en/home.php">EN</a></li>
+                    <li class="header-link d-flex align-items-center justify-content-center"><a class="underline" href="../nl/home.php">NL</a>/<a href="../en/home.php">EN</a></li>
                 </ul>
             </div>
 <!--        Dit is het rechterdeel van de header voor kleiner dan laptopformaat, dus telefoon en tablet-->
