@@ -20,7 +20,7 @@ session_start();
         <div class="row">
             <div class="col-md-6 col-12">
                 <div class="dividerLine">
-                    <button type="button" class="expandBtn closedContent">Question 1</button>
+                    <button type="button" class="expandBtn closedContent">Question 1 <span class="material-icons align-middle"></span></button>
                     <div class="expContent">
                         <p class="mt-0"> Question 1 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
@@ -30,7 +30,7 @@ session_start();
         <div class="row">
             <div class="col-md-6 col-12">
                 <div class="dividerLine">
-                    <button type="button" class="expandBtn closedContent">Question 2</button>
+                    <button type="button" class="expandBtn closedContent">Question 2 <span class="material-icons align-middle"></span></button>
                     <div class="expContent">
                         <p class="mt-0"> Question 2 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
@@ -40,7 +40,7 @@ session_start();
         <div class="row">
             <div class="col-md-6 col-12">
                 <div class="dividerLine">
-                    <button type="button" class="expandBtn closedContent">Question 3</button>
+                    <button type="button" class="expandBtn closedContent">Question 3 <span class="material-icons align-middle"></span></button>
                     <div class="expContent">
                         <p class="mt-0"> Question 3 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>

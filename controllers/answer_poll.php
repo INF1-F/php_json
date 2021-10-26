@@ -14,7 +14,7 @@ $polls->$id = $poll;
 
 writeToJsonFile($polls, 'poll', $user_lang);
 
-setcookie('poll_id', $id, time() + (365 * 24 * 60 * 60), '/');
+setcookie("{$user_lang}_poll_id", $id, time() + (365 * 24 * 60 * 60), '/');
 
 
 header("Location: ../pages/{$user_lang}/home.php");

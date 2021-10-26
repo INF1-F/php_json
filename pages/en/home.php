@@ -3,6 +3,9 @@ session_start();
 include('../../components/function.php');
 
 $news_items = getJsonContent('news', 'en');
+$polls = getJsonContent('poll', 'en');
+$current_poll = $polls->{array_keys((array) $polls)[0]};
+$current_poll_id = array_keys((array) $polls)[0];
 
 
 ?>
@@ -17,6 +20,71 @@ $news_items = getJsonContent('news', 'en');
 <body>
     <?php include_once('../../components/en/header.php') ?>
     <div class="container h-100">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6">
+                        <h1>Newest poll</h1>
+                    </div>
+                    <?php
+                    if ($_SESSION['auth'] == "teacher") {
+                    ?>
+                        <div class="col-6 my-auto">
+                            <!-- Als het ingelogde persoon een leraar is, laat de 'nieuws toevoegen' knop zien. -->
+                            <a class="btn btn-custom float-right" href="./add-poll.php">Add poll <span class="material-icons align-middle">add</span></a>
+                        </div>
+                    <?php
+                    }
+                    ?>
+                </div>
+            </div>
+            <?php
+            $date = date("Y-m-d");
+            $expire = $current_poll->expire_time;
+            if ($date <= $expire) {
+            ?>
+                <div class="col-12">
+                    <h3><?= $current_poll->title ?></h3>
+                    <p><?= $current_poll->description ?></p>
+                    <?php
+                    if (isset($_COOKIE['en_poll_id']) && $_COOKIE['en_poll_id'] == $current_poll_id) {
+                        foreach ($current_poll->questions as $key => $question) {
+                    ?>
+                            <p><?= $key . ': ' . round($question / array_sum((array) $current_poll->questions) * 100, 1) ?>%</p>
+                        <?php
+                        }
+                    } else {
+                        ?>
+                        <form action="../../controllers/answer_poll.php" method="POST">
+
+                            <input type="hidden" name="userLang" value="en">
+                            <input type="hidden" name="id" value="<?= $current_poll_id ?>">
+                            <div class="row">
+                                <?php
+                                foreach ($current_poll->questions as $key => $question) {
+                                ?>
+                                    <div class="col-12 mb-1">
+                                        <input onchange="this.form.submit();" type="radio" id="<?= $key ?>" name="question" value="<?= $key ?>">
+                                        <label for="<?= $key ?>"><?= $key ?></label>
+                                    </div>
+                                <?php
+                                }
+
+                                ?>
+
+                            </div>
+
+                        </form>
+                    <?php
+                    }
+                    ?>
+                </div>
+            <?php
+            } else {
+                echo "<div class='col-12'><p>There is currently no poll available</p></div>";
+            }
+            ?>
+        </div>
         <div class="row">
             <div class="col-12 d-flex h-100">
                 <h2>Latest news</h2>
@@ -67,7 +135,7 @@ $news_items = getJsonContent('news', 'en');
 
         <div class="row mb-2 mt-2">
             <div class="col-12 d-flex justify-content-center">
-                <a href="./news.php" class="btn btn-custom hoverUnderline">View more</a>
+                <a href="./news.php" class="btn btn-custom hoverUnderline">View more <span class="material-icons align-middle">keyboard_arrow_down</span></a>
             </div>
         </div>
     </div>

@@ -1,11 +1,11 @@
 {
-    "1635276574": {
-        "title": "Willen jullie vrij?",
+    "1635276596": {
+        "title": "Do you wanna be free?",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum\r\n",
         "expire_time": "2021-10-31",
         "questions": {
-            "Ja": 14,
-            "Nee": 26
+            "Yes": 24,
+            "No": 23
         }
     }
 }

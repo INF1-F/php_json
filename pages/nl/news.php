@@ -30,7 +30,7 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
             if ($_SESSION['auth'] == "teacher") {
             ?>
             <div class="col-6 my-auto"> <!-- Als het ingelogde persoon een leraar is, laat de 'nieuws toevoegen' knop zien. -->
-                <a class="btn btn-custom float-right" href="./add-news.php">Nieuws toevoegen</a>
+                <a class="btn btn-custom float-right" href="./add-news.php">Nieuws toevoegen <span class="material-icons align-middle">add</span></a>
             </div>
             <?php
             }
@@ -81,7 +81,7 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
                         <div class="col-12 d-flex justify-content-center">
                             <form action="news.php#bottom" method="POST">
                                 <input type="hidden" value="<?= $counter ?>" name="counter">
-                                <button type="submit" class="btn btn-custom">Meer weergeven</button>
+                                <button type="submit" class="btn btn-custom">Meer weergeven <span class="material-icons align-middle">keyboard_arrow_down</span></button>
                             </form>
                         </div>
                     </div>

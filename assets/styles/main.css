@@ -742,12 +742,12 @@ span.error {
     display: none;
 }
 
-.closedContent::after {
-    content: "▼";
+.closedContent span::after {
+    content: "keyboard_arrow_down";
 }
 
-.openedContent::after {
-    content: "▲";
+.openedContent span::after {
+    content: "keyboard_arrow_up";
 }
 
 .dividerLine {
