@@ -19,15 +19,17 @@
                     <div id="mySidenav" class="sidenav">
                         <div class="mobileMenu">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img class="d-flex" src="../../assets/img/Logo.svg" alt="Logo site kleur"></a>
-                            <a href="news.php">Nieuws</a>
+                            <a href="./news.php">News</a>
                             <hr class="MenuLine">
-                            <a href="contact-choise.php">Contact</a>
+                            <a href="./contact-choise.php">Contact</a>
                             <hr class="MenuLine">
-                            <a href="faq.php">FAQ</a>
+                            <a href="./faq.php">FAQ</a>
                             <hr class="MenuLine">
-                            <a href="#">Log off</a> <br />
+                            <form action="../../index.php" method="post">
+                                <button type="submit" class="nav-btn" name="logoff">Logout</button>
+                            </form>
                             <div class="MobileBottomLogo">
-                                <img src="../../assets/img/Stenden_logo_blauw.svg" alt="Stenden logo blauw" id="MobileStendenLogo">
+                                <a href="../en/home.php"><img src="../../assets/img/Stenden_logo_blauw.svg" alt="Stenden logo blauw" id="MobileStendenLogo"></a>
                             </div>
                         </div>
                     </div>
@@ -41,14 +43,14 @@
             </div>
 <!--        Dit is het midden van de header voor telefoon en tablet-->
             <div class="col-lg-2 col-4 d-flex justify-content-center d-lg-none">
-                <img src="../../assets/img/Stenden_logo_wit.svg" alt="Het logo van Stenden">
+                <a href="../en/home.php"><img src="../../assets/img/Stenden_logo_wit.svg" alt="Het logo van Stenden"></a>
             </div>
 <!--        Dit is het rechterdeel van de header voor laptopformaat en groter-->
             <div class="col-lg-5 col-4 d-none d-lg-block">
                 <ul class="d-flex justify-content-right list-unstyled align-items-center">
                     <li class="header-link d-flex align-items-center justify-content-center">
                         <form action="../../index.php" method="post">
-                            <button type="submit" class="button" name="logoff">Log off</button>
+                            <button type="submit" class="button" name="logoff">Logout</button>
                         </form>
                     </li>
                     <li class="header-link d-flex align-items-center justify-content-center"><a class="underline" href="../en/home.php">EN</a>/<a href="../nl/home.php">NL</a></li>
@@ -56,7 +58,7 @@
             </div>
 <!--        Dit is het rechterdeel van de header voor kleiner dan laptopformaat, dus telefoon en tablet-->
             <div class="col-lg-5 col-4 d-lg-none d-flex align-items-center justify-content-center">
-                <a href="../pages/en/home.php">EN</a>/<a href="../pages/nl/home.php">NL</a>
+                <a class="underline" href="../en/home.php">EN</a>/<a href="../nl/home.php">NL</a>
             </div>
         </div>
     </div>

@@ -1,36 +1,48 @@
 {
-    "1635254534": {
-        "title": "test 2",
-        "article": "Test 2",
-        "image": "assets\/img\/news_items\/nl\/1635254534.png",
-        "author": "Monique sabong",
+    "1635261213": {
+        "title": "Test 3",
+        "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "image": "assets\/img\/news_items\/nl\/1635261213.gif",
+        "author": " Steffan van der Werf",
         "reactions": {
-            "1635254583": {
-                "author": "Monique sabong",
-                "reaction": "test 5"
-            },
-            "1635254576": {
-                "author": "Monique sabong",
-                "reaction": "test 4"
-            },
-            "1635254573": {
-                "author": "Monique sabong",
-                "reaction": "test 3\r\n"
-            },
-            "1635254568": {
-                "author": "Monique sabong",
-                "reaction": "test 2"
-            },
-            "1635254559": {
-                "author": "Monique sabong",
+            "1635261317": {
+                "author": " Steffan van der Werf",
                 "reaction": "test"
+            },
+            "1635261307": {
+                "author": " Steffan van der Werf",
+                "reaction": "interessant wel"
+            },
+            "1635261288": {
+                "author": " Steffan van der Werf",
+                "reaction": "Those moves"
+            },
+            "1635261279": {
+                "author": " Steffan van der Werf",
+                "reaction": "Pog"
+            },
+            "1635261276": {
+                "author": " Steffan van der Werf",
+                "reaction": "Wauw"
             }
         }
     },
-    "1635254410": {
-        "title": "test",
-        "article": "Test",
-        "image": "assets\/img\/news_items\/nl\/1635254410.jpeg",
-        "author": "Monique sabong"
+    "1635261063": {
+        "title": "Trots moment op onze studenten",
+        "article": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "image": "assets\/img\/news_items\/nl\/1635261063.gif",
+        "author": " Steffan van der Werf"
+    },
+    "1635261040": {
+        "title": "Lion king ",
+        "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "image": "assets\/img\/news_items\/nl\/1635261040.gif",
+        "author": " Steffan van der Werf"
+    },
+    "1635260819": {
+        "title": "Dit is een Test item",
+        "article": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+        "image": "assets\/img\/news_items\/nl\/1635260819.gif",
+        "author": " Steffan van der Werf"
     }
 }

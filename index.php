@@ -29,7 +29,16 @@ session_start();
         $name = explode("@", $email)[0];
         if (strpos($name, '.')) { //Kijk of de naam bestaat uit een voornaam en achternaam
             $fullname = preg_replace('/[0-9]+/', '', str_replace(".", " ", $name)); // uit fullname worden de punten vervangen door spaties en met de preg replace functie worden alle cijfers uit de naam gefilterd waar [0-9] controlleert op alle cijfers en de + staat voor hoever die moet zoeken en dat is tot einde string
-            return ucfirst($fullname); //return voor en achternaam 
+            $unformattedNameList = explode(" ",$fullname);
+            $unformattedNameList[count($unformattedNameList) - 1] = ucfirst($unformattedNameList[count($unformattedNameList) - 1]); // laaste woord krijgt hooftletter
+
+            $unformattedNameList[0] = ucfirst($unformattedNameList[0]); // eerste woord krijgt hooftletter
+            $formattedName = "";
+            for ($i=0; $i < count($unformattedNameList); $i++) {  // plakken we de naam weer aan elkaar
+                $formattedName .= " ". $unformattedNameList[$i];
+            }
+            
+            return $formattedName; //return voor en achternaam met hooftletter van eerste woord en hooftletter van laaste woord
         } else {
             echo PrintError("Een email moet bestaan uit 'voornaam.achternaam@nhlstenden.com'");
         }
@@ -108,7 +117,7 @@ session_start();
                                 <div class="row">
                                     <div class="col-12">
                                         <label for="login-email" class="mb-1">
-                                            Emailadress:
+                                            Emailadres:
                                         </label>
                                     </div>
                                     <div class="col-12">

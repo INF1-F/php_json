@@ -10,7 +10,9 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
-
+textarea {
+    resize: none;
+}
 h1,
 .h1,
 h2,
@@ -348,10 +350,6 @@ header button[type="submit"] {
     cursor: pointer;
 }
 
-header a img {
-    height: 3.25em;
-}
-
 .round {
     border-radius: 50%;
     background-color: white;
@@ -504,10 +502,6 @@ footer img {
 
 /* News page overview*/
 
-.news-card {
-    height: 250px;
-    overflow: hidden;
-}
 
 .news-description {
     overflow: hidden;
@@ -595,6 +589,66 @@ span.error {
     font-weight: bold;
 }
 
+/* Mobile menu */
+
+.sidenav a img {
+    height: 3.25em;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+.sidenav .nav-btn {
+    margin-bottom: .5rem;
+}
+.sidenav a,
+.sidenav .nav-btn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #0A54AB;
+    display: block;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+.sidenav a:hover,
+.sidenav button:hover
+ {
+    text-decoration: underline;
+}
+
+.sidenav .closebtn {
+    position: center;
+    top: 0;
+    font-size: 36px;
+}
+
+.mobileMenu {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: left;
+}
+
+#MobilePlatformLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#MobileStendenLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Flexbox */
 
@@ -698,6 +752,7 @@ span.error {
 
 .dividerLine {
     border-bottom: 1px solid rgba(0, 0, 0, .125);
+    margin-bottom: 2.5rem;
 }
 
 
@@ -847,6 +902,11 @@ span.error {
     .col-md-1 {
         flex: 0 0 8.333333333333333%;
         max-width: 8.333333333333333%;
+    }
+
+    .news-card {
+        height: 250px;
+        overflow: hidden;
     }
 }
 
@@ -1098,38 +1158,13 @@ span.error {
     .news-image {
         height: 230px;
     }
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #ffffff;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 30px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #0A54AB;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: center;
-    top: 0;
-    font-size: 36px;
+    .news-card h2 {
+        margin-top:1rem;
+    }
+    .news-card {
+        max-height: 515px;
+        overflow: hidden;
+    }
 }
 
 @media screen and (max-height: 450px) {
@@ -1139,22 +1174,4 @@ span.error {
     .sidenav a {
         font-size: 18px;
     }
-}
-
-.mobileMenu {
-    padding-left: 15%;
-    padding-right: 15%;
-    text-align: left;
-}
-
-#MobilePlatformLogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#MobileStendenLogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
