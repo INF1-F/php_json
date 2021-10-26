@@ -17,7 +17,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <?php include_once('../../components/head.php') ?>
@@ -43,7 +43,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
             </div>
             <div class="col-12 col-md-6">
-                <h3 class="mt-0">Geef een reatie</h3> <!-- geplaatste reacties-->
+                <h3 class="mt-0">Geef een reactie</h3> <!-- geplaatste reacties-->
                 <?php
                 if (isset($reactions)) {
                     foreach ($reactions as $key => $reaction) {
@@ -88,7 +88,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
             </div>
         </div>
     </div>
-    <?php include_once('../../components/footer.php') ?>
+    <?php include_once('../../components/nl/footer.php') ?>
 </body>
 
 </html>

@@ -34,8 +34,8 @@
                                     ?>
                                 </label>
                                 <p id="lang">
-                                    <label class="radio-label"><input type="radio" name="lang" value="nl" checked required> Nederlands</label>
-                                    <label class="radio-label"><input type="radio" name="lang" value="en" required> Engels</label>
+                                    <label class="radio-label"><input type="radio" name="lang" value="nl" required> Nederlands</label>
+                                    <label class="radio-label"><input type="radio" name="lang" value="en" checked required> Engels</label>
                                 </p>
                             </div>
                             <div class="form-row">
@@ -107,7 +107,7 @@
         </div>
     </div>
 
-    <?php include_once('../../components/footer.php') ?>
+    <?php include_once('../../components/en/footer.php') ?>
 </body>
 
 </html>

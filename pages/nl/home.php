@@ -6,7 +6,7 @@ $news_items = getJsonContent('news', 'nl');
 
 ?>
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="nl" class="h-100">
 
 <head>
     <?php include_once('../../components/head.php') ?>
@@ -66,7 +66,7 @@ $news_items = getJsonContent('news', 'nl');
             </div>
         </div>
     </div>
-    <?php include_once('../../components/footer.php') ?>
+    <?php include_once('../../components/nl/footer.php') ?>
 </body>
 
 </html>

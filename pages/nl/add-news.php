@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <?php include_once('../../components/head.php') ?>
@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <?php include_once('../../components/nlheader.php') ?>
+    <?php include_once('../../components/nl/header.php') ?>
 
     <div class="container">
         <div class="row">

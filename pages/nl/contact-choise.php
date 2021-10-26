@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
     <head>
         <?php include_once('../../components/head.php') ?>
         <title>Contact keuze</title>
@@ -36,6 +36,6 @@
             </div>
         </div>
     </div>
-    <?php include_once('../../components/footer.php')?>
+    <?php include_once('../../components/nl/footer.php')?>
 </body>
 </html>

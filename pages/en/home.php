@@ -66,7 +66,7 @@ $news_items = getJsonContent('news', 'en');
             </div>
         </div>
     </div>
-    <?php include_once('../../components/footer.php') ?>
+    <?php include_once('../../components/en/footer.php') ?>
 </body>
 
 </html>

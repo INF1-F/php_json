@@ -43,7 +43,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
             </div>
             <div class="col-12 col-md-6">
-                <h3 class="mt-0">Geef een reatie</h3> <!-- geplaatste reacties-->
+                <h3 class="mt-0">Give a reaction</h3> <!-- geplaatste reacties-->
                 <?php
                 if (isset($reactions)) {
                     foreach ($reactions as $key => $reaction) {
@@ -60,7 +60,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                     }
                 } else {
                     ?>
-                    <h4 class="text-center">Er zijn momenteel geen reacties</h4>
+                    <h4 class="text-center">There are currently no comments</h4>
 
                 <?php
                 }
@@ -69,11 +69,11 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
                 <!-- reactie typen -->
                 <h3 class="mt-3">
-                    <label for="reaction"> Schrijf uw reactie <sup>*</sup>
+                    <label for="reaction"> Write your comment <sup>*</sup>
                         <?php
                         if (isset($_GET["error"]) && $_GET["error"] == "message") { //foutmelding als bericht leeg is
                         ?>
-                        <span class="error">uw bericht was niet ingevuld</span>
+                        <span class="error">Your message was not filled in</span>
                         <?php
                         }
                         ?>
@@ -83,13 +83,13 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
                     <input type="hidden" name="id" value="<?= $id ?>">
                     <input type="hidden" name="userLang" value="en">
                     <input type="hidden" name="author" value="<?= $_SESSION['fullName'] ?>">
-                    <textarea id="reaction" class="form-control" name="reaction" placeholder="Vul hier uw bericht in...."></textarea>
-                    <input type="submit" class="btn btn-custom mt-2 mb-2" height="80" value="Versturen">
+                    <textarea id="reaction" class="form-control" name="reaction" placeholder="Enter your message here...."></textarea>
+                    <input type="submit" class="btn btn-custom mt-2 mb-2" height="80" value="Send">
                 </form>
             </div>
         </div>
     </div>
-    <?php include_once('../../components/footer.php') ?>
+    <?php include_once('../../components/en/footer.php') ?>
 </body>
 
 </html>
