@@ -11,7 +11,13 @@ if(isset($_GET['poll'])){
 
     $poll = Array (
         $time => Array(
-            "question" => $_GET['poll']
+            "title" => $_GET['poll'],
+            "description" => '',
+            "exp-time" => 123213232,
+            "questions" => array(
+                $_POST['anwser1'] => 0,
+                $_POST['anwser2'] => 0
+            )
         )
     );
 

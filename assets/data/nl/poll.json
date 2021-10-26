@@ -1,5 +1,16 @@
 {
     "1632910405": {
-        "question": "willen jullie vrij?"
+        "title": "willen jullie vrij?",
+        "questions": {
+            "ja": 13,
+            "nee": 2
+        }
+    },
+    "1999990405": {
+        "question": "Stoppen met school?",
+        "answers": {
+            "true": 6,
+            "false": 32
+        }
     }
 }
