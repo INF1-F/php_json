@@ -3,7 +3,13 @@
         "title": "Herfst",
         "article": "Herfst kan heel erg mooi zijn, maar meestal is het nat.",
         "image": "assets\/img\/news_items\/nl\/1635317199.jpeg",
-        "author": " Freya Marijke Baas"
+        "author": " Freya Marijke Baas",
+        "reactions": {
+            "1635319731": {
+                "author": " Lady Roos",
+                "reaction": "klopt"
+            }
+        }
     },
     "1635261213": {
         "title": "Test 3",

@@ -50,7 +50,7 @@
                 <ul class="d-flex justify-content-right list-unstyled align-items-center">
                     <li class="header-link d-flex align-items-center justify-content-center">
                         <form action="../../index.php" method="post">
-                            <button type="submit" class="button logOut" name="logoff">Log out <span class="material-icons align-middle">logout</span></button>
+                            <button type="submit" class="button" name="logoff">Log out <span class="material-icons align-middle">logout</span></button>
                         </form>
                     </li>
                     <li class="header-link d-flex align-items-center justify-content-center"><a class="underline" href="../en/home.php">EN</a>/<a href="../nl/home.php">NL</a></li>
