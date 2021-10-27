@@ -49,8 +49,19 @@ $current_poll_id = array_keys((array) $polls)[0];
                     <?php
                     if (isset($_COOKIE['en_poll_id']) && $_COOKIE['en_poll_id'] == $current_poll_id) {
                         foreach ($current_poll->questions as $key => $question) {
+                            $pollPercentage = $question / array_sum((array) $current_poll->questions) * 100;
                     ?>
-                            <p><?= $key . ': ' . round($question / array_sum((array) $current_poll->questions) * 100, 1) ?>%</p>
+                            <div class="row">
+                                <div class="col-md-3 col-6 ">
+                                    <div class="pollBarBG">
+                                        <div style="width: <?= round($pollPercentage) ?>%">
+                                            <div class="pollBar h-100">
+                                                <p class="pollText"><?= $key . ': ' . number_format(round($pollPercentage, 1), 1) ?>%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         <?php
                         }
                     } else {
