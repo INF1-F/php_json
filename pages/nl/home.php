@@ -22,7 +22,7 @@ $current_poll_id = array_keys((array) $polls)[0];
             <div class="col-12">
                 <div class="row">
                     <div class="col-6">
-                        <h1>Nieuwste poll</h1>
+                        <h2>Nieuwste poll</h2>
                     </div>
                     <?php
                     if ($_SESSION['auth'] == "teacher") {
