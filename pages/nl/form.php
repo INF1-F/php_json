@@ -5,7 +5,7 @@ session_start();
 <html lang="nl">
     <head>
         <?php include_once('../../components/head.php') ?>
-        <title>Feedback</title>
+        <title><?=$formChoise?></title>
     </head>
     <?php
     if (isset($_GET['choise'])) {
