@@ -11,7 +11,7 @@ session_start();
 </head>
 
 <body>
-    <?php include_once('../../components/nl/header.php') ?>
+    <?php include_once('../../components/en/header.php') ?>
 
     <div class="container">
         <div class="row">
