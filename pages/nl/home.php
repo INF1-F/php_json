@@ -2,8 +2,8 @@
 session_start();
 include('../../components/function.php');
 
-$news_items = getJsonContent('news', 'nl');
-$polls = getJsonContent('poll', 'nl');
+$news_items = getJsonContent('news', 'nl'); 
+$polls = getJsonContent('poll', 'nl'); 
 $current_poll = $polls->{array_keys((array) $polls)[0]};
 $current_poll_id = array_keys((array) $polls)[0];
 ?>

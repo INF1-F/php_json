@@ -2,9 +2,9 @@
 session_start();
 include('../../components/function.php');
 
-$news_items = getJsonContent('news', 'nl');
+$news_items = getJsonContent('news', 'nl'); //data van nieuws
 
-$counter = 3;
+$counter = 3; 
 $i = 0;
 
 if (isset($_POST['counter']) && !empty($_POST['counter'])) {
@@ -72,20 +72,20 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
             ?>
             <div class="hidden" id="bottom"></div>
 
-            <?php
+            <?php //Op de nieuwspagina worden alleen 3 artikelen getoond
             if (count((array) $news_items) > 3) {
                 if ($counter < $i) {
 
             ?>
-                    <div class="row mb-4" id="bottom">
+                    <div class="row mb-4" id="bottom"> 
                         <div class="col-12 d-flex justify-content-center">
                             <form action="news.php#bottom" method="POST">
                                 <input type="hidden" value="<?= $counter ?>" name="counter">
                                 <button type="submit" class="btn btn-custom">Meer weergeven <span class="material-icons align-middle">keyboard_arrow_down</span></button>
-                            </form>
+                            </form> 
                         </div>
                     </div>
-            <?php
+            <?php // wanneer er meer dan 3 artikelen zijn, gaan de ouder artikelen onder het kopje "meer weergeven" staan. 
                 }
             }
         } else {

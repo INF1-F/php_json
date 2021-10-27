@@ -30,7 +30,7 @@ session_start();
                                             $name = "Anoniem";
                                         }
 
-                                        $file = fopen ('../../assets/data/contact/formData-'.date("YmdHis").'.txt', 'a');
+                                        $file = fopen ('../../assets/data/contact/formData-'.date("YmdHis").'.txt', 'a'); //waneer men het formulier verzend, word een file opengemaakt waar de formsdata wordt opgeslagen.
 
                                         fwrite($file, "Type formulier:");
                                         fwrite($file, $sort . "\n");
@@ -48,18 +48,18 @@ session_start();
                                         fwrite($file, $message . "\n");
                                     
                                         fclose($file);
-                                        echo "<p>Bedankt voor het versturen! U krijgt zo spoedig mogelijk antwoord!</p>";
+                                        echo "<p>Bedankt voor het versturen! U krijgt zo spoedig mogelijk antwoord!</p>"; //waneer men het formulier verzend, komt er "bedankt voor het versturen te staan
                                     } else {
-                                        header("location: form.php?choise={$formtype}&error=message");
+                                        header("location: form.php?choise={$formtype}&error=message");//wanneer je formulier verzendt,komt de errormessage tevoorschijn wanneer je geen message hebt ingevuld
                                     } 
                                 } else {
-                                    header("location: form.php?choise={$formtype}&error=location");
+                                    header("location: form.php?choise={$formtype}&error=location");//wanneer je formulier verzendt,komt de errormessage tevoorschijn wanneer je geen locatie hebt ingevuld
                                 } 
                             } else {
-                                header("location: form.php?choise={$formtype}&error=education");
+                                header("location: form.php?choise={$formtype}&error=education");//wanneer je formulier verzendt,komt de errormessage tevoorschijn wanneer je geen opleiding hebt ingevuld
                             } 
                         }else {
-                            header("location: form.php?choise={$formtype}&error=sort");
+                            header("location: form.php?choise={$formtype}&error=sort");//wanneer je formulier verzendt,komt de errormessage tevoorschijn wanneer je geen soortformulier hebt ingevuld
                         }
                     }
                     ?>
