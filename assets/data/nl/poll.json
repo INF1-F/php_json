@@ -4,8 +4,16 @@
         "description": "Buurmans duiven van Lady Roos is het mooiste nummer ooit gemaakt.",
         "expire_time": "2021-10-28",
         "questions": {
-            "Ja": 1,
+            "Ja": 0,
             "Nee": 1
+        }
+    },
+    "1635318630": {
+        "title": "Buurmans duiven",
+        "description": "Buurmans duiven van Lady Roos is het mooiste nummer ooit gemaakt",
+        "expire_time": "2021-10-28",
+        "questions": {
+            "Ja": 0
         }
     },
     "1635276574": {
