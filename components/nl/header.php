@@ -41,7 +41,7 @@
 <!--        Dit is het midden van de header voor laptopformaat en groter-->
             <div class="col-lg-2 col-4 justify-content-center d-lg-flex align-items-center d-none">
                 <div class="round justify-content-center align-items-center d-flex">
-                    <img src="../../assets/img/logo.svg" alt="Logo van de site" class="main-logo"></a>
+                    <a href="./home.php"><img src="../../assets/img/logo.svg" alt="Logo van de site" class="main-logo"></a>
                 </div>
             </div>
 <!--        Dit is het midden van de header voor telefoon en tablet-->
