@@ -456,7 +456,8 @@ footer img {
 }
 
 .pollBarBG {
-    border: 1px solid rgba(0, 0, 0, .125);
+    background-color: rgba(0, 0, 0, .0625);
+    margin-bottom: .25rem;
 }
 
 .pollText {

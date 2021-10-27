@@ -1,6 +1,30 @@
 <?php
-ob_start();
+// ob_start();
 session_start();
+if (isset($_POST['login'])) {
+    $email = $_POST["email"];
+    if (strpos($email, '@') && substr($email, -22) === "student.nhlstenden.com") { //Check voor studentenmail.
+        $name = GetName($email);
+        if ($name) { //zodra er een naam is stuur de gebruiker door naar de volgende pagina. Hierbij wordt ook de naam en rol (student/leraar) meegenomen.
+            // Add values to the session.
+            $_SESSION["fullName"] = $name;
+            $_SESSION["auth"] = "student";
+            header("Location: ./pages/nl/home.php");
+            exit;
+        }
+    } else if (strpos($email, '@') && substr($email, -14) === "nhlstenden.com") { //Check voor een leraren mail.
+        $name = GetName($email);
+        if ($name) {
+            // Add values to the session.
+            $_SESSION['fullName'] = $name;
+            $_SESSION['auth'] = "teacher";
+            header("Location: ./pages/nl/home.php");
+            exit;
+        }
+    } else {
+        echo PrintError("Het ingevoerde emailadres is niet geldig");
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="nl" class="h-100">
@@ -48,33 +72,6 @@ session_start();
     { //Functie die een error balk print met de class 'popup'.
         return "<div class='popup'> $errorText </div>";
     }
-
-
-    if (isset($_POST['login'])) {
-        $email = $_POST["email"];
-        if (strpos($email, '@') && substr($email, -22) === "student.nhlstenden.com") { //Check voor studentenmail.
-            $name = GetName($email);
-            if ($name) { //zodra er een naam is stuur de gebruiker door naar de volgende pagina. Hierbij wordt ook de naam en rol (student/leraar) meegenomen.
-                // Add values to the session.
-                $_SESSION["fullName"] = $name;
-                $_SESSION["auth"] = "student";
-                header("Location: ./pages/nl/home.php");
-                exit;
-            }
-        } else if (strpos($email, '@') && substr($email, -14) === "nhlstenden.com") { //Check voor een leraren mail.
-            $name = GetName($email);
-            if ($name) {
-                // Add values to the session.
-                $_SESSION['fullName'] = $name;
-                $_SESSION['auth'] = "teacher";
-                header("Location: ./pages/nl/home.php");
-                exit;
-            }
-        } else {
-            echo PrintError("Het ingevoerde emailadres is niet geldig");
-        }
-    }
-
     function getTheme()
     {
         $today = new DateTime();
