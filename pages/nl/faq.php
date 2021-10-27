@@ -58,18 +58,26 @@ session_start();
         </div>
         </div>
         <script type="text/javascript">
+            //array van alle elementen met de class expandBtn
             var expBtns = document.getElementsByClassName("expandBtn");
-
+            //array expBtns gaat door de for-loop
             for (var i = 0; i < expBtns.length; i++) {
+                //voegt een clickevent toe aan de huidige expBtns
+                //clickevent: als erop geklikt wordt, voer aangegeven functie uit
                 expBtns[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
+                    //haalt de tekst op van het dropdownmenu vraag-antwoord door de sibling erna te pakken
                     var content = this.nextElementSibling;
+                    //if: Als hij aan is, zet hem uit.
+                    //Else: Als hij uit is, zet hem aan.
+                    //Gedaan met display block.
                     if (content.style.display === "block") {
                         content.style.display = "none";
+                        // zorgen voor de correcte dropdown pijltjes
                         this.classList.add("closedContent");
                         this.classList.remove("openedContent");
                     } else {
                         content.style.display = "block";
+                        //zorgen voor de correcte dropdown pijltjes
                         this.classList.add("openedContent");
                         this.classList.remove("closedContent");
                     }
