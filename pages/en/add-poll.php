@@ -37,8 +37,8 @@ session_start();
                                     ?>
                                 </label>
                                 <p id="lang">
-                                    <label class="radio-label"><input type="radio" name="lang" value="nl" checked required> Dutch</label>
-                                    <label class="radio-label"><input type="radio" name="lang" value="en" required> English</label>
+                                    <label class="radio-label"><input type="radio" name="lang" value="nl" required> Dutch</label>
+                                    <label class="radio-label"><input type="radio" name="lang" value="en" checked required> English</label>
                                 </p>
                             </div>
                             <div class="form-row">
