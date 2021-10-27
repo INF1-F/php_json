@@ -115,7 +115,7 @@ session_start();
                                     <img src="./assets/img/Logo.svg" style="height:150px;" alt="logo">
                                 </div>
                                 <div class="col-12 text-center mt-3 mb-3 ">
-                                    <h2>Welkom bij het NHL Stenden Studentenplatform!</h2>
+                                    <h2>Welcome at the NHL Stenden Student platform!</h2>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
@@ -129,7 +129,7 @@ session_start();
                                     <div class="col-12 text-right">
                                         <button type="submit" name="login" class="btn btn-custom mt-3">
                                             <span class="material-icons align-middle">lock</span>
-                                            Inloggen
+                                            Log in
                                         </button>
                                     </div>
                                 </div>
