@@ -22,7 +22,7 @@ $current_poll_id = array_keys((array) $polls)[0];
             <div class="col-12">
                 <div class="row">
                     <div class="col-6">
-                        <h1>Nieuwste poll</h1>
+                        <h2>Nieuwste poll</h2>
                     </div>
                     <?php
                     if ($_SESSION['auth'] == "teacher") {
@@ -49,8 +49,19 @@ $current_poll_id = array_keys((array) $polls)[0];
                     <?php
                     if (isset($_COOKIE['nl_poll_id']) && $_COOKIE['nl_poll_id'] == $current_poll_id) {
                         foreach ($current_poll->questions as $key => $question) {
-                    ?>
-                            <p><?= $key . ': ' . round($question / array_sum((array) $current_poll->questions) * 100, 1) ?>%</p>
+                            $pollPercentage = $question / array_sum((array) $current_poll->questions) * 100;
+                    ?>      
+                            <div class="row">
+                                <div class="col-md-3 col-6 ">
+                                    <div class="pollBarBG">
+                                        <div style="width: <?= round($pollPercentage) ?>%">
+                                            <div class="pollBar h-100">
+                                                <p class="pollText"><?= $key . ': ' . number_format(round($pollPercentage, 1), 1) ?>%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         <?php
                         }
                     } else {

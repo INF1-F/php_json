@@ -11,7 +11,7 @@ session_start();
 </head>
 
 <body>
-    <?php include_once('../../components/nl/header.php') ?>
+    <?php include_once('../../components/en/header.php') ?>
 
     <div class="container">
         <div class="row">
@@ -37,8 +37,8 @@ session_start();
                                     ?>
                                 </label>
                                 <p id="lang">
-                                    <label class="radio-label"><input type="radio" name="lang" value="nl" checked required> Dutch</label>
-                                    <label class="radio-label"><input type="radio" name="lang" value="en" required> English</label>
+                                    <label class="radio-label"><input type="radio" name="lang" value="nl" required> Dutch</label>
+                                    <label class="radio-label"><input type="radio" name="lang" value="en" checked required> English</label>
                                 </p>
                             </div>
                             <div class="form-row">
@@ -124,7 +124,7 @@ session_start();
         </div>
     </div>
 
-    <?php include_once('../../components/nl/footer.php') ?>
+    <?php include_once('../../components/en/footer.php') ?>
 </body>
 
 </html>

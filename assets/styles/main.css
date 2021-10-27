@@ -252,6 +252,10 @@ button:hover {
     height: 100%;
 }
 
+.w-50 {
+    width: 50%;
+}
+
 .h-25 {
     height: 25%;
 }
@@ -390,7 +394,7 @@ header ul li a:hover {
 /* Footer */
 
 footer {
-    background-color: #0a54ab;
+    background-color: #0A54AB;
     padding: 1rem 0;
 }
 
@@ -442,6 +446,25 @@ footer img {
     margin-bottom: 1rem;
     border: 1px solid transparent;
     border-radius: .25rem;
+}
+
+
+/* Poll */
+
+.pollBar {
+    background-color: #0A54AB;
+}
+
+.pollBarBG {
+    background-color: rgba(0, 0, 0, .0625);
+    margin-bottom: .25rem;
+}
+
+.pollText {
+    width: 100%;
+    margin: 0 .5rem;
+    color: white;
+    white-space: nowrap;
 }
 
 
