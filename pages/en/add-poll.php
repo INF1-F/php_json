@@ -124,7 +124,7 @@ session_start();
         </div>
     </div>
 
-    <?php include_once('../../components/nl/footer.php') ?>
+    <?php include_once('../../components/en/footer.php') ?>
 </body>
 
 </html>
