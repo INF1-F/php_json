@@ -13,13 +13,13 @@ session_start();
     <?php include_once('../../components/nl/header.php') ?>
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-12">
+            <div class="col-md-12 col-12">
                 <h2>Vaak gestelde vragen</h2>
             </div>
         </div>
         <div class="mt-2 mb-2">
         <div class="row">
-            <div class="col-md-6 col-12">
+            <div class="col-md-12 col-12">
                 <div class="dividerLine">
                     <button type="button" class="expandBtn closedContent">Inschrijven, hoe doe ik dat? <span class="material-icons align-middle"></span></button>
                     <div class="expContent">
@@ -29,7 +29,7 @@ session_start();
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-12">
+            <div class="col-md-12 col-12">
                 <div class="dividerLine">
                     <button type="button" class="expandBtn closedContent">Studeren, wat kost dat? <span class="material-icons align-middle"></span></button>
                     <div class="expContent">
@@ -39,7 +39,7 @@ session_start();
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-12">
+            <div class="col-md-12 col-12">
                 <div class="dividerLine">
                     <button type="button" class="expandBtn closedContent">Op jezelf wonen, wat zijn de kosten? <span class="material-icons align-middle"></span></button>
                     <div class="expContent">
@@ -49,7 +49,7 @@ session_start();
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-12">
+            <div class="col-md-12 col-12">
                 <button type="button" class="expandBtn closedContent">Studeren met een functiebeperking, wat zijn de mogelijkheden? <span class="material-icons align-middle"></span></button>
                 <div class="expContent">
                     <p class="mt-0"> Bespreek de mogelijkheden met een studentendecaan. Deze zijn te vinden op ons decanaat.</p>
