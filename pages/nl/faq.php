@@ -21,9 +21,9 @@ session_start();
         <div class="row">
             <div class="col-md-6 col-12">
                 <div class="dividerLine">
-                    <button type="button" class="expandBtn closedContent">Vraag 1 <span class="material-icons align-middle"></span></button>
+                    <button type="button" class="expandBtn closedContent">Inschrijven, hoe doe ik dat? <span class="material-icons align-middle"></span></button>
                     <div class="expContent">
-                        <p class="mt-0"> Antwoord 1 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="mt-0"> Je schrijft je in op Studielink, de inschrijfportaal van het miniserie van Onderwijs. Je volgt hiervoor de onderstaande stappen. Ga naar www.studielink.nl en kies voor “Inloggen met DigiD”. Log in met je DigiD gebruikersnaam en wachtwoord. Vul in het volgende scherm jouw persoonsgegevens in. Activeer je account volgens de instructies van Studielink. Kies jouw studie, de startdatum en inschrijfvorm. Geef ook aan of je als eerstejaars of als hogerejaars student start. </p>
                     </div>
                 </div>
             </div>
@@ -31,9 +31,9 @@ session_start();
         <div class="row">
             <div class="col-md-6 col-12">
                 <div class="dividerLine">
-                    <button type="button" class="expandBtn closedContent">Vraag 2 <span class="material-icons align-middle"></span></button>
+                    <button type="button" class="expandBtn closedContent">Studeren, wat kost dat? <span class="material-icons align-middle"></span></button>
                     <div class="expContent">
-                        <p class="mt-0"> Antwoord 2 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="mt-0"> Het kabinet heeft dit jaar besloten om het wettelijke collegegeld te halveren en vast te stellen op € 1.084. Om studenten enigszins te compenseren voor de verminderde studiemogelijkheden gedurende de Coronaperiode.</p>
                     </div>
                 </div>
             </div>
@@ -41,18 +41,18 @@ session_start();
         <div class="row">
             <div class="col-md-6 col-12">
                 <div class="dividerLine">
-                    <button type="button" class="expandBtn closedContent">Vraag 3 <span class="material-icons align-middle"></span></button>
+                    <button type="button" class="expandBtn closedContent">Op jezelf wonen, wat zijn de kosten? <span class="material-icons align-middle"></span></button>
                     <div class="expContent">
-                        <p class="mt-0"> Antwoord 3 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="mt-0"> Veel studenten kiezen ervoor om tijdens hun studie op zichzelf te gaan wonen. Een eigen studio, appartement of een gezellige kamer in een studentenhuis, er is keuze genoeg. De huur die je betaalt voor je eigen plekje verschilt per locatie. De huur is niet de enige uitgave die je doet wanneer je op jezelf woont. Je gaat ook je eigen boodschappen doen. Het Nibud stelt dat studenten gemiddeld €161 euro per maand kwijt zijn aan boodschappen. Dit is een gemiddelde, het echte bedrag verschilt natuurlijk per persoon.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 col-12">
-                <button type="button" class="expandBtn closedContent">Vraag 4 <span class="material-icons align-middle"></span></button>
+                <button type="button" class="expandBtn closedContent">Studeren met een functiebeperking, wat zijn de mogelijkheden? <span class="material-icons align-middle"></span></button>
                 <div class="expContent">
-                    <p class="mt-0"> Antwoord 4 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="mt-0"> Bespreek de mogelijkheden met een studentendecaan. Deze zijn te vinden op ons decanaat.</p>
                 </div>
             </div>
         </div>

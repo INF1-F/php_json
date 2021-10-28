@@ -20,9 +20,9 @@ session_start();
         <div class="row">
             <div class="col-md-6 col-12">
                 <div class="dividerLine">
-                    <button type="button" class="expandBtn closedContent">Question 1 <span class="material-icons align-middle"></span></button>
+                    <button type="button" class="expandBtn closedContent">Registering, how do I do that? <span class="material-icons align-middle"></span></button>
                     <div class="expContent">
-                        <p class="mt-0"> Question 1 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="mt-0">You register on Studielink, the registration portal of the Education miniseries. To do this, follow the steps below. Go to www.studielink.nl and choose “Log in with DigiD”. Log in with your DigiD username and password. Enter your personal details in the next screen. Activate your account according to the instructions of Studielink. Choose your study, the start date and registration form. Also indicate whether you are starting as a first-year or higher-year student. </p>
                     </div>
                 </div>
             </div>
@@ -30,9 +30,9 @@ session_start();
         <div class="row">
             <div class="col-md-6 col-12">
                 <div class="dividerLine">
-                    <button type="button" class="expandBtn closedContent">Question 2 <span class="material-icons align-middle"></span></button>
+                    <button type="button" class="expandBtn closedContent">Studying, what does it cost? <span class="material-icons align-middle"></span></button>
                     <div class="expContent">
-                        <p class="mt-0"> Question 2 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="mt-0">The cabinet has decided this year to halve the statutory tuition fee and set it at €1,084. To compensate students somewhat for the reduced study opportunities during the Corona period. </p>
                     </div>
                 </div>
             </div>
@@ -40,9 +40,9 @@ session_start();
         <div class="row">
             <div class="col-md-6 col-12">
                 <div class="dividerLine">
-                    <button type="button" class="expandBtn closedContent">Question 3 <span class="material-icons align-middle"></span></button>
+                    <button type="button" class="expandBtn closedContent">Living on your own, what are the costs? <span class="material-icons align-middle"></span></button>
                     <div class="expContent">
-                        <p class="mt-0"> Question 3 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="mt-0">Many students choose to live on their own during their studies. Your own studio, apartment or a cozy room in a student house, there is plenty of choice. The rent you pay for your own spot varies per location. Rent isn't the only expense you make when you live on your own. You will also do your own shopping. Nibud states that students spend an average of €161 per month on groceries. This is an average, the real amount varies per person of course. </p>
                     </div>
                 </div>
             </div>
@@ -50,9 +50,9 @@ session_start();
         <div class="row">
             <div class="col-md-6 col-12">
                 <div class="dividerLine">
-                    <button type="button" class="expandBtn closedContent">Question 4 <span class="material-icons align-middle"></span></button>
+                    <button type="button" class="expandBtn closedContent">Studying with a disability, what are the options? <span class="material-icons align-middle"></span></button>
                     <div class="expContent">
-                        <p class="mt-0"> Question 4 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="mt-0">Discuss the options with a student counselor. These can be found at our dean's office. </p>
                     </div>
                 </div>
             </div>
