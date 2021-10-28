@@ -16,70 +16,26 @@ if (isset($_GET['choise'])) {
 ?>
 <!DOCTYPE html>
 <html lang="nl">
-<<<<<<< HEAD
-    <head>
-        <?php include_once('../../components/head.php') ?>
-        <title><?=$formChoise?></title>
-    </head>
-    <?php //Hier word geselecteerd welke form je krijgt, wanneer je op klachten druk krijg je de klachten formulier, wanneer je op vragen drukt krijgt je dr vragen formulier,etc
-    if (isset($_GET['choise'])) {
-        if ($_GET['choise'] == 0) {
-            $formChoise = "Klachten";
-        } else if ($_GET['choise'] == 1) {
-            $formChoise = "Vragen";
-        } else if ($_GET['choise'] == 2) {
-            $formChoise = "Feedback";
-        } else {
-            header("Location: ./contact-choise.php");
-        }
-    }else {
-      echo "Er is geen keuze gemaakt";
-    }
-    ?>
-    <body>
-        <?php include_once('../../components/nl/header.php') ?>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1><?=$formChoise?></h1>
-                </div>
-                <div class="col-12 mb-3">
-                    <div class="card align-items">
-                        <div class="card-body">
-                            <form class="contactForm" action="./formResult.php" method="POST">     
-                                <input type="hidden" value="<?=$formChoise?>" name="sort">
-                                <input type="hidden" value="<?=$_GET['choise']?>" name="formtype">     <!--  -->                          
-                                <div class="form-row">
-                                    <p class="mt-0 reqFieldText"><span class="reqField">*</span> Verplichte velden</p>
-                                </div>
-                                <?php
-                                if ($_GET['choise'] == 1) { //klachten en feedback formulieren zijn hetzelfde, wanneer je vragen kiest krijg je nog een extra naam field.
-                                ?> 
-                                    <div class="form-row">
-                                        <label for="name">
-                                         <b>Naam <span class="reqField">*</span></b>
-                                          <?php if(isset($_GET['error']) && $_GET['error'] == 'name')
-                                          echo"<span class='contact-warning'> Geen naam ingevuld </span>";   //de error message wanneer je naam niet hebt ingevuld.
-                                          ?> 
-                                        </label>
-                                        <input class="form-control" type="text" value="<?=$_SESSION["fullName"]?>" name="name" id="name" required>              
-                                    </div>
-                                <?php
-                                }
-                                ?>
-                                <div class="form-row">
-                                    <label for="Opleiding">
-                                        <b>Opleiding <span class="reqField">*</span></b>
-                                        <?php if(isset($_GET['error']) && $_GET['error'] == 'education')
-                                        echo"<span class='contact-warning'> Geen opleiding ingevuld </span>";   //de error message wanneer je geen opleiding hebt ingevuld.
-                                        ?> 
-                                
-=======
 
 <head>
     <?php include_once('../../components/head.php') ?>
     <title><?= $formChoise ?></title>
 </head>
+<?php //Hier word geselecteerd welke form je krijgt, wanneer je op klachten druk krijg je de klachten formulier, wanneer je op vragen drukt krijgt je dr vragen formulier,etc
+if (isset($_GET['choise'])) {
+    if ($_GET['choise'] == 0) {
+        $formChoise = "Klachten";
+    } else if ($_GET['choise'] == 1) {
+        $formChoise = "Vragen";
+    } else if ($_GET['choise'] == 2) {
+        $formChoise = "Feedback";
+    } else {
+        header("Location: ./contact-choise.php");
+    }
+} else {
+    echo "Er is geen keuze gemaakt";
+}
+?>
 
 <body>
     <?php include_once('../../components/nl/header.php') ?>
@@ -93,26 +49,35 @@ if (isset($_GET['choise'])) {
                     <div class="card-body">
                         <form class="contactForm" action="./formResult.php" method="POST">
                             <input type="hidden" value="<?= $formChoise ?>" name="sort">
-                            <input type="hidden" value="<?= $_GET['choise'] ?>" name="formtype">
+                            <input type="hidden" value="<?= $_GET['choise'] ?>" name="formtype"> <!--  -->
                             <div class="form-row">
                                 <p class="mt-0 reqFieldText"><span class="reqField">*</span> Verplichte velden</p>
                             </div>
                             <?php
-                            if ($_GET['choise'] == 1) {
+                            if ($_GET['choise'] == 1) { //klachten en feedback formulieren zijn hetzelfde, wanneer je vragen kiest krijg je nog een extra naam field.
                             ?>
                                 <div class="form-row">
                                     <label for="name">
                                         <b>Naam <span class="reqField">*</span></b>
                                         <?php if (isset($_GET['error']) && $_GET['error'] == 'name')
-                                            echo "<span class='contact-warning'> Geen naam ingevuld </span>";
+                                            echo "<span class='contact-warning'> Geen naam ingevuld </span>";   //de error message wanneer je naam niet hebt ingevuld.
                                         ?>
->>>>>>> f31f59c191b94423d8df6929a6a0825c8226c87c
                                     </label>
                                     <input class="form-control" type="text" value="<?= $_SESSION["fullName"] ?>" name="name" id="name" required>
                                 </div>
                             <?php
                             }
                             ?>
+                            <div class="form-row">
+                                <label for="Opleiding">
+                                    <b>Opleiding <span class="reqField">*</span></b>
+                                    <?php if (isset($_GET['error']) && $_GET['error'] == 'education') {
+                                        echo "<span class='contact-warning'> Geen opleiding ingevuld </span>";   //de error message wanneer je geen opleiding hebt ingevuld.
+                                    }
+                                    ?>
+                                </label>
+                                <input class="form-control" type="text" value="<?= $_SESSION["fullName"] ?>" name="name" id="name" required>
+                            </div>
                             <div class="form-row">
                                 <label for="Opleiding">
                                     <b>Opleiding <span class="reqField">*</span></b>
@@ -212,57 +177,25 @@ if (isset($_GET['choise'])) {
                             <div class="form-row">
                                 <label for="Locatie">
                                     <b>Locatie <span class="reqField">*</span></b>
-<<<<<<< HEAD
-                                    <?php if(isset($_GET['error']) && $_GET['error'] == 'location') //de error message wanneer je locatie niet hebt ingevuld.
-                                          echo"<span class='contact-warning'> Geen locatie ingevuld</span>";   
-                                    ?>
-                                    </label>
-                                    <select class="form-control" id="Locatie" name="location" required>
-                                        <option value="Emmen">Emmen</option>
-                                        <option value="Amsterdam">Amsterdam</option>
-                                        <option value="Assen">Assen</option>
-                                        <option value="Groningen">Groningen</option>
-                                        <option value="Leeuwarden">Leeuwarden</option>
-                                        <option value="Meppel">Meppel</option>
-                                        <option value="Terschelling">Terschelling</option>
-                                        <option value="Zwolle">Zwolle</option>
-                                    </select>
-                                </div>
-                                <div class="form-row">
-                                    <label for="message">
-                                        <b>Bericht <span class="reqField">*</span></b>
-                                        <?php if(isset($_GET['error']) && $_GET['error'] == 'message')
-                                          echo"<span class='contact-warning'> Geen bericht ingevuld </span>";   //de error message wanneer je geen bericht niet hebt ingevuld.
-                                        ?> 
-                                    </label>
-                                    <textarea id="message" class="form-control" name="message" style="height: 200px;" placeholder="Schrijf hier uw bericht..." required></textarea>
-                                </div>
-                                <div class="form-row">                                           
-                                    <input class="float-right btn btn-custom" name="submit" type="submit" value="Versturen">
-                                </div>
-                            </form>
-                        </div>
-=======
-                                    <?php if (isset($_GET['error']) && $_GET['error'] == 'location')
-                                        echo "<span class='contact-warning'> Geen locatie ingevuld</span>";
-                                    ?>
-                                </label>
-                                <select class="form-control" id="Locatie" name="location" required>
-                                    <option value="Emmen">Emmen</option>
-                                    <option value="Amsterdam">Amsterdam</option>
-                                    <option value="Assen">Assen</option>
-                                    <option value="Groningen">Groningen</option>
-                                    <option value="Leeuwarden">Leeuwarden</option>
-                                    <option value="Meppel">Meppel</option>
-                                    <option value="Terschelling">Terschelling</option>
-                                    <option value="Zwolle">Zwolle</option>
-                                </select>
+                                    <<<<<<< HEAD <?php if (isset($_GET['error']) && $_GET['error'] == 'location') //de error message wanneer je locatie niet hebt ingevuld.
+                                                        echo "<span class='contact-warning'> Geen locatie ingevuld</span>";
+                                                    ?> </label>
+                                        <select class="form-control" id="Locatie" name="location" required>
+                                            <option value="Emmen">Emmen</option>
+                                            <option value="Amsterdam">Amsterdam</option>
+                                            <option value="Assen">Assen</option>
+                                            <option value="Groningen">Groningen</option>
+                                            <option value="Leeuwarden">Leeuwarden</option>
+                                            <option value="Meppel">Meppel</option>
+                                            <option value="Terschelling">Terschelling</option>
+                                            <option value="Zwolle">Zwolle</option>
+                                        </select>
                             </div>
                             <div class="form-row">
                                 <label for="message">
                                     <b>Bericht <span class="reqField">*</span></b>
                                     <?php if (isset($_GET['error']) && $_GET['error'] == 'message')
-                                        echo "<span class='contact-warning'> Geen bericht ingevuld </span>";
+                                        echo "<span class='contact-warning'> Geen bericht ingevuld </span>";   //de error message wanneer je geen bericht niet hebt ingevuld.
                                     ?>
                                 </label>
                                 <textarea id="message" class="form-control" name="message" style="height: 200px;" placeholder="Schrijf hier uw bericht..." required></textarea>
@@ -271,11 +204,41 @@ if (isset($_GET['choise'])) {
                                 <input class="float-right btn btn-custom" name="submit" type="submit" value="Versturen">
                             </div>
                         </form>
->>>>>>> f31f59c191b94423d8df6929a6a0825c8226c87c
                     </div>
+                    =======
+                    <?php if (isset($_GET['error']) && $_GET['error'] == 'location')
+                        echo "<span class='contact-warning'> Geen locatie ingevuld</span>";
+                    ?>
+                    </label>
+                    <select class="form-control" id="Locatie" name="location" required>
+                        <option value="Emmen">Emmen</option>
+                        <option value="Amsterdam">Amsterdam</option>
+                        <option value="Assen">Assen</option>
+                        <option value="Groningen">Groningen</option>
+                        <option value="Leeuwarden">Leeuwarden</option>
+                        <option value="Meppel">Meppel</option>
+                        <option value="Terschelling">Terschelling</option>
+                        <option value="Zwolle">Zwolle</option>
+                    </select>
                 </div>
+                <div class="form-row">
+                    <label for="message">
+                        <b>Bericht <span class="reqField">*</span></b>
+                        <?php if (isset($_GET['error']) && $_GET['error'] == 'message')
+                            echo "<span class='contact-warning'> Geen bericht ingevuld </span>";
+                        ?>
+                    </label>
+                    <textarea id="message" class="form-control" name="message" style="height: 200px;" placeholder="Schrijf hier uw bericht..." required></textarea>
+                </div>
+                <div class="form-row">
+                    <input class="float-right btn btn-custom" name="submit" type="submit" value="Versturen">
+                </div>
+                </form>
+                >>>>>>> f31f59c191b94423d8df6929a6a0825c8226c87c
             </div>
         </div>
+    </div>
+    </div>
     </div>
     <?php include_once('../../components/nl/footer.php') ?>
 </body>

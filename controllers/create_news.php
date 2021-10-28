@@ -31,10 +31,10 @@ if (isset($_POST['article']) && !empty($_POST['article'])) {
                         // Zet de ingevulde gegevens in een associative array
                         $news_item = array(
                             $time => array(
-                                "title" => $_POST['title'],
-                                "article" => $_POST['article'],
+                                "title" => strip_tags(htmlspecialchars($_POST['title'])),
+                                "article" => strip_tags(htmlspecialchars($_POST['article'])),
                                 "image" => $path,
-                                "author" => $_POST['author']
+                                "author" => strip_tags(htmlspecialchars($_POST['author']))
                             )
                         );
 

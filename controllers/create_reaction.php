@@ -13,8 +13,8 @@ if(isset($_POST['userLang']) && !empty($_POST['userLang'])){
 
 // Checked of reaction wel word mee gestuurd vanuit het formulier
 if(isset($_POST['reaction']) && !empty($_POST['reaction'])){
-    $author = $_POST['author'];
-    $reaction = $_POST['reaction'];
+    $author = htmlspecialchars($_POST['author']);
+    $reaction = strip_tags(htmlspecialchars($_POST['reaction']));
 
     // Maakt reacties aan
     $reaction = createReaction($author, $reaction);

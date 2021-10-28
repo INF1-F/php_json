@@ -4,7 +4,7 @@
 include('../components/function.php');
 $user_lang = $_POST['userLang'];
 $id = $_POST['id'];
-$question = $_POST['question'];
+$question = strip_tags(htmlspecialchars($_POST['question']));
 
 $polls = getJsonContent('poll', $user_lang);
 $poll = $polls->$id;

@@ -15,12 +15,12 @@ if (isset($_POST['userLang']) && !empty($_POST['userLang'])) {
                             $time = time();
                             $poll = array(
                                 $time => array(
-                                    "title" => $_POST['title'],
-                                    "description" => $_POST['description'],
-                                    "expire_time" => $_POST['expire_date'],
+                                    "title" => strip_tags(htmlspecialchars($_POST['title'])),
+                                    "description" => strip_tags(htmlspecialchars($_POST['description'])),
+                                    "expire_time" => strip_tags(htmlspecialchars($_POST['expire_date'])),
                                     "questions" => array(
-                                        $_POST['anwser1'] => 0,
-                                        $_POST['anwser2'] => 0
+                                        strip_tags(htmlspecialchars($_POST['anwser1'])) => 0,
+                                        strip_tags(htmlspecialchars($_POST['anwser2'])) => 0
                                     )
                                 )
                             );
