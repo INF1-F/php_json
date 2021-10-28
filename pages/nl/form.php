@@ -177,7 +177,7 @@ if (isset($_GET['choise'])) {
                             <div class="form-row">
                                 <label for="Locatie">
                                     <b>Locatie <span class="reqField">*</span></b>
-                                    <<<<<<< HEAD <?php if (isset($_GET['error']) && $_GET['error'] == 'location') //de error message wanneer je locatie niet hebt ingevuld.
+                                        <?php if (isset($_GET['error']) && $_GET['error'] == 'location') //de error message wanneer je locatie niet hebt ingevuld.
                                                         echo "<span class='contact-warning'> Geen locatie ingevuld</span>";
                                                     ?> </label>
                                         <select class="form-control" id="Locatie" name="location" required>
@@ -205,36 +205,6 @@ if (isset($_GET['choise'])) {
                             </div>
                         </form>
                     </div>
-                    =======
-                    <?php if (isset($_GET['error']) && $_GET['error'] == 'location')
-                        echo "<span class='contact-warning'> Geen locatie ingevuld</span>";
-                    ?>
-                    </label>
-                    <select class="form-control" id="Locatie" name="location" required>
-                        <option value="Emmen">Emmen</option>
-                        <option value="Amsterdam">Amsterdam</option>
-                        <option value="Assen">Assen</option>
-                        <option value="Groningen">Groningen</option>
-                        <option value="Leeuwarden">Leeuwarden</option>
-                        <option value="Meppel">Meppel</option>
-                        <option value="Terschelling">Terschelling</option>
-                        <option value="Zwolle">Zwolle</option>
-                    </select>
-                </div>
-                <div class="form-row">
-                    <label for="message">
-                        <b>Bericht <span class="reqField">*</span></b>
-                        <?php if (isset($_GET['error']) && $_GET['error'] == 'message')
-                            echo "<span class='contact-warning'> Geen bericht ingevuld </span>";
-                        ?>
-                    </label>
-                    <textarea id="message" class="form-control" name="message" style="height: 200px;" placeholder="Schrijf hier uw bericht..." required></textarea>
-                </div>
-                <div class="form-row">
-                    <input class="float-right btn btn-custom" name="submit" type="submit" value="Versturen">
-                </div>
-                </form>
-                >>>>>>> f31f59c191b94423d8df6929a6a0825c8226c87c
             </div>
         </div>
     </div>
