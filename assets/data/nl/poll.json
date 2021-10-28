@@ -4,17 +4,8 @@
         "description": "De roosters voor de tentamens zijn duidelijk voor mij, ik weet waar en hoe laat ik aanwezig moet zijn.",
         "expire_time": "2021-11-30",
         "questions": {
-            "Ja": 0,
-            "Nee": 0
-        }
-    },
-    "1635406785": {
-        "title": "Vinden jullie informatiemanagement moeilijk",
-        "description": "Informatiemanagement is kennelijk heel moeilijk. Hoe denken jullie hierover",
-        "expire_time": "2019-01-01",
-        "questions": {
-            "Ja": 0,
-            "Nee": 0
+            "Ja": 78,
+            "Nee": 20
         }
     }
 }
