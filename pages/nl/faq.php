@@ -14,7 +14,7 @@ session_start();
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-12">
-                <h2>Vaak gestelde vragen</h2>
+                <h1>Vaak gestelde vragen</h1>
             </div>
         </div>
         <div class="mt-2 mb-2">

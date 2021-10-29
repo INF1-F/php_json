@@ -19,12 +19,19 @@ $current_poll_id = array_keys((array) $polls)[0];
 
 <body>
     <?php include_once('../../components/en/header.php') ?>
+    <?php
+    if (isset($_GET["status"]) && $_GET["status"] == "success") {
+    ?>
+        <div id="success_popup" class='popup'> <span class="material-icons align-middle">done</span>The poll has been added successfully<span onclick="document.getElementById('success_popup').style.display = 'none'" class="material-icons align middel pointer float-right">clear</span></div>
+    <?php
+    }
+    ?>
     <div class="container h-100">
         <div class="row">
             <div class="col-12">
                 <div class="row">
                     <div class="col-6">
-                        <h2>Newest poll</h2>
+                        <h1>Newest poll</h1>
                     </div>
                     <?php
                     if ($_SESSION['auth'] == "teacher") {

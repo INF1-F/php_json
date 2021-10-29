@@ -4,7 +4,7 @@ include('../../components/function.php');
 
 $news_items = getJsonContent('news', 'nl'); //data van nieuws
 
-$counter = 3; 
+$counter = 3;
 $i = 0;
 
 if (isset($_POST['counter']) && !empty($_POST['counter'])) {
@@ -21,17 +21,25 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
 
 <body class="h-100">
     <?php include_once('../../components/nl/header.php') ?>
+    <?php
+    if (isset($_GET["status"]) && $_GET["status"] == "success") {
+    ?>
+        <div id="success_popup" class='popup'> <span class="material-icons align-middle">done</span>Het nieuws item is succesvol toegevoegd <span onclick="document.getElementById('success_popup').style.display = 'none'" class="material-icons align middel pointer float-right">clear</span></div>
+    <?php
+    }
+    ?>
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <h2>Nieuws</h2>
+                <h1>Nieuws</h1>
             </div>
-            <?php 
+            <?php
             if ($_SESSION['auth'] == "teacher") {
             ?>
-            <div class="col-6 my-auto"> <!-- Als het ingelogde persoon een leraar is, laat de 'nieuws toevoegen' knop zien. -->
-                <a class="btn btn-custom float-right" href="./add-news.php">Nieuws toevoegen <span class="material-icons align-middle">add</span></a>
-            </div>
+                <div class="col-6 my-auto">
+                    <!-- Als het ingelogde persoon een leraar is, laat de 'nieuws toevoegen' knop zien. -->
+                    <a class="btn btn-custom float-right" href="./add-news.php">Nieuws toevoegen <span class="material-icons align-middle">add</span></a>
+                </div>
             <?php
             }
             ?>
@@ -77,12 +85,12 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
                 if ($counter < $i) {
 
             ?>
-                    <div class="row mb-4" id="bottom"> 
+                    <div class="row mb-4" id="bottom">
                         <div class="col-12 d-flex justify-content-center">
                             <form action="news.php#bottom" method="POST">
                                 <input type="hidden" value="<?= $counter ?>" name="counter">
                                 <button type="submit" class="btn btn-custom">Meer weergeven <span class="material-icons align-middle">keyboard_arrow_down</span></button>
-                            </form> 
+                            </form>
                         </div>
                     </div>
             <?php // wanneer er meer dan 3 artikelen zijn, gaan de ouder artikelen onder het kopje "meer weergeven" staan. 

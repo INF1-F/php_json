@@ -30,7 +30,7 @@ if (isset($_POST['userLang']) && !empty($_POST['userLang'])) {
 
                             writeToJsonFile($old_items, 'poll', $lang);
 
-                            header("Location: ../pages/{$user_lang}/home.php");
+                            header("Location: ../pages/{$user_lang}/home.php?status=success");
                         } else {
                             header("Location: ../pages/{$user_lang}/add-poll.php?error=anwser2");
                         }

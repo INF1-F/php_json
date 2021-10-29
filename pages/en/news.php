@@ -21,10 +21,17 @@ if (isset($_POST['counter']) && !empty($_POST['counter'])) {
 
 <body class="h-100">
     <?php include_once('../../components/en/header.php') ?>
+    <?php
+    if (isset($_GET["status"]) && $_GET["status"] == "success") {
+    ?>
+        <div id="success_popup" class='popup'> <span class="material-icons align-middle">done</span>The news item has been added successfully<span onclick="document.getElementById('success_popup').style.display = 'none'" class="material-icons align middel pointer float-right">clear</span></div>
+    <?php
+    }
+    ?>
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <h2>News</h2>
+                <h1>News</h1>
             </div>
             <?php 
             if ($_SESSION['auth'] == "teacher") {

@@ -31,7 +31,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2><?= $news_item->title ?></h2>
+                <h1><?= $news_item->title ?></h1>
             </div>
             <div class="col-12 col-md-6">
                 <img src="../../<?= $news_item->image ?>" class="image-fluid news-item-img" alt="<?= $news_item->title ?>">

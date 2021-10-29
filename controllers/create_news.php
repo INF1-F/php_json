@@ -41,7 +41,7 @@ if (isset($_POST['article']) && !empty($_POST['article'])) {
                         // Haalt de data uit news.json
                         $old_items = getJsonContent('news', $lang);
 
-                         $old_items = (object) array_replace_recursive((array)$news_item, (array)$old_items);
+                        $old_items = (object) array_replace_recursive((array)$news_item, (array)$old_items);
 
                         // $content = addNewsItemToContent($old_items, $news_item, $time);
 
@@ -49,7 +49,7 @@ if (isset($_POST['article']) && !empty($_POST['article'])) {
                         writeToJsonFile($old_items, 'news', $lang);
 
                         // Stuurt de gebruiker terug naar index.php
-                        header("Location: ../pages/{$user_lang}/news.php");
+                        header("Location: ../pages/{$user_lang}/news.php?status=success");
                     }else {
                         header("Location: ../pages/{$user_lang}/add-news.php?error=img_extention");
                     }
@@ -66,5 +66,7 @@ if (isset($_POST['article']) && !empty($_POST['article'])) {
         header("Location: ../pages/{$user_lang}/add-news.php?error=title");
     }
 } else {
+    var_dump($_POST);
+    die("");
     header("Location: ../pages/{$user_lang}/add-news.php?error=article");
 }
