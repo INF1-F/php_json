@@ -2,7 +2,9 @@
 	<div class="container">
 		<div class="row text-center text-md-left">
 			<div class="col-md-6 col-12 d-none d-md-block">
-				<img src="../../assets/img/Stenden_logo_wit.svg" alt="Stenden logo">
+				<a href="../en/home.php">
+					<img src="../../assets/img/Stenden_logo_wit.svg" alt="Stenden logo">
+				</a>
 			</div>
 			<div class="col-md-4 col-12 my-auto">
 				<ul class="list-unstyled footer-nav">
@@ -13,8 +15,10 @@
 			</div>
 			<div class="col-md-2 col-12 my-auto py-2">
 				<div class="footer-space">
-					<img class="float-left d-md-none" src="../../assets/img/Stenden_logo_wit.svg" alt="Logo Stenden">
-					<img class="float-right" src="../../assets/img/Logo_footer_white.svg" alt="Logo wit">
+					<a href="../en/home.php">
+						<img class="float-left d-md-none" src="../../assets/img/Stenden_logo_wit.svg" alt="Logo Stenden">
+						<img class="float-right" src="../../assets/img/Logo_footer_white.svg" alt="Logo wit">
+					</a>
 				</div>
 			</div>
 		</div>
