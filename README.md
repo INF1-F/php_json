@@ -1,6 +1,8 @@
 # TODO
 
-**FAQ**
-* Vraag en antwoord toevoegen(wachten op opgeleverde teksten).
 
 **Vragen**
+
+**Github clone link**
+
+* git@github.com:INF1-F/studentenplatform.git
