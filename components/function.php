@@ -47,23 +47,6 @@ function addNewsItemToContent($content, $item, $id)
     return $content;
 }
 
-// function setIdInCookie($id)
-// // {
-// //     if (isset($_COOKIE['answerd_polls'])) {
-// //         $answerd_polls = json_decode($_COOKIE['answerd_polls']);
-// //         echo json_encode($answerd_polls);
-// //         echo '<br>';
-// //     } else {
-// //         $answerd_polls = array();
-// //     }
-// //     array_push($answerd_polls, $id);
-
-// //     echo json_encode($answerd_polls);
-
-//     setcookie('answerd_polls', json_encode($answerd_polls), time() + (365 * 24 * 60 * 60), '/');
-//     return;
-// }
-
 function printArray($array)
 {
     echo '<pre>';
