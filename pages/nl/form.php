@@ -71,16 +71,6 @@ if (isset($_GET['choise'])) {
                             <div class="form-row">
                                 <label for="Opleiding">
                                     <b>Opleiding <span class="reqField">*</span></b>
-                                    <?php if (isset($_GET['error']) && $_GET['error'] == 'education') {
-                                        echo "<span class='contact-warning'> Geen opleiding ingevuld </span>";   //de error message wanneer je geen opleiding hebt ingevuld.
-                                    }
-                                    ?>
-                                </label>
-                                <input class="form-control" type="text" value="<?= $_SESSION["fullName"] ?>" name="name" id="name" required>
-                            </div>
-                            <div class="form-row">
-                                <label for="Opleiding">
-                                    <b>Opleiding <span class="reqField">*</span></b>
                                     <?php if (isset($_GET['error']) && $_GET['error'] == 'education')
                                         echo "<span class='contact-warning'> Geen opleiding ingevuld </span>";
                                     ?>
