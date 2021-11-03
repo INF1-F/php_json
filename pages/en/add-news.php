@@ -24,7 +24,7 @@ session_start();
                         <form class="contactForm" action="../../controllers/create_news.php" method="POST" enctype="multipart/form-data">
                             <input type="hidden" name="userLang" value="en">
                             <div class="form-row">
-                                <p class="mt-0 reqFieldText"><span class="reqField">*</span> Required fields</p>
+                                <p class="mt-0 reqFieldText"><span class="reqField">*</span> Verplichte velden</p>
                             </div>
                             <div class="form-row">
                                 <label for="lang">

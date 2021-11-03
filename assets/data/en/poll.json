@@ -4,7 +4,7 @@
         "description": "The timetables for the exams are clear to me, I know where and what time I have to be present.",
         "expire_time": "2021-11-30",
         "questions": {
-            "Yes": 110,
+            "Yes": 111,
             "No": 67
         }
     }

@@ -17,7 +17,6 @@ session_start();
         <div class="row">
             <div class="col-12">
                 <h1>Voeg een poll toe</h1>
-                <p class="text-muted">Alles met een * is verplicht om in te vullen</p>
             </div>
             <div class="col-12 mb-3 add-news">
                 <div class="card align-items">
@@ -25,8 +24,11 @@ session_start();
                         <form class="contactForm" action="../../controllers/create_poll.php" method="POST">
                             <input type="hidden" name="userLang" value="nl">
                             <div class="form-row">
+                                <p class="mt-0 reqFieldText"><span class="reqField">*</span> Verplichte velden</p>
+                            </div>
+                            <div class="form-row">
                                 <label for="lang">
-                                    <b>Selecteer een taal <sup>*</sup></b>
+                                    <b>Selecteer de taal van uw poll <span class="reqField">*</span></b>
                                     <?php
                                     //foutmelding als lang leeg is
                                     if (isset($_GET["error"]) && $_GET["error"] == "lang") {
@@ -43,7 +45,7 @@ session_start();
                             </div>
                             <div class="form-row">
                                 <label for="title">
-                                    <b>Verval datum <sup>*</sup></b>
+                                    <b>Vervaldatum <span class="reqField">*</span></b>
                                     <?php
                                     //foutmelding als title leeg is
                                     if (isset($_GET["error"]) && $_GET["error"] == "date") {
@@ -57,7 +59,7 @@ session_start();
                             </div>
                             <div class="form-row">
                                 <label for="title">
-                                    <b>Titel <sup>*</sup></b>
+                                    <b>Titel <span class="reqField">*</span></b>
                                     <?php
                                     //foutmelding als title leeg is
                                     if (isset($_GET["error"]) && $_GET["error"] == "title") {
@@ -71,7 +73,7 @@ session_start();
                             </div>
                             <div class="form-row">
                                 <label for="article">
-                                    <b>Omschrijving <sup>*</sup></b>
+                                    <b>Beschrijving van uw poll <span class="reqField">*</span></b>
                                     <?php
                                     //foutmelding als omschrijving leeg is
                                     if (isset($_GET["error"]) && $_GET["error"] == "description") {
@@ -85,7 +87,7 @@ session_start();
                             </div>
                             <div class="form-row">
                                 <label for="anwser1">
-                                    <b>Antwoord 1 <sup>*</sup></b>
+                                    <b>Antwoord optie 1<span class="reqField">*</span></b>
                                     <?php
                                     //foutmelding als antwoord 1 leeg is
                                     if (isset($_GET["error"]) && $_GET["error"] == "answer1") {
@@ -99,7 +101,7 @@ session_start();
                             </div>
                             <div class="form-row">
                                 <label for="anwser2">
-                                    <b>Antwoord 2 <sup>*</sup></b>
+                                    <b>Antwoord optie 2<span class="reqField">*</span></b>
                                     <?php
                                     //foutmelding als antwoord 2 leeg is
                                     if (isset($_GET["error"]) && $_GET["error"] == "answer2") {
